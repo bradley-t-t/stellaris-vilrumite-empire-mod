@@ -1,0 +1,8 @@
+viltrumite_species = {
+ class = "HUM"
+ name = "Viltrumite"
+ plural = "Viltrumites"
+ adjective = "Viltrumite"
+ name_list = "VILTRUMITE"
+ traits = { "trait_viltrumite_pure" }
+}

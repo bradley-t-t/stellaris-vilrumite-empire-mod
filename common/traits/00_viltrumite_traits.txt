@@ -1,0 +1,16 @@
+trait_viltrumite_pure = {
+	cost = 2
+	allowed_archetypes = { BIOLOGICAL }
+	icon = "gfx/interface/icons/traits/trait_very_strong.dds"
+	opposites = { }
+	modifier = {
+		leader_lifespan_add = 1000
+		army_damage_mult = 5.0
+		army_health = 5.0
+		country_edict_fund_mult = 0.25
+		pop_environment_tolerance = 1.0
+		species_leader_exp_gain = 0.50
+		all_technology_research_speed = 0.30
+		logistic_growth_mult = -0.99
+	}
+}

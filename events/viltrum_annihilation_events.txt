@@ -1,0 +1,44 @@
+namespace = viltrum_annihilation
+
+planet_event = {
+    id = viltrum_annihilation.1
+    title = "viltrum_annihilation.1.name"
+    desc = "viltrum_annihilation.1.desc"
+    picture = "GFX_evt_burning_settlement"
+    show_sound = event_bad_omen
+    is_triggered_only = yes
+
+    trigger = {
+        planet_devastation >= 99
+        NOT = { has_planet_flag = viltrumite_cracked }
+        # Viltrumite fleet is bombarding
+        solar_system = {
+            any_fleet_in_system = {
+                exists = owner
+                owner = {
+                    has_origin = origin_viltrum_survivors
+                }
+                is_ship_class = shipclass_military
+            }
+        }
+    }
+
+    option = {
+        name = "viltrum_annihilation.1.a"
+        # Shatter the planet
+        set_planet_flag = viltrumite_cracked
+        change_pc = pc_shattered
+    }
+    
+    option = {
+        name = "viltrum_annihilation.1.b"
+        # Wipe out all population instead
+        while = {
+            count = 500
+            random_owned_pop_group = {
+                limit = { pop_group_size > 0 }
+                kill_single_pop = yes
+            }
+        }
+    }
+}

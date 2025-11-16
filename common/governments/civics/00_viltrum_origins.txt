@@ -1,0 +1,38 @@
+origin_viltrum_survivors = {
+	is_origin = yes
+
+	icon = "gfx/interface/icons/origins/origins_under_one_rule.dds"
+	picture = GFX_origin_legendary_leader
+
+	max_once_global = yes
+
+	description = "origin_viltrum_survivors_desc"
+	negative_description = "origin_viltrum_survivors_secondary_desc"
+
+	flags = { custom_start_screen }
+
+	traits = {
+		trait = trait_viltrumite_pure
+	}
+
+	possible = {
+		authority = { value = auth_dictatorial }
+		ethics = {
+			value = ethic_xenophobe
+			value = ethic_authoritarian
+			value = ethic_militarist
+		}
+	}
+
+	modifier = {
+		country_naval_cap_add = 50
+		planet_building_build_speed_mult = 0.25
+		planet_building_capacity_add = 2
+		planet_districts_hab_cost_mult = -0.20
+		country_unity_produces_mult = 3.0
+	}
+
+	random_weight = {
+		base = 5
+	}
+}

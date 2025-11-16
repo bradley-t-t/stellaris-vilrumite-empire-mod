@@ -1,0 +1,127 @@
+﻿VILTRUMITE = {
+ category = "Humanoid"
+ ship_names = {
+  generic = {
+   Viltrum Vanguard Thragg's Fury Nolan's Blade Anissa's Wrath Kregg's Hammer Thula's Storm Lucan's Spear Taurus Titan Vidor's Vengeance Argall's Annihilator Thaedus Thunder Ursaal's Unmaker Veyra's Void Kurr's Kraken Zorak's Zealot Ragnarr's Rage Dren's Doom Korath's Killer Veyl's Vindicator Drakar's Destructor
+  }
+  corvette = {
+   Fist Blade Hammer Storm Wrath Fury Vengeance Dominion Spear Lance Fang Claw
+  }
+  destroyer = {
+   Rage Iron Steel Titan Crusher Annihilator Overlord Conqueror
+  }
+  cruiser = {
+   Tyrant Warlord Slayer Regent Executioner Reaver Purge Scourge
+  }
+  battleship = {
+   Apocalypse Doombringer Worldbreaker Empire Viltrum Argall Thragg Nolan
+  }
+  titan = {
+   Conquest Thragg's Legacy Vanguard Eternal Conqueror
+  }
+  colossus = {
+   Final Judgment Planetbreaker Starshatter Universe Ender
+  }
+  juggernaut = {
+   Thraggradon Viltrum Fortress Imperium Core
+  }
+  science = {
+   Truthseeker Knowledgebreaker Starprobe Voidscanner
+  }
+  colonizer = {
+   New Viltrum Conquest Seed Empire Founder Worldclaimer
+  }
+  constructor = {
+   Forgeworld Structuremaker Starbuilder Megaforge
+  }
+  transport = {
+   Troopcarrier Conquest Transport Legion Hauler Warbringer
+  }
+  military_station_small = {
+   Outpost Watch Guard Sentinel
+  }
+  ion_cannon = {
+   Planetshatter Worldender Starbreaker Voidcannon
+  }
+ }
+ ship_class_names = {
+  generic = {
+   Fist Blade Hammer Storm Wrath Fury Vanguard Conqueror
+  }
+ }
+ fleet_names = {
+  random_names = {
+   Viltrumite Legion Thragg's Wrath Nolan's Fleet Anissa's Armada Kregg's Conquest Thula's Terror Lucan's Legion Taurus Triumph Vidor's Vanguard Argall's Avengers
+  }
+  sequential_name = "Viltrumite Legion"
+ }
+ planet_names = {
+  generic = {
+   names = {
+    Viltrum Conquest Thragg Nolan Anissa Kregg Thula Lucan Taurus Vidor Argall Thaedus Ursaal Veyra Kurr Zorak Ragnarr Dren Korath Veyl Omnipax Talescria Rognarr Flaxxus Viltrom Mardax Thaldor Vex Prime Krothon Ulthar Mordax Thandor Vraxx Zalthon Drakos Vortan Aegis Kuran Virilis Thaxon Dominus Anvilforge Urdok Supremacy Thargax Vaxxor
+   }
+  }
+  pc_desert = {
+   names = {
+    Scorchheim Ashfall Dune Sovereign Aridax Sandthrone Desolatum Dustborn Banelands Sear Drymouth Firerift
+   }
+  }
+  pc_savannah = {
+   names = {
+    Plainswrath Steppelord Grassveld Huntsground Widefield Roamlands Goldmane Pridereach
+   }
+  }
+  pc_tropical = {
+   names = {
+    Junglecrown Verdantia Rainstorm Vinegrasp Canopy Prime Overgrowth Fernhold Mistleaf
+   }
+  }
+  pc_arid = {
+   names = {
+    Drybane Parchedstone Wastemark Sandfist Cracklands Dunewrath Siltreach Harshworld
+   }
+  }
+  pc_continental = {
+   names = {
+    Temperance Haven Greenwatch Earthhold Meadowmark Primesoil Heartland Verdance
+   }
+  }
+  pc_ocean = {
+   names = {
+    Deepblue Wavebreaker Tidemark Seacrown Abyssal Azure Realm Currentia Stormwater
+   }
+  }
+  pc_tundra = {
+   names = {
+    Frostmarch Coldheart Icemark Snowveil Permafrost Winterhold Chill Reach Frozenwatch
+   }
+  }
+  pc_arctic = {
+   names = {
+    Glaciax Icehelm Polarwatch Whiteout Frostforge Blizzardhold Coldspire Icecrown
+   }
+  }
+  pc_alpine = {
+   names = {
+    Highpeak Ridgemark Summit Prime Alpinex Stonetop Cloudreach Cresthaven Skyhold
+   }
+  }
+ }
+ character_names = {
+  default = {
+   first_names = {
+    Thragg Nolan Anissa Kregg Thula Lucan Taurus Vidor Argall Thaedus Ursaal Veyra Kurr Zorak Ragnarr Dren Korath Veyl Drakar Thoran Kragor Zalthar Vortan Anvil
+   }
+   second_names = {
+    Viltrum Argall Korath Veyl Drenn Zorath Ragnar Tauron Kurran Ursal Vidorin Thulari Lucari Anissar Thraggor Kreggar Veylar Drakari
+   }
+   use_full_regnal_name = yes
+   regnal_first_names = {
+    Thragg Nolan Anissa Kregg Thula Lucan Taurus Vidor Argall Thaedus Ursaal Veyra Kurr Zorak Ragnarr Dren Korath Veyl Drakar Thoran Kragor Zalthar Vortan Anvil
+   }
+   regnal_second_names = {
+    Viltrum Argall Korath Veyl Drenn Zorath Ragnar Tauron Kurran Ursal Vidorin Thulari Lucari Anissar Thraggor Kreggar Veylar Drakari
+   }
+  }
+ }
+}

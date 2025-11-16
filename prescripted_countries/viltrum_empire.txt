@@ -1,0 +1,71 @@
+viltrum_empire = {
+	ship_prefix = "VES"
+	
+	species = {
+		class = HUM
+		portrait = "human"
+		name = "Viltrumite"
+		plural = "Viltrumites"
+		adjective = "Viltrumite"
+		name_list = "VILTRUMITE"
+		
+		trait = "trait_viltrumite_pure"
+	}
+	
+	name = "Viltrum Empire"
+	adjective = "Viltrumite"
+	
+	authority = auth_dictatorial
+	
+	civics = {
+		"civic_distinguished_admiralty"
+		"civic_warrior_culture"
+	}
+	
+	government = gov_military_dictatorship
+	
+	planet_name = "Viltrum"
+	planet_class = pc_continental
+	
+	system_name = "Viltrum"
+	
+	origin = "origin_viltrum_survivors"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_xenophobe"
+	
+	empire_flag = {
+		icon = {
+			category = "viltrum"
+			file = "vil.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"red"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	graphical_culture = "humanoid_01"
+	city_graphical_culture = "humanoid_01"
+	
+	room = "personality_slaving_despots_room"
+	
+	ruler = {
+		gender = male
+		name = "Thragg"
+		portrait = "human"
+		texture = 0
+		clothes = 3
+		ruler_title = "Grand Regent"
+		ruler_title_female = "Grand Regent"
+		
+		trait = "leader_trait_resilient"
+	}
+}

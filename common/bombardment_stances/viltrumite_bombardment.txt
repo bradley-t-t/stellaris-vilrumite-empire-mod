@@ -1,0 +1,18 @@
+viltrumite_annihilation = {
+	trigger = {
+		owner = {
+			has_origin = origin_viltrum_survivors
+		}
+	}
+	default = no
+	stop_when_armies_dead = no
+	planet_damage = 15.0
+	army_damage = 5.0
+	kill_pop_chance = {
+		base = 2.0
+	}
+	min_pops_to_kill_pop = 0
+	ai_weight = {
+		weight = 50
+	}
+}

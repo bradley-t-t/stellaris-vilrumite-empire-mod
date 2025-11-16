@@ -1,0 +1,23 @@
+on_pop_bombed_to_death = {
+    events = {
+        viltrum_annihilation.1
+    }
+}
+
+on_game_start_country = {
+	events = {
+		viltrum_start_pops.1
+	}
+}
+
+on_monthly_pulse = {
+	events = {
+		viltrum_bombardment.1
+	}
+}
+
+on_yearly_pulse_country = {
+    events = {
+        viltrum_start_pops.1
+    }
+}
