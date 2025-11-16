@@ -11,7 +11,7 @@ planet_event = {
     trigger = {
         planet_devastation >= 99
         NOT = { has_planet_flag = viltrumite_cracked }
-        # Viltrumite fleet is bombarding
+        # Viltrumite fleet is bombarding check
         solar_system = {
             any_fleet_in_system = {
                 exists = owner

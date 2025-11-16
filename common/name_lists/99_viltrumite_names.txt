@@ -53,7 +53,6 @@
   random_names = {
    Viltrumite Legion Thragg's Wrath Nolan's Fleet Anissa's Armada Kregg's Conquest Thula's Terror Lucan's Legion Taurus Triumph Vidor's Vanguard Argall's Avengers
   }
-  sequential_name = "Viltrumite Legion"
  }
  planet_names = {
   generic = {

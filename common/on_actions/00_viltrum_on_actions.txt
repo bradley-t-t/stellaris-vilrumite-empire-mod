@@ -10,12 +10,6 @@ on_game_start_country = {
 	}
 }
 
-on_monthly_pulse = {
-	events = {
-		viltrum_bombardment.1
-	}
-}
-
 on_yearly_pulse_country = {
     events = {
         viltrum_start_pops.1
