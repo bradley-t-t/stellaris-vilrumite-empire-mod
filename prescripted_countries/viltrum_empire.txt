@@ -10,6 +10,7 @@ viltrum_empire = {
 		name_list = "VILTRUMITE"
 		
 		trait = "trait_viltrumite_pure"
+		trait = "trait_organic"
 	}
 	
 	name = "Viltrum Empire"
@@ -55,7 +56,7 @@ viltrum_empire = {
 	graphical_culture = "humanoid_01"
 	city_graphical_culture = "humanoid_01"
 	
-	room = "personality_slaving_despots_room"
+	room = "default_room"
 	
 	ruler = {
 		gender = male

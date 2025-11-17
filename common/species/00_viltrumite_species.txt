@@ -19,5 +19,5 @@ viltrumite_species = {
  name_list = "VILTRUMITE"
  
  # Start with Pure Viltrumite trait (superhuman abilities)
- traits = { "trait_viltrumite_pure" }
+ traits = { "trait_viltrumite_pure", "trait_organic" }
 }

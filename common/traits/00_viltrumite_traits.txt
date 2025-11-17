@@ -17,8 +17,8 @@ trait_viltrumite_pure = {
 	
 	# TRAIT EFFECTS:
 	modifier = {
-		# Leaders live 1000 years longer (near-immortal)
-		leader_lifespan_add = 1000
+		# Leaders live 5000 years longer (near-immortal)
+		leader_lifespan_add = 5000
 		
 		# Armies deal 500% more damage
 		army_damage_mult = 5.0
