@@ -33,4 +33,11 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+	
+	spriteType = {
+		name = "GFX_evt_ps_0"
+		texturefile = "gfx/event_pictures/ps-0.dds"
+		masking_texture = "gfx/interface/situation_log/event_mask.dds"
+		alwaystransparent = yes
+	}
 }

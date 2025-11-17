@@ -1,8 +1,23 @@
+# VILTRUMITE SPECIES DEFINITION
+# Defines the Viltrumite species for use in prescripted empires
+# Based on humanoid portrait class with custom trait and name list
+
 viltrumite_species = {
+ # Humanoid portrait class
  class = "HUM"
+ 
+ # Portrait appearance settings
+ portrait = "human"
+ graphical_culture = "humanoid_01"
+ 
+ # Species display names
  name = "Viltrumite"
  plural = "Viltrumites"
  adjective = "Viltrumite"
+ 
+ # Use custom Viltrumite name list (defined in 99_viltrumite_names.txt)
  name_list = "VILTRUMITE"
+ 
+ # Start with Pure Viltrumite trait (superhuman abilities)
  traits = { "trait_viltrumite_pure" }
 }

@@ -1,26 +1,38 @@
+# SCOURGE VIRUS EVENT CHAIN
+# Narrative event series that kills most of the Viltrumite population at game start
+# Reduces population from thousands to ~100 survivors over time
+# Triggered by on_game_start_country and on_yearly_pulse_country
+
 namespace = viltrum_start_pops
 
-# Scourge Virus Begins
+# Event 1: Scourge Virus Outbreak Begins
+# Initial event that starts the population culling chain
+# Only fires once per empire via country flag
 country_event = {
     id = viltrum_start_pops.1
     title = "viltrum_start_pops.1.name"
     desc = "viltrum_start_pops.1.desc"
-    picture = "GFX_evt_sv_0"
+    picture = "GFX_evt_sv_0"  # Custom event picture (sv-0.dds)
     show_sound = event_bad_omen
     is_triggered_only = yes
 
     trigger = {
+        # Only for Viltrum Survivors origin
         has_origin = origin_viltrum_survivors
+        
+        # Prevent event from firing multiple times
         NOT = { has_country_flag = viltrum_scourge_started }
     }
 
     immediate = {
+        # Mark virus as started
         set_country_flag = viltrum_scourge_started
     }
 
     option = {
         name = "viltrum_start_pops.1.a"
         hidden_effect = {
+            # Start the population culling loop on capital planet
             capital_scope = {
                 planet_event = { id = viltrum_start_pops.2 days = 15 }
             }
@@ -28,21 +40,26 @@ country_event = {
     }
 }
 
-# Scourge Virus Kills Pops (Hidden, Repeating)
+# Event 2: Scourge Virus Pop Culling Loop (Hidden)
+# Repeating event that kills pops every 10 days
+# Shows progress events at specific population milestones
+# Stops when population drops below 100
 planet_event = {
     id = viltrum_start_pops.2
-    hide_window = yes
+    hide_window = yes  # No popup - runs silently
     is_triggered_only = yes
 
     trigger = {
         owner = {
+            # Virus must be active
             has_country_flag = viltrum_scourge_started
+            # And not yet ended
             NOT = { has_country_flag = viltrum_scourge_ended }
         }
     }
 
     immediate = {
-        # Kill 100 population at a time (1 pop)
+        # Kill 100 population (1 pop = 100 individuals)
         random_owned_pop_group = {
             limit = {
                 pop_group_size > 1
@@ -50,7 +67,7 @@ planet_event = {
             kill_single_pop = yes
         }
         
-        # Show progress popups at specific population thresholds
+        # PROGRESS EVENT 1: First Wave (at ~3000-3500 pops)
         if = {
             limit = {
                 pop_amount > 3000
@@ -64,6 +81,8 @@ planet_event = {
                 country_event = { id = viltrum_start_pops.4 }
             }
         }
+        
+        # PROGRESS EVENT 2: The Culling (at ~1500-2000 pops)
         else_if = {
             limit = {
                 pop_amount > 1500
@@ -77,6 +96,8 @@ planet_event = {
                 country_event = { id = viltrum_start_pops.5 }
             }
         }
+        
+        # PROGRESS EVENT 3: Final Days (at ~600-800 pops)
         else_if = {
             limit = {
                 pop_amount > 600
@@ -91,16 +112,17 @@ planet_event = {
             }
         }
         
-        # Check if we should stop - stop when population drops below 100
+        # CHECK STOPPING CONDITION
         if = {
             limit = {
+                # Continue if above 100 pops
                 pop_amount > 100
             }
-            # Continue the cycle
+            # Schedule next culling cycle in 10 days
             planet_event = { id = viltrum_start_pops.2 days = 10 }
         }
         else = {
-            # Stop - we've reached target population
+            # Population reached target - end virus
             owner = {
                 country_event = { id = viltrum_start_pops.3 }
             }
@@ -108,12 +130,13 @@ planet_event = {
     }
 }
 
-# Progress Update 1 - Early Outbreak
+# Event 4: Progress Update - First Wave
+# Narrative event showing early outbreak
 country_event = {
     id = viltrum_start_pops.4
     title = "viltrum_start_pops.4.name"
     desc = "viltrum_start_pops.4.desc"
-    picture = "GFX_evt_sv_1"
+    picture = "GFX_evt_sv_1"  # Custom event picture (sv-1.dds)
     show_sound = event_bad_omen
     is_triggered_only = yes
 
@@ -122,12 +145,13 @@ country_event = {
     }
 }
 
-# Progress Update 2 - Mass Casualties
+# Event 5: Progress Update - The Culling
+# Narrative event showing mass casualties
 country_event = {
     id = viltrum_start_pops.5
     title = "viltrum_start_pops.5.name"
     desc = "viltrum_start_pops.5.desc"
-    picture = "GFX_evt_sv_2"
+    picture = "GFX_evt_sv_2"  # Custom event picture (sv-2.dds)
     show_sound = event_bad_omen
     is_triggered_only = yes
 
@@ -136,12 +160,13 @@ country_event = {
     }
 }
 
-# Progress Update 3 - Final Days
+# Event 6: Progress Update - Final Days
+# Narrative event showing virus nearing end
 country_event = {
     id = viltrum_start_pops.6
     title = "viltrum_start_pops.6.name"
     desc = "viltrum_start_pops.6.desc"
-    picture = "GFX_evt_sv_3"
+    picture = "GFX_evt_sv_3"  # Custom event picture (sv-3.dds)
     show_sound = event_bad_omen
     is_triggered_only = yes
 
@@ -150,16 +175,19 @@ country_event = {
     }
 }
 
-# Scourge Virus Ends
+# Event 3: Scourge Virus Ends
+# Final event when population drops to ~100
+# Marks virus as complete
 country_event = {
     id = viltrum_start_pops.3
     title = "viltrum_start_pops.3.name"
     desc = "viltrum_start_pops.3.desc"
-    picture = "GFX_evt_sv_4"
+    picture = "GFX_evt_sv_4"  # Custom event picture (sv-4.dds)
     show_sound = event_celebration
     is_triggered_only = yes
 
     immediate = {
+        # Mark virus as ended
         set_country_flag = viltrum_scourge_ended
     }
 

@@ -1,16 +1,45 @@
+# PURE VILTRUMITE TRAIT
+# Superhuman warrior species with extreme combat abilities
+# Massive bonuses to military and leaders, but near-zero population growth
+
 trait_viltrumite_pure = {
+	# Trait point cost (2 points)
 	cost = 2
+	
+	# Only available for biological species
 	allowed_archetypes = { BIOLOGICAL }
+	
+	# Uses "Very Strong" trait icon
 	icon = "gfx/interface/icons/traits/trait_very_strong.dds"
+	
+	# No conflicting traits
 	opposites = { }
+	
+	# TRAIT EFFECTS:
 	modifier = {
+		# Leaders live 1000 years longer (near-immortal)
 		leader_lifespan_add = 1000
+		
+		# Armies deal 500% more damage
 		army_damage_mult = 5.0
+		
+		# Armies have 500% more health
 		army_health = 5.0
+		
+		# +25% edict fund (more resources for edicts)
 		country_edict_fund_mult = 0.25
+		
+		# Perfect habitability on all worlds (+100%)
 		pop_environment_tolerance = 1.0
+		
+		# Leaders gain experience 50% faster
 		species_leader_exp_gain = 0.50
+		
+		# +30% research speed for all technologies
 		all_technology_research_speed = 0.30
+		
+		# -99% population growth (near-zero growth)
+		# Balances extreme power with inability to rapidly expand
 		logistic_growth_mult = -0.99
 	}
 }
