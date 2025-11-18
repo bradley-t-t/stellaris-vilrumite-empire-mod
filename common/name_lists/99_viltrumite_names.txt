@@ -1,126 +1,198 @@
-﻿VILTRUMITE = {
- category = "Humanoid"
- ship_names = {
-  generic = {
-   Viltrum Vanguard Thragg's Fury Nolan's Blade Anissa's Wrath Kregg's Hammer Thula's Storm Lucan's Spear Taurus Titan Vidor's Vengeance Argall's Annihilator Thaedus Thunder Ursaal's Unmaker Veyra's Void Kurr's Kraken Zorak's Zealot Ragnarr's Rage Dren's Doom Korath's Killer Veyl's Vindicator Drakar's Destructor
-  }
-  corvette = {
-   Fist Blade Hammer Storm Wrath Fury Vengeance Dominion Spear Lance Fang Claw
-  }
-  destroyer = {
-   Rage Iron Steel Titan Crusher Annihilator Overlord Conqueror
-  }
-  cruiser = {
-   Tyrant Warlord Slayer Regent Executioner Reaver Purge Scourge
-  }
-  battleship = {
-   Apocalypse Doombringer Worldbreaker Empire Viltrum Argall Thragg Nolan
-  }
-  titan = {
-   Conquest Thragg's Legacy Vanguard Eternal Conqueror
-  }
-  colossus = {
-   Final Judgment Planetbreaker Starshatter Universe Ender
-  }
-  juggernaut = {
-   Thraggradon Viltrum Fortress Imperium Core
-  }
-  science = {
-   Truthseeker Knowledgebreaker Starprobe Voidscanner
-  }
-  colonizer = {
-   New Viltrum Conquest Seed Empire Founder Worldclaimer
-  }
-  constructor = {
-   Forgeworld Structuremaker Starbuilder Megaforge
-  }
-  transport = {
-   Troopcarrier Conquest Transport Legion Hauler Warbringer
-  }
-  military_station_small = {
-   Outpost Watch Guard Sentinel
-  }
-  ion_cannon = {
-   Planetshatter Worldender Starbreaker Voidcannon
-  }
- }
- ship_class_names = {
-  generic = {
-   Fist Blade Hammer Storm Wrath Fury Vanguard Conqueror
-  }
- }
- fleet_names = {
-  random_names = {
-   Viltrumite Legion Thragg's Wrath Nolan's Fleet Anissa's Armada Kregg's Conquest Thula's Terror Lucan's Legion Taurus Triumph Vidor's Vanguard Argall's Avengers
-  }
- }
- planet_names = {
-  generic = {
-   names = {
-    Viltrum Conquest Thragg Nolan Anissa Kregg Thula Lucan Taurus Vidor Argall Thaedus Ursaal Veyra Kurr Zorak Ragnarr Dren Korath Veyl Omnipax Talescria Rognarr Flaxxus Viltrom Mardax Thaldor Vex Prime Krothon Ulthar Mordax Thandor Vraxx Zalthon Drakos Vortan Aegis Kuran Virilis Thaxon Dominus Anvilforge Urdok Supremacy Thargax Vaxxor
-   }
-  }
-  pc_desert = {
-   names = {
-    Scorchheim Ashfall Dune Sovereign Aridax Sandthrone Desolatum Dustborn Banelands Sear Drymouth Firerift
-   }
-  }
-  pc_savannah = {
-   names = {
-    Plainswrath Steppelord Grassveld Huntsground Widefield Roamlands Goldmane Pridereach
-   }
-  }
-  pc_tropical = {
-   names = {
-    Junglecrown Verdantia Rainstorm Vinegrasp Canopy Prime Overgrowth Fernhold Mistleaf
-   }
-  }
-  pc_arid = {
-   names = {
-    Drybane Parchedstone Wastemark Sandfist Cracklands Dunewrath Siltreach Harshworld
-   }
-  }
-  pc_continental = {
-   names = {
-    Temperance Haven Greenwatch Earthhold Meadowmark Primesoil Heartland Verdance
-   }
-  }
-  pc_ocean = {
-   names = {
-    Deepblue Wavebreaker Tidemark Seacrown Abyssal Azure Realm Currentia Stormwater
-   }
-  }
-  pc_tundra = {
-   names = {
-    Frostmarch Coldheart Icemark Snowveil Permafrost Winterhold Chill Reach Frozenwatch
-   }
-  }
-  pc_arctic = {
-   names = {
-    Glaciax Icehelm Polarwatch Whiteout Frostforge Blizzardhold Coldspire Icecrown
-   }
-  }
-  pc_alpine = {
-   names = {
-    Highpeak Ridgemark Summit Prime Alpinex Stonetop Cloudreach Cresthaven Skyhold
-   }
-  }
- }
- character_names = {
-  default = {
-   first_names = {
-    Thragg Nolan Anissa Kregg Thula Lucan Taurus Vidor Argall Thaedus Ursaal Veyra Kurr Zorak Ragnarr Dren Korath Veyl Drakar Thoran Kragor Zalthar Vortan Anvil
-   }
-   second_names = {
-    Viltrum Argall Korath Veyl Drenn Zorath Ragnar Tauron Kurran Ursal Vidorin Thulari Lucari Anissar Thraggor Kreggar Veylar Drakari
-   }
-   use_full_regnal_name = yes
-   regnal_first_names = {
-    Thragg Nolan Anissa Kregg Thula Lucan Taurus Vidor Argall Thaedus Ursaal Veyra Kurr Zorak Ragnarr Dren Korath Veyl Drakar Thoran Kragor Zalthar Vortan Anvil
-   }
-   regnal_second_names = {
-    Viltrum Argall Korath Veyl Drenn Zorath Ragnar Tauron Kurran Ursal Vidorin Thulari Lucari Anissar Thraggor Kreggar Veylar Drakari
-   }
-  }
- }
+﻿##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Viltrumite Name List
+# Naming conventions for Viltrumite characters, ships, planets, and fleets
+#
+# DESCRIPTION:
+# Defines all naming patterns used by Viltrumite empires. Includes character
+# names from the Invincible series, thematic ship names emphasizing conquest
+# and warfare, and planet names reflecting Viltrumite dominance.
+#
+# CATEGORIES:
+# - Character names: Canon characters (Thragg, Nolan, Anissa, etc.)
+# - Ship names: Warfare-themed names by ship class
+# - Planet names: Generic and biome-specific conquest names
+# - Fleet names: Legion-themed formations
+#
+# USAGE:
+# Referenced by name_list = "VILTRUMITE" in species definitions
+##########################################################################
+
+VILTRUMITE = {
+	# Categorized as humanoid for name generation purposes
+	category = "Humanoid"
+	
+	# ===================================================================
+	# SHIP NAMING CONVENTIONS
+	# ===================================================================
+	ship_names = {
+		# Generic ship names (used for all military vessels)
+		generic = {
+			Viltrum Vanguard Thragg's Fury Nolan's Blade Anissa's Wrath Kregg's Hammer Thula's Storm Lucan's Spear Taurus Titan Vidor's Vengeance Argall's Annihilator Thaedus Thunder Ursaal's Unmaker Veyra's Void Kurr's Kraken Zorak's Zealot Ragnarr's Rage Dren's Doom Korath's Killer Veyl's Vindicator Drakar's Destructor
+		}
+		# Corvette names (fast attack ships - weapon-themed)
+		corvette = {
+			Fist Blade Hammer Storm Wrath Fury Vengeance Dominion Spear Lance Fang Claw
+		}
+		# Destroyer names (medium warships - strength-themed)
+		destroyer = {
+			Rage Iron Steel Titan Crusher Annihilator Overlord Conqueror
+		}
+		# Cruiser names (heavy warships - domination-themed)
+		cruiser = {
+			Tyrant Warlord Slayer Regent Executioner Reaver Purge Scourge
+		}
+		# Battleship names (capital ships - apocalypse and legendary characters)
+		battleship = {
+			Apocalypse Doombringer Worldbreaker Empire Viltrum Argall Thragg Nolan
+		}
+		# Titan names (super capital ships - conquest-themed)
+		titan = {
+			Conquest Thragg's Legacy Vanguard Eternal Conqueror
+		}
+		# Colossus names (planet destroyers - judgment and destruction)
+		colossus = {
+			Final Judgment Planetbreaker Starshatter Universe Ender
+		}
+		# Juggernaut names (mobile fortress - empire symbols)
+		juggernaut = {
+			Thraggradon Viltrum Fortress Imperium Core
+		}
+		# Science ship names (research vessels)
+		science = {
+			Truthseeker Knowledgebreaker Starprobe Voidscanner
+		}
+		# Colony ship names (expansion vessels)
+		colonizer = {
+			New Viltrum Conquest Seed Empire Founder Worldclaimer
+		}
+		# Constructor names (engineering ships)
+		constructor = {
+			Forgeworld Structuremaker Starbuilder Megaforge
+		}
+		# Transport names (army carriers)
+		transport = {
+			Troopcarrier Conquest Transport Legion Hauler Warbringer
+		}
+		# Starbase names (defensive stations)
+		military_station_small = {
+			Outpost Watch Guard Sentinel
+		}
+		# Ion cannon names (starbase weapons)
+		ion_cannon = {
+			Planetshatter Worldender Starbreaker Voidcannon
+		}
+	}
+	# ===================================================================
+	# SHIP CLASS NAMES (shown in fleet composition)
+	# ===================================================================
+	ship_class_names = {
+		generic = {
+			Fist Blade Hammer Storm Wrath Fury Vanguard Conqueror
+		}
+	}
+	
+	# ===================================================================
+	# FLEET NAMES (named after legendary Viltrumite warriors)
+	# ===================================================================
+	fleet_names = {
+		random_names = {
+			Viltrumite Legion Thragg's Wrath Nolan's Fleet Anissa's Armada Kregg's Conquest Thula's Terror Lucan's Legion Taurus Triumph Vidor's Vanguard Argall's Avengers
+		}
+	}
+	
+	# ===================================================================
+	# PLANET NAMES (conquest-themed names by biome type)
+	# ===================================================================
+	planet_names = {
+		# Generic planet names (used for any planet type)
+		generic = {
+			names = {
+				Viltrum Conquest Thragg Nolan Anissa Kregg Thula Lucan Taurus Vidor Argall Thaedus Ursaal Veyra Kurr Zorak Ragnarr Dren Korath Veyl Omnipax Talescria Rognarr Flaxxus Viltrom Mardax Thaldor Vex Prime Krothon Ulthar Mordax Thandor Vraxx Zalthon Drakos Vortan Aegis Kuran Virilis Thaxon Dominus Anvilforge Urdok Supremacy Thargax Vaxxor
+			}
+		}
+		# Desert planets (scorched, arid worlds)
+		pc_desert = {
+			names = {
+				Scorchheim Ashfall Dune Sovereign Aridax Sandthrone Desolatum Dustborn Banelands Sear Drymouth Firerift
+			}
+		}
+		# Savannah planets (grasslands with scattered trees)
+		pc_savannah = {
+			names = {
+				Plainswrath Steppelord Grassveld Huntsground Widefield Roamlands Goldmane Pridereach
+			}
+		}
+		# Tropical planets (jungle worlds)
+		pc_tropical = {
+			names = {
+				Junglecrown Verdantia Rainstorm Vinegrasp Canopy Prime Overgrowth Fernhold Mistleaf
+			}
+		}
+		# Arid planets (dry, sparse vegetation)
+		pc_arid = {
+			names = {
+				Drybane Parchedstone Wastemark Sandfist Cracklands Dunewrath Siltreach Harshworld
+			}
+		}
+		# Continental planets (earth-like, temperate)
+		pc_continental = {
+			names = {
+				Temperance Haven Greenwatch Earthhold Meadowmark Primesoil Heartland Verdance
+			}
+		}
+		# Ocean planets (water-covered worlds)
+		pc_ocean = {
+			names = {
+				Deepblue Wavebreaker Tidemark Seacrown Abyssal Azure Realm Currentia Stormwater
+			}
+		}
+		# Tundra planets (cold, some vegetation)
+		pc_tundra = {
+			names = {
+				Frostmarch Coldheart Icemark Snowveil Permafrost Winterhold Chill Reach Frozenwatch
+			}
+		}
+		# Arctic planets (frozen ice worlds)
+		pc_arctic = {
+			names = {
+				Glaciax Icehelm Polarwatch Whiteout Frostforge Blizzardhold Coldspire Icecrown
+			}
+		}
+		# Alpine planets (mountainous worlds)
+		pc_alpine = {
+			names = {
+				Highpeak Ridgemark Summit Prime Alpinex Stonetop Cloudreach Cresthaven Skyhold
+			}
+		}
+	}
+	
+	# ===================================================================
+	# CHARACTER NAMES (leaders, rulers, admirals, generals)
+	# Based on canon Invincible characters and thematic variations
+	# ===================================================================
+	character_names = {
+		default = {
+			# First names (given names for all leaders)
+			first_names = {
+				Thragg Nolan Anissa Kregg Thula Lucan Taurus Vidor Argall Thaedus Ursaal Veyra Kurr Zorak Ragnarr Dren Korath Veyl Drakar Thoran Kragor Zalthar Vortan Anvil
+			}
+			# Second names (surnames/clan names)
+			second_names = {
+				Viltrum Argall Korath Veyl Drenn Zorath Ragnar Tauron Kurran Ursal Vidorin Thulari Lucari Anissar Thraggor Kreggar Veylar Drakari
+			}
+			# Use full names for rulers/important characters
+			use_full_regnal_name = yes
+			# Regnal first names (used for monarchs/dictators)
+			regnal_first_names = {
+				Thragg Nolan Anissa Kregg Thula Lucan Taurus Vidor Argall Thaedus Ursaal Veyra Kurr Zorak Ragnarr Dren Korath Veyl Drakar Thoran Kragor Zalthar Vortan Anvil
+			}
+			# Regnal second names (surnames for monarchs/dictators)
+			regnal_second_names = {
+				Viltrum Argall Korath Veyl Drenn Zorath Ragnar Tauron Kurran Ursal Vidorin Thulari Lucari Anissar Thraggor Kreggar Veylar Drakari
+			}
+		}
+	}
 }

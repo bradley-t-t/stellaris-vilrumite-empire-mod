@@ -1,5 +1,10 @@
-# VILTRUM ON_ACTIONS
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Viltrum On_Actions
 # Defines when Viltrum-specific events trigger
+##########################################################################
 
 # Fires when a pop is killed by orbital bombardment
 # Used to trigger planet shattering at high devastation

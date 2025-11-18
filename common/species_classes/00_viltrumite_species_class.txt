@@ -1,0 +1,41 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Viltrumite Species Class
+# Custom species class for the Viltrumite warrior race
+#
+# DESCRIPTION:
+# Defines the Viltrumite species class as a biological humanoid species.
+# This class is used instead of HUM to allow for custom naming and
+# portrait associations specific to Viltrumites.
+#
+# FEATURES:
+# - Biological archetype (can be genetically modified)
+# - Humanoid graphical culture (uses humanoid_01 assets)
+# - Gender-based naming (uses male/female name lists)
+# - Uses human portraits (portrait_sets defined separately)
+#
+# LOCALIZATION KEYS REQUIRED:
+# - VILTRUMITE (species class name)
+# - VILTRUMITE_desc (species class description)
+# - VILTRUMITE_plural (plural form)
+##########################################################################
+
+VILTRUMITE = {
+	# Base species type (biological, not machine or lithoid)
+	archetype = BIOLOGICAL
+	
+	# Graphical settings (uses humanoid ships and cities)
+	graphical_culture = humanoid_01
+	
+	# Sound effect when moving pops between planets
+	move_pop_sound_effect = "moving_pop_confirmation"
+	
+	# Name generation (supports gender-based names)
+	gender = yes
+	
+	# Planet preferences (can colonize and inhabit planets)
+	possible = { always = yes }           # Can be primary species
+	possible_secondary = { always = yes }  # Can be secondary/conquered species
+}

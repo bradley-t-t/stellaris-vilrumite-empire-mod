@@ -1,6 +1,11 @@
-# VILTRUMITE PLANET ANNIHILATION EVENTS
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Viltrumite Planet Annihilation Events
 # Automatically shatters planets when Viltrumite bombardment reaches 99% devastation
 # Triggered by on_pop_bombed_to_death when using viltrumite_annihilation stance
+##########################################################################
 
 namespace = viltrum_annihilation
 

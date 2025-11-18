@@ -1,6 +1,11 @@
-# VILTRUMITE ANNIHILATION BOMBARDMENT STANCE
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Viltrumite Annihilation Bombardment Stance
 # Custom bombardment stance for Viltrum Survivors origin
 # Automatically shatters planets at 99% devastation via event system
+##########################################################################
 
 viltrumite_annihilation = {
 	# Only available to empires with the Viltrum Survivors origin

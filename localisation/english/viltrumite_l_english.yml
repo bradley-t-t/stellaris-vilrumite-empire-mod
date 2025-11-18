@@ -1,5 +1,9 @@
 ﻿l_english:
  
+ VILTRUMITE:0 "Viltrumite"
+ VILTRUMITE_desc:0 "The warrior race that once dominated galaxies"
+ VILTRUMITE_plural:0 "Viltrumites"
+ 
  species_name_viltrumite_species:0 "Viltrumite"
  species_plural_viltrumite_species:0 "Viltrumites"
  species_adjective_viltrumite_species:0 "Viltrumite"

@@ -1,6 +1,11 @@
-# PURE VILTRUMITE TRAIT
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Pure Viltrumite Trait Definition
 # Superhuman warrior species with extreme combat abilities
 # Massive bonuses to military and leaders, but near-zero population growth
+##########################################################################
 
 trait_viltrumite_pure = {
 	# Trait point cost (2 points)

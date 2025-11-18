@@ -1,7 +1,12 @@
-# SCOURGE VIRUS EVENT CHAIN
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Scourge Virus Event Chain
 # Narrative event series that kills most of the Viltrumite population at game start
 # Reduces population from thousands to ~100 survivors over time
 # Triggered by on_game_start_country and on_yearly_pulse_country
+##########################################################################
 
 namespace = viltrum_start_pops
 
