@@ -102,10 +102,10 @@ viltrum_empire = {
 	}
 	
 	# ===================================================================
-	# GRAPHICAL CULTURE (ships, cities, etc.)
+	# GRAPHICAL SETTINGS (ships, cities, etc.)
 	# ===================================================================
-	graphical_culture = "humanoid_01"      # Humanoid ship designs
-	city_graphical_culture = "humanoid_01" # Humanoid city appearance
+	graphical_culture = "mammalian_01"      # Use mammalian ships (available to all)
+	city_graphical_culture = "mammalian_01" # Use mammalian cities (available to all)
 	
 	# ===================================================================
 	# SPAWN SETTINGS

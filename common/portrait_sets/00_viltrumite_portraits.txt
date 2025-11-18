@@ -1,0 +1,16 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Viltrumite Portrait Set
+# Maps human portraits to the VILTRUMITE species class
+##########################################################################
+
+viltrumites = {
+	species_class = VILTRUMITE
+	
+	# Use all standard human portraits
+	portraits = {
+		"human"
+	}
+}
