@@ -1,0 +1,28 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Sequid Trait Definition
+# Parasitic infiltrators - subtle mind control and infiltration
+##########################################################################
+
+trait_sequid_parasites = {
+	cost = 2
+	allowed_archetypes = { BIOLOGICAL }
+	icon = "gfx/interface/icons/traits/trait_intelligent.dds"
+	
+	modifier = {
+		# Mental dominance and infiltration
+		intel_encryption_add = 2
+		intel_decryption_add = 2
+		country_physics_tech_research_speed = 0.15
+		
+		# Parasitic control
+		pop_cat_slave_political_power = 0.25
+		planet_jobs_specialist_produces_mult = 0.10
+		
+		# Physically weak hosts
+		army_damage_mult = -0.30
+		army_health = -0.20
+	}
+}

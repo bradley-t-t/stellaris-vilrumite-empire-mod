@@ -1,0 +1,6 @@
+{
+  "version": "1.0",
+  "projectName": "viltrum-empire",
+  "branch": "main",
+  "provider": "claude-code"
+}

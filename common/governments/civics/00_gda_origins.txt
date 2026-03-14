@@ -1,0 +1,100 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: GDA Earth Defense Origin
+# Custom origin for the Global Defense Agency (GDA) Empire
+#
+# DESCRIPTION:
+# Earth's Global Defense Agency operates as humanity's first and last
+# line of defense against extraterrestrial threats. Led by the pragmatic
+# Director Cecil Stedman, the GDA employs espionage, covert operations,
+# advanced technology, and strategic defense to protect humanity from
+# superior alien forces. What they lack in raw power, they compensate
+# with intelligence, preparation, and ruthless efficiency.
+#
+# REQUIREMENTS:
+# - Oligarchic authority (committee oversight, checks and balances)
+# - Xenophobe ethics (distrust of aliens)
+# - Militarist or Materialist ethics (defense or technology focus)
+#
+# KEY FEATURES:
+# - Enhanced espionage and intelligence networks
+# - Defensive bonuses (fortress worlds, defensive armies)
+# - Technology and research advantages
+# - Starts with defensive infrastructure
+# - Reduced naval capacity (quality over quantity)
+##########################################################################
+
+origin_gda_earth_defense = {
+	is_origin = yes
+
+	# Visual appearance in origin selection screen
+	icon = "gfx/interface/icons/origins/origins_hegemon.dds"
+	picture = GFX_origin_payback
+
+	# Only one empire per galaxy can use this origin
+	max_once_global = yes
+
+	# Localization keys for descriptions
+	description = "origin_gda_earth_defense_desc"
+	negative_description = "origin_gda_earth_defense_secondary_desc"
+
+	# Enables custom start screen for this origin
+	flags = { custom_start_screen }
+
+	# Authority and ethics requirements
+	possible = {
+		authority = { value = auth_oligarchic }
+		ethics = {
+			value = ethic_xenophobe
+			OR = {
+				value = ethic_militarist
+				value = ethic_materialist
+			}
+		}
+	}
+
+	# Starting resources and infrastructure
+	advanced_start = yes
+	
+	# Empire-wide modifiers
+	modifier = {
+		# ESPIONAGE & INTELLIGENCE
+		intel_encryption_add = 2                        # +2 encryption (harder to spy on)
+		intel_decryption_add = 2                        # +2 decryption (easier to spy on others)
+		spy_network_levels_add = 1                      # +1 spy network level
+		
+		# DEFENSIVE CAPABILITIES
+		planet_sensor_range_add = 2                     # +2 sensor range (early warning)
+		starbase_defense_platform_capacity_add = 4      # +4 defense platforms per starbase
+		army_defense_damage_mult = 0.50                 # +50% defensive army damage
+		army_defense_morale_mult = 0.25                 # +25% defensive army morale
+		ship_home_territory_fire_rate_mult = 0.20       # +20% fire rate in own territory
+		
+		# TECHNOLOGY & RESEARCH
+		all_technology_research_speed = 0.15            # +15% all research speed
+		country_engineering_tech_research_speed = 0.10  # +10% engineering research (fortifications)
+		country_physics_tech_research_speed = 0.10      # +10% physics research (sensors, shields)
+		category_computing_research_speed_mult = 0.20   # +20% computing research (AI, codebreaking)
+		
+		# INFRASTRUCTURE
+		planet_building_build_speed_mult = 0.15         # +15% building construction speed
+		country_starbase_capacity_add = 2               # +2 starbase capacity
+		starbase_upgrade_cost_mult = -0.20              # -20% starbase upgrade cost
+		
+		# STRATEGIC LIMITATIONS (Underdog status)
+		country_naval_cap_mult = -0.15                  # -15% naval capacity (smaller fleet)
+		country_claim_influence_cost_mult = 0.25        # +25% claim influence cost (not expansionist)
+		ship_weapon_damage = -0.10                      # -10% weapon damage (inferior firepower)
+		
+		# DIPLOMATIC ADVANTAGES
+		envoy_improve_relations_mult = 0.25             # +25% improve relations speed
+		country_trust_growth = 0.25                     # +25% trust growth
+	}
+
+	# AI weight for selecting this origin
+	random_weight = {
+		base = 5
+	}
+}

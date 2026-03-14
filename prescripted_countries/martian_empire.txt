@@ -1,0 +1,132 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Martian Empire - Prescripted Country
+# Mars colony turned independent militarist state
+#
+# DESCRIPTION:
+# The Martian Empire began as Earth's colony on Mars but declared
+# independence and became a militaristic authoritarian state. They harbor
+# resentment toward Earth and seek to prove Martian superiority through
+# military strength and conquest.
+#
+# GOVERNMENT:
+# - Authority: Oligarchic
+# - Ethics: Militarist, Authoritarian, Xenophobe
+# - Civics: Warrior Culture, Police State
+#
+# SPECIES:
+# - Class: HUM (Human)
+# - Traits: Strong, Resilient, Unruly
+#
+# RULER:
+# - Title: Supreme Commander
+##########################################################################
+
+martian_empire = {
+	# Ship name prefix
+	ship_prefix = "MMS"  # Martian Military Ship
+	
+	# ===================================================================
+	# SPECIES DEFINITION
+	# ===================================================================
+	species = {
+		class = REP                    # Reptilian species class
+		portrait = "rep1"              # Reptilian portrait
+		name = "Martian"               # Species name (singular)
+		plural = "Martians"            # Species name (plural)
+		adjective = "Martian"          # Adjective form
+		name_list = "MARTIAN"          # Uses martian name list
+		
+		trait = "trait_martian_colonist" # Martian warrior adaptation
+		trait = "trait_organic"        # Organic species
+	}
+	
+	# ===================================================================
+	# EMPIRE IDENTITY
+	# ===================================================================
+	name = "Martian Confederacy"      # Empire name
+	adjective = "Martian"             # Empire adjective
+	
+	# ===================================================================
+	# GOVERNMENT STRUCTURE
+	# ===================================================================
+	authority = auth_oligarchic       # Oligarchic authority
+	
+	civics = {
+		"civic_warrior_culture"       # Warrior Culture
+		"civic_police_state"          # Police State
+	}
+	
+	government = gov_military_junta   # Military Junta
+	
+	# ===================================================================
+	# STARTING SYSTEM
+	# ===================================================================
+	planet_name = "Mars"              # Homeworld name
+	planet_class = pc_desert          # Desert/arid planet
+	
+	system_name = "Sol"               # Sol system (same as Earth)
+	
+	# ===================================================================
+	# ORIGIN & ETHICS
+	# ===================================================================
+	origin = "origin_martian_rebellion" # Martian Rebellion origin
+	
+	ethic = "ethic_militarist"        # Militarist
+	ethic = "ethic_authoritarian"     # Authoritarian
+	ethic = "ethic_xenophobe"         # Xenophobe
+	
+	# ===================================================================
+	# EMPIRE FLAG
+	# ===================================================================
+	empire_flag = {
+		icon = {
+			category = "pointy"
+			file = "flag_pointy_3.dds"  # Military emblem
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"dark_red"                   # Primary: Mars red
+			"black"                      # Secondary: black
+			"orange"                     # Tertiary: orange
+			"null"
+		}
+	}
+	
+	# ===================================================================
+	# GRAPHICAL SETTINGS
+	# ===================================================================
+	graphical_culture = "reptilian_01"
+	city_graphical_culture = "reptilian_01"
+	
+	# ===================================================================
+	# SPAWN SETTINGS
+	# ===================================================================
+	spawn_enabled = yes
+	spawn_as_fallen = no
+	
+	# ===================================================================
+	# THRONE ROOM
+	# ===================================================================
+	room = "default_room"
+	
+	# ===================================================================
+	# STARTING RULER
+	# ===================================================================
+	ruler = {
+		gender = male
+		name = "Commander Levy"
+		portrait = "rep1"
+		texture = 3
+		clothes = 3
+		ruler_title = "Supreme Commander"
+		ruler_title_female = "Supreme Commander"
+		
+		trait = "leader_trait_resilient"
+	}
+}

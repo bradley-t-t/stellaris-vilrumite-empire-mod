@@ -1,0 +1,71 @@
+﻿##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Thraxxan Name List
+# Naming conventions for Thraxxan Hive characters, ships, planets, and fleets
+#
+# DESCRIPTION:
+# The Thraxxans are a hyper-aggressive insectoid species organized into
+# vast swarms. Their naming reflects their hive mentality, brutal conquest,
+# and insect-themed culture.
+##########################################################################
+
+THRAXXAN = {
+	category = "Arthropoid"
+	
+	ship_names = {
+		generic = {
+			"Swarmship" "Hive Vessel" "Chitinblade" "Mandible" "Stinger" "Venom" "Carapace" "Colony Ship" "Brood Carrier" "Queen's Wrath" "Drone Assault" "Warrior Caste" "Hunter Killer" "Nest Guardian" "Hive Mind" "Brood Mother" "Swarm Alpha" "Thorax Strike" "Wing Commander" "Compound Eye"
+		}
+		corvette = {
+			"Drone" "Worker" "Scout" "Stinger" "Fang" "Mandible" "Claw" "Spike"
+		}
+		destroyer = {
+			"Warrior" "Hunter" "Soldier" "Slasher" "Piercer" "Reaper" "Striker"
+		}
+		cruiser = {
+			"Broodlord" "Hiveguard" "Swarmmaster" "Nest Keeper" "Colony Lord"
+		}
+		battleship = {
+			"Queen's Fury" "Hive Tyrant" "Brood King" "Swarm Overlord" "Nest Destroyer"
+		}
+		titan = {
+			"Hive Omega" "Swarm Colossus" "Queen Mother" "Nest Prime"
+		}
+		science = {
+			"Bio-Scanner" "Gene Seeker" "Evolution Track" "Adaptation Scout"
+		}
+		colonizer = {
+			"New Nest" "Colony Seed" "Brood Carrier" "Hive Expansion"
+		}
+		transport = {
+			"Swarm Transport" "Warrior Carrier" "Drone Hauler" "Invasion Nest"
+		}
+	}
+	
+	fleet_names = {
+		random_names = {
+			"First Swarm" "Queen's Legion" "Hunter Fleet" "Warrior Horde" "Nest Defense" "Brood Strike" "Hive Vanguard" "Colony Expansion" "Mandible Fleet" "Stinger Squadron"
+		}
+	}
+	
+	planet_names = {
+		generic = {
+			names = {
+				"Thraxx Prime" "Hive Alpha" "Nest Beta" "Colony Gamma" "Brood Delta" "Swarm Epsilon" "Queen's World" "Worker's Rest" "Warrior's Den" "Hunter's Ground" "Breeder World" "Larva Nursery" "Pupa Station" "Chitin Fields" "Mandible Rock" "Stinger Heights" "Venom Pool" "Carapace Mountains" "Antennae Valley" "Compound Reach"
+			}
+		}
+	}
+	
+	character_names = {
+		default = {
+			first_names = {
+				"Thraxx" "Klikt" "Zzar" "Chrr" "Vzzk" "Skrrt" "Tikk" "Zzzr" "Krrk" "Vkkr" "Tchk" "Zzzt" "Skrr" "Klik" "Vrrt"
+			}
+			second_names = {
+				"the_Warrior" "the_Hunter" "the_Queens_Guard" "the_Nest_Keeper" "the_Brood_Lord" "the_Swarm_Master" "the_Hive_Mind" "the_Colony_Founder" "the_Drone_Commander" "the_Stinger"
+			}
+		}
+	}
+}

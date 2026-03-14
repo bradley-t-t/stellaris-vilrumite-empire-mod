@@ -1,0 +1,132 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Flaxan Empire - Prescripted Country
+# Interdimensional conquerors
+#
+# DESCRIPTION:
+# The Flaxans are interdimensional invaders from a dimension where time
+# moves much faster. What is days for them is mere seconds for others.
+# They age rapidly but reproduce quickly, creating massive armies through
+# multiple generations in short timeframes.
+#
+# GOVERNMENT:
+# - Authority: Dictatorial
+# - Ethics: Fanatic Militarist, Authoritarian
+# - Civics: Warrior Culture, Strength of Legions
+#
+# SPECIES:
+# - Class: HUMANOID
+# - Traits: Rapid Breeders, Fleeting, Strong
+#
+# RULER:
+# - Name: Flaxan Emperor
+# - Title: Dimensional Emperor
+##########################################################################
+
+flaxan_empire = {
+	# Ship name prefix
+	ship_prefix = "FIS"  # Flaxan Invasion Ship
+	
+	# ===================================================================
+	# SPECIES DEFINITION
+	# ===================================================================
+	species = {
+		class = REP                    # Reptilian species class
+		portrait = "rep4"              # Reptilian portrait #6
+		name = "Flaxan"                # Species name (singular)
+		plural = "Flaxans"             # Species name (plural)
+		adjective = "Flaxan"           # Adjective form
+		name_list = "FLAXAN"           # Uses flaxan name list
+		
+		trait = "trait_flaxan_temporal" # Temporal acceleration
+		trait = "trait_organic"        # Organic species
+	}
+	
+	# ===================================================================
+	# EMPIRE IDENTITY
+	# ===================================================================
+	name = "Flaxan Empire"            # Empire name
+	adjective = "Flaxan"              # Empire adjective
+	
+	# ===================================================================
+	# GOVERNMENT STRUCTURE
+	# ===================================================================
+	authority = auth_dictatorial      # Dictatorial authority
+	
+	civics = {
+		"civic_warrior_culture"       # Warrior Culture
+		"civic_distinguished_admiralty" # Distinguished Admiralty
+	}
+	
+	government = gov_military_dictatorship # Military Dictatorship
+	
+	# ===================================================================
+	# STARTING SYSTEM
+	# ===================================================================
+	planet_name = "Flaxus"            # Homeworld name
+	planet_class = pc_continental     # Continental planet
+	
+	system_name = "Temporal Rift"     # Home system name
+	
+	# ===================================================================
+	# ORIGIN & ETHICS
+	# ===================================================================
+	origin = "origin_flaxan_dimension" # Flaxan Dimension origin
+	
+	ethic = "ethic_fanatic_militarist" # Fanatic Militarist
+	ethic = "ethic_authoritarian"     # Authoritarian
+	
+	# ===================================================================
+	# EMPIRE FLAG
+	# ===================================================================
+	empire_flag = {
+		icon = {
+			category = "pointy"
+			file = "flag_pointy_7.dds"  # Aggressive emblem
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"red"                        # Primary: red
+			"black"                      # Secondary: black
+			"grey"                       # Tertiary: grey
+			"null"
+		}
+	}
+	
+	# ===================================================================
+	# GRAPHICAL SETTINGS
+	# ===================================================================
+	graphical_culture = "reptilian_01"
+	city_graphical_culture = "reptilian_01"
+	
+	# ===================================================================
+	# SPAWN SETTINGS
+	# ===================================================================
+	spawn_enabled = yes
+	spawn_as_fallen = no
+	
+	# ===================================================================
+	# THRONE ROOM
+	# ===================================================================
+	room = "default_room"
+	
+	# ===================================================================
+	# STARTING RULER
+	# ===================================================================
+	ruler = {
+		gender = male
+		name = "Flaxan Emperor"
+		portrait = "rep4"
+		texture = 0
+		clothes = 0
+		ruler_title = "Dimensional Emperor"
+		ruler_title_female = "Dimensional Empress"
+		
+		trait = "leader_trait_resilient"
+	}
+}

@@ -1,0 +1,22 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Martian Species Definition
+# Defines the Martian reptilian species for use in prescripted empires
+##########################################################################
+
+martian_species = {
+	class = "REP"
+	
+	portrait = "rep1"
+	graphical_culture = "reptilian_01"
+	
+	name = "Martian"
+	plural = "Martians"
+	adjective = "Martian"
+	
+	name_list = "MARTIAN"
+	
+	traits = { "trait_martian_colonist" }
+}

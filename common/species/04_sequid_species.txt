@@ -1,0 +1,22 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Sequid Species Definition
+# Defines the Sequid parasitic molluscoid species for use in prescripted empires
+##########################################################################
+
+sequid_species = {
+	class = "MOL"
+	
+	portrait = "mol1"
+	graphical_culture = "molluscoid_01"
+	
+	name = "Sequid"
+	plural = "Sequids"
+	adjective = "Sequid"
+	
+	name_list = "SEQUID"
+	
+	traits = { "trait_sequid_parasites" }
+}

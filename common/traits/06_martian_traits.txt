@@ -1,0 +1,28 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Martian Trait Definition
+# Mars colonists - hardy warriors adapted to harsh conditions
+##########################################################################
+
+trait_martian_colonist = {
+	cost = 2
+	allowed_archetypes = { BIOLOGICAL }
+	icon = "gfx/interface/icons/traits/trait_resilient.dds"
+	
+	modifier = {
+		# Mars adaptation
+		pop_environment_tolerance = 0.10
+		planet_structures_cost_mult = -0.10
+		
+		# Military prowess and rebellion
+		army_damage_mult = 0.25
+		army_morale = 0.15
+		ship_hull_mult = 0.10
+		
+		# Rebellious nature
+		pop_government_ethic_attraction = -0.10
+		planet_crime_add = 5
+	}
+}

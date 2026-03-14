@@ -1,0 +1,132 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Thraxxan Empire - Prescripted Country
+# Insectoid hive mind empire
+#
+# DESCRIPTION:
+# The Thraxxan Empire is a massive insectoid hive mind led by their queen.
+# They reproduce rapidly and overwhelm enemies through sheer numbers rather
+# than individual strength. Their single-minded devotion to the hive makes
+# them relentless in expansion and conquest.
+#
+# GOVERNMENT:
+# - Authority: Dictatorial
+# - Ethics: Authoritarian, Xenophobe, Materialist
+# - Civics: Functional Architecture, Mining Guilds
+#
+# SPECIES:
+# - Class: INSECT (Arthropoid)
+# - Traits: Rapid Breeders, Industrious, Repugnant
+#
+# RULER:
+# - Name: Thraxxan Queen
+# - Title: Hive Queen
+##########################################################################
+
+thraxxan_empire = {
+	# Ship name prefix
+	ship_prefix = "HVS"  # Hive Vessel Ship
+	
+	# ===================================================================
+	# SPECIES DEFINITION
+	# ===================================================================
+	species = {
+		class = ART                    # Arthropoid species class
+		portrait = "art1"
+		name = "Thraxxan"              # Species name (singular)
+		plural = "Thraxxans"           # Species name (plural)
+		adjective = "Thraxxan"         # Adjective form
+		name_list = "THRAXXAN"         # Uses thraxxan name list
+		
+		trait = "trait_thraxxan_swarm" # Swarm biology
+		trait = "trait_organic"        # Organic species
+	}
+	
+	# ===================================================================
+	# EMPIRE IDENTITY
+	# ===================================================================
+	name = "Thraxxan Hive"             # Empire name
+	adjective = "Thraxxan"             # Empire adjective
+	
+	# ===================================================================
+	# GOVERNMENT STRUCTURE
+	# ===================================================================
+	authority = auth_dictatorial       # Dictatorial authority
+	
+	civics = {
+		"civic_functional_architecture" # Functional Architecture (rapid expansion)
+		"civic_mining_guilds"          # Mining Guilds (resource extraction)
+	}
+	
+	government = gov_despotic_empire   # Despotic Empire
+	
+	# ===================================================================
+	# STARTING SYSTEM
+	# ===================================================================
+	planet_name = "Thraxx Prime"       # Homeworld name
+	planet_class = pc_tropical         # Tropical jungle world
+	
+	system_name = "Thraxx"             # Home system name
+	
+	# ===================================================================
+	# ORIGIN & ETHICS
+	# ===================================================================
+	origin = "origin_thraxxan_swarm"  # Thraxxan Swarm origin
+	
+	ethic = "ethic_fanatic_xenophobe" # Fanatic Xenophobe (insular hive)
+	ethic = "ethic_materialist"       # Materialist (pragmatic expansion)
+	
+	# ===================================================================
+	# EMPIRE FLAG
+	# ===================================================================
+	empire_flag = {
+		icon = {
+			category = "pointy"
+			file = "flag_pointy_5.dds"  # Aggressive emblem
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"dark_green"                  # Primary: dark green
+			"orange"                      # Secondary: orange
+			"brown"                       # Tertiary: brown
+			"null"
+		}
+	}
+	
+	# ===================================================================
+	# GRAPHICAL SETTINGS
+	# ===================================================================
+	graphical_culture = "arthropoid_01"
+	city_graphical_culture = "arthropoid_01"
+	
+	# ===================================================================
+	# SPAWN SETTINGS
+	# ===================================================================
+	spawn_enabled = yes
+	spawn_as_fallen = no
+	
+	# ===================================================================
+	# THRONE ROOM
+	# ===================================================================
+	room = "default_room"
+	
+	# ===================================================================
+	# STARTING RULER
+	# ===================================================================
+	ruler = {
+		gender = female
+		name = "Thraxxan Queen"
+		portrait = "art1"
+		texture = 0
+		clothes = 0
+		ruler_title = "Hive Queen"
+		ruler_title_female = "Hive Queen"
+		
+		trait = "leader_trait_resilient"
+	}
+}

@@ -1,0 +1,71 @@
+﻿##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Coalition of Planets Name List
+# Naming conventions for Coalition characters, ships, planets, and fleets
+#
+# DESCRIPTION:
+# The Coalition of Planets is a democratic federation of diverse species
+# united for mutual protection and prosperity. Their naming reflects unity,
+# cooperation, peace, and diplomatic ideals.
+##########################################################################
+
+COALITION = {
+	category = "Mammalian"
+	
+	ship_names = {
+		generic = {
+			"Unity" "Harmony" "Accord" "Concord" "Alliance" "Federation" "Covenant" "Solidarity" "Partnership" "Treaty" "Diplomat" "Mediator" "Peacekeeper" "Guardian" "Protector" "Sentinel" "Defender" "Arbiter" "Reconciler" "Consensus"
+		}
+		corvette = {
+			"Delegate" "Envoy" "Ambassador" "Scout" "Patrol" "Watch" "Guard"
+		}
+		destroyer = {
+			"Mediator" "Arbitrator" "Defender" "Protector" "Sentinel" "Shield"
+		}
+		cruiser = {
+			"Councilor" "Commissioner" "Guardian" "Peacekeeper" "Justice"
+		}
+		battleship = {
+			"Unity Throne" "Alliance Fortress" "Coalition Command" "Federation Pride"
+		}
+		titan = {
+			"Grand Alliance" "Eternal Unity" "Coalition Prime" "Federation Apex"
+		}
+		science = {
+			"Discovery" "Explorer" "Researcher" "Knowledge Seeker" "Science Envoy"
+		}
+		colonizer = {
+			"New Hope" "Pioneer" "Settler" "Colony Ark" "Frontier Seed"
+		}
+		transport = {
+			"Convoy" "Carrier" "Transport Fleet" "Supply Line" "Logistics"
+		}
+	}
+	
+	fleet_names = {
+		random_names = {
+			"Unity Fleet" "Coalition Defense" "Alliance Navy" "Federation Guard" "Peace Patrol" "Diplomatic Corps" "Joint Task Force" "Combined Fleet" "Mutual Defense" "Coalition Strike"
+		}
+	}
+	
+	planet_names = {
+		generic = {
+			names = {
+				"Coalition Prime" "Unity World" "Harmony" "Accord Station" "Alliance Hub" "Federation Center" "Council Seat" "Diplomat's Rest" "Peace Haven" "Treaty Port" "New Hope" "Liberty" "Equality" "Fraternity" "Prosperity" "Democracy" "Republic" "Commonwealth" "Assembly" "Parliament" "Congress World" "Senate Station" "Forum" "Agora" "Concordia"
+			}
+		}
+	}
+	
+	character_names = {
+		default = {
+			first_names = {
+				"Allen" "Marcus" "Sarah" "David" "Elena" "James" "Maya" "Carlos" "Yuki" "Ahmed" "Priya" "Chen" "Amara" "Hiroshi" "Fatima" "Lars" "Zara" "Viktor" "Leila" "Kwame"
+			}
+			second_names = {
+				"Chen" "Patel" "Rodriguez" "Kim" "Al-Rashid" "Tanaka" "Okonkwo" "Silva" "Hansen" "Ivanov" "Kapoor" "Martinez" "Zhou" "Kowalski" "Hassan" "Nguyen" "Anderson" "Yamamoto" "Ali" "O'Brien"
+			}
+		}
+	}
+}

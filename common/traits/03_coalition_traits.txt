@@ -1,0 +1,27 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Coalition Species Trait Definition
+# Multi-species federation - diplomatic and cooperative
+##########################################################################
+
+trait_coalition_unity = {
+	cost = 2
+	allowed_archetypes = { BIOLOGICAL }
+	icon = "gfx/interface/icons/traits/trait_charismatic.dds"
+	
+	modifier = {
+		# Diplomatic masters
+		country_trust_growth = 0.25
+		diplo_weight_mult = 0.15
+		country_admin_cap_mult = 0.10
+		
+		# Cooperative society
+		planet_amenities_mult = 0.15
+		pop_government_ethic_attraction = 0.15
+		
+		# Less combat focused
+		army_damage_mult = -0.15
+	}
+}

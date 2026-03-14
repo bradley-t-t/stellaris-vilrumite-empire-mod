@@ -35,7 +35,7 @@ viltrum_empire = {
 	# SPECIES DEFINITION
 	# ===================================================================
 	species = {
-		class = VILTRUMITE             # Custom Viltrumite species class
+		class = HUM                    # Human species class
 		portrait = "human"             # Uses human portrait set
 		name = "Viltrumite"            # Species name (singular)
 		plural = "Viltrumites"         # Species name (plural)
@@ -43,7 +43,7 @@ viltrum_empire = {
 		name_list = "VILTRUMITE"       # Uses Viltrumite name list
 		
 		trait = "trait_viltrumite_pure"  # Pure Viltrumite trait
-		trait = "trait_organic"           # Required organic species trait
+		trait = "trait_organic"          # Organic species trait
 	}
 	
 	# ===================================================================

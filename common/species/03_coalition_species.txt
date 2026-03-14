@@ -1,0 +1,22 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Coalition Species Definition
+# Defines the Coalition mammalian species for use in prescripted empires
+##########################################################################
+
+coalition_species = {
+	class = "MAM"
+	
+	portrait = "mam1"
+	graphical_culture = "mammalian_01"
+	
+	name = "Coalition Species"
+	plural = "Coalition Species"
+	adjective = "Coalition"
+	
+	name_list = "COALITION"
+	
+	traits = { "trait_coalition_unity" }
+}

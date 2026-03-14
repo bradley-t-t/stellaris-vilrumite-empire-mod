@@ -1,0 +1,22 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: GDA Human Species Definition
+# Defines the GDA human species for use in prescripted empires
+##########################################################################
+
+gda_species = {
+	class = "HUM"
+	
+	portrait = "human"
+	graphical_culture = "mammalian_01"
+	
+	name = "Human"
+	plural = "Humans"
+	adjective = "Human"
+	
+	name_list = "GDA"
+	
+	traits = { "trait_gda_human" }
+}

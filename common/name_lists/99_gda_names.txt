@@ -1,0 +1,123 @@
+﻿##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: GDA Name List
+# Custom names for Global Defense Agency (GDA) Empire
+#
+# DESCRIPTION:
+# Military-themed naming conventions for Earth's Global Defense Agency.
+# Emphasizes defensive operations, intelligence gathering, and strategic
+# military terminology reflecting the GDA's mission to protect humanity.
+#
+# CATEGORIES:
+# - Ships: Military operation codenames and defensive terms
+# - Planets: Earth-based location names and strategic sites
+# - Characters: Human names (uses standard HUMAN1 list)
+# - Sequential: GDA designation system
+##########################################################################
+
+GDA = {
+	# Categorized as humanoid for name generation purposes
+	category = "Humanoid"
+	
+	# ===================================================================
+	# SHIP NAMING CONVENTIONS
+	# ===================================================================
+	ship_names = {
+		# Generic ship names (all military vessels)
+		generic = {
+			Guardian Sentinel Warden Defender Protector Shield Bulwark Rampart Bastion Citadel Fortress Aegis
+			Phantom Shadow Ghost Specter Wraith Eclipse Blackout Darkwatch Nightfall Stealth Cipher Enigma
+			Interceptor Counterstrike Retaliation Reprisal Payback Vigilance Watch Ward Safeguard Haven
+			Arsenal Armory Vanguard Picket Patrol Scout Observer Reconnaissance
+			Javelin Patriot Raptor Eagle Hawk Falcon Hornet Wasp Viper Cobra Scorpion Mantis
+			Deterrent Containment Blockade Cordon Barricade Checkpoint Perimeter Alert
+			Command Control Tactical Strategic Operational Protocol Directive Executive Authority Mandate
+			Overwatch Surveillance Monitor Watchdog Lookout Handler
+			Earthguard Terrawatch Homeland Homeworld Pentagon Cheyenne
+		}
+		# Corvette names (fast attack ships)
+		corvette = {
+			Interceptor Raptor Viper Falcon Hawk Hornet Wasp Scout Patrol Picket
+		}
+		# Destroyer names (medium warships)
+		destroyer = {
+			Guardian Sentinel Warden Defender Protector Rampart Bulwark Bastion
+		}
+		# Cruiser names (heavy warships)
+		cruiser = {
+			Aegis Shield Fortress Citadel Arsenal Command Authority Strategic
+		}
+		# Battleship names (capital ships)
+		battleship = {
+			Deterrent Retaliation Payback Vengeance Earthguard Homeland Pentagon Cheyenne
+		}
+		# Science ship names (intelligence vessels)
+		science = {
+			Observer Reconnaissance Monitor Surveillance Overwatch Lookout Scanner Probe
+		}
+		# Colony ship names (expansion vessels)
+		colonizer = {
+			Pioneer Settler Voyager Frontier Pathfinder Trailblazer Colonist
+		}
+		# Constructor names (engineering ships)
+		constructor = {
+			Builder Engineer Constructor Fabricator Architect Forgemaster
+		}
+		# Transport names (troop carriers)
+		transport = {
+			Carrier Transport Deployment Hauler Convoy
+		}
+		# Starbase names (defensive stations)
+		military_station_small = {
+			Outpost Checkpoint Watch Guard Post
+		}
+	}
+	
+	# ===================================================================
+	# FLEET NAMES
+	# ===================================================================
+	fleet_names = {
+		random_names = {
+			"GDA Defense Fleet" "GDA Rapid Response" "GDA Strike Group" "GDA Patrol Squadron" 
+			"GDA Strategic Reserve" "GDA Task Force" "GDA Interceptor Wing" "GDA System Guard"
+		}
+	}
+	
+	# ===================================================================
+	# PLANET NAMES
+	# ===================================================================
+	planet_names = {
+		# Generic planet names
+		generic = {
+			names = {
+				Earth Terra Sol Washington Pentagon Cheyenne London Moscow Beijing Tokyo Delhi
+				Paris Berlin Rome Cairo Sydney Toronto Europa Asia Afrika America Oceania
+				Everest Sahara Amazon Pacific Atlantic Arctic Mediterranean Apollo Gemini Mercury
+				Outpost Stronghold Redoubt Firebase Depot Waystation Checkpoint Perimeter
+			}
+		}
+	}
+	
+	# ===================================================================
+	# CHARACTER NAMES
+	# ===================================================================
+	character_names = {
+		default = {
+			# First names (given names)
+			first_names = {
+				Cecil Donald Mark William Robert David John James Michael Chris Steven Richard Joseph Thomas
+				Charles Daniel Matthew Anthony Kevin Brian Edward Ronald Jason Jeffrey Ryan Jacob Nicholas
+				Sarah Jennifer Emily Jessica Ashley Michelle Amanda Lisa Mary Karen Nancy Laura Elizabeth
+			}
+			# Second names (surnames)
+			second_names = {
+				Stedman Armstrong Johnson Williams Brown Jones Garcia Miller Davis Rodriguez Martinez
+				Wilson Anderson Taylor Thomas Moore Jackson White Harris Martin Thompson Clark
+			}
+			# Use full names for rulers
+			use_full_regnal_name = yes
+		}
+	}
+}

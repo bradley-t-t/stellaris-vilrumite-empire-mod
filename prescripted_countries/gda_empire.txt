@@ -1,0 +1,134 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Global Defense Agency (GDA) - Prescripted Country
+# Earth-based empire led by Cecil Stedman
+#
+# DESCRIPTION:
+# The Global Defense Agency represents Earth's unified defense force,
+# led by the ruthless and pragmatic Cecil Stedman. While Earth appears
+# outmatched by alien threats, the GDA compensates through espionage,
+# tactical brilliance, and willingness to use any means necessary.
+#
+# GOVERNMENT:
+# - Authority: Oligarchic
+# - Ethics: Xenophobe, Materialist, Egalitarian
+# - Civics: Police State, Shadow Council
+#
+# SPECIES:
+# - Class: HUM (Human)
+# - Homeworld: Earth
+# - Standard human traits
+#
+# LEADER:
+# - Name: Cecil Stedman
+# - Title: Director
+##########################################################################
+
+gda_empire = {
+	# Ship name prefix (Global Defense Agency)
+	ship_prefix = "GDA"
+	
+	# ===================================================================
+	# SPECIES DEFINITION
+	# ===================================================================
+	species = {
+		class = HUM                    # Human species class
+		portrait = "human"             # Uses human portrait set
+		name = "Human"                 # Species name (singular)
+		plural = "Humans"              # Species name (plural)
+		adjective = "Human"            # Adjective form
+		name_list = "GDA"              # Uses GDA name list
+		
+		trait = "trait_gda_human"      # GDA training and determination
+		trait = "trait_organic"        # Organic species trait
+	}
+	
+	# ===================================================================
+	# EMPIRE IDENTITY
+	# ===================================================================
+	name = "Global Defense Agency"    # Empire name
+	adjective = "GDA"                  # Empire adjective
+	
+	# ===================================================================
+	# GOVERNMENT STRUCTURE
+	# ===================================================================
+	authority = auth_oligarchic        # Oligarchic authority (council leadership)
+	
+	civics = {
+		"civic_police_state"           # Police State (surveillance and control)
+		"civic_shadow_council"         # Shadow Council (covert operations)
+	}
+	
+	government = gov_military_junta    # Military junta government type
+	
+	# ===================================================================
+	# STARTING SYSTEM
+	# ===================================================================
+	planet_name = "Earth"              # Homeworld name
+	planet_class = pc_continental      # Continental planet type (earth-like)
+	
+	system_name = "Sol"                # Home system name
+	
+	# ===================================================================
+	# ORIGIN & ETHICS
+	# ===================================================================
+	origin = "origin_gda_earth_defense"  # GDA Earth Defense origin
+	
+	ethic = "ethic_xenophobe"          # Xenophobe ethics (distrust of aliens)
+	ethic = "ethic_egalitarian"        # Egalitarian (defend all humanity)
+	ethic = "ethic_materialist"        # Materialist ethics (technology emphasis)
+	
+	# ===================================================================
+	# EMPIRE FLAG
+	# ===================================================================
+	empire_flag = {
+		icon = {
+			category = "pointy"
+			file = "flag_pointy_18.dds"  # Shield-like emblem
+		}
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"          # Circle background
+		}
+		colors = {
+			"dark_blue"                  # Primary color: dark blue
+			"white"                      # Secondary color: white
+			"grey"                       # Tertiary color: grey
+			"null"                       # No quaternary color
+		}
+	}
+	
+	# ===================================================================
+	# GRAPHICAL SETTINGS (ships, cities, etc.)
+	# ===================================================================
+	graphical_culture = "mammalian_01"      # Use mammalian ships (available to all)
+	city_graphical_culture = "mammalian_01" # Use mammalian cities (available to all)
+	
+	# ===================================================================
+	# SPAWN SETTINGS
+	# ===================================================================
+	spawn_enabled = yes                # Can appear in random games
+	spawn_as_fallen = no               # Cannot spawn as fallen empire
+	
+	# ===================================================================
+	# THRONE ROOM
+	# ===================================================================
+	room = "default_room"              # Uses default throne room background
+	
+	# ===================================================================
+	# STARTING RULER
+	# ===================================================================
+	ruler = {
+		gender = male                  # Male ruler
+		name = "Cecil Stedman"         # Ruler name (Director Cecil Stedman)
+		portrait = "human"             # Human portrait
+		texture = 1                    # Portrait texture variant
+		clothes = 1                    # Clothing style variant
+		ruler_title = "Director"       # Male ruler title
+		ruler_title_female = "Director" # Female ruler title (same)
+		
+		trait = "leader_trait_resilient"  # Resilient (survivor)
+	}
+}
