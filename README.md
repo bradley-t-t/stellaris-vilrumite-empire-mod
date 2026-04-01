@@ -3,7 +3,7 @@
 <p align="center"><strong>Invincible Universe Total Conversion Mod for Stellaris</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-1.0-blue" alt="Version 1.0" />
+  <img src="https://img.shields.io/badge/v1.0-release-1e3a5f" alt="v1.0" />
   <img src="https://img.shields.io/badge/Stellaris-Mod-7B2D8B?logo=steam&logoColor=white" alt="Stellaris Mod" />
   <img src="https://img.shields.io/badge/Steam_Workshop-Published-1b2838?logo=steam&logoColor=white" alt="Steam Workshop" />
 </p>
@@ -44,7 +44,7 @@ The mod follows the standard Stellaris directory layout: `common/` houses specie
 
 ---
 
-| Stat | Count |
+| Metric | Value |
 |---|---|
 | Playable Species | 7 |
 | Prescripted Empires | 7 |
