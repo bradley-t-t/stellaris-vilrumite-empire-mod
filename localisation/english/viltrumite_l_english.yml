@@ -120,7 +120,7 @@
  SEQ_VILTRUMITE_LEGION:0 "Viltrumite Legion $NUM$"
  viltrumite_legion_seq:0 "Viltrumite Legion"
  VES:0 "VES"
- Viltrumites: "Viltrumites"
+ Viltrumites:0 "Viltrumites"
 
  name_list_VILTRUMITE:0 "Viltrumite Names"
  Thragg:0 "Thragg"
