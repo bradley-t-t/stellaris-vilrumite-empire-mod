@@ -43,8 +43,8 @@ trait_viltrumite_pure = {
 		# +30% research speed for all technologies
 		all_technology_research_speed = 0.30
 		
-		# -50% population growth (reduced growth)
-		# Balances extreme power with slower expansion
-		logistic_growth_mult = -0.50
+		# -95% population growth (near-zero growth)
+		# Balances extreme power with near-zero expansion
+		logistic_growth_mult = -0.95
 	}
 }
