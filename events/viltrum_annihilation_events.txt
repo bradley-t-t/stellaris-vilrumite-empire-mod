@@ -1,0 +1,88 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Viltrumite Planet Annihilation Events
+# Automatically shatters planets when Viltrumite bombardment reaches 99% devastation
+# Triggered by on_pop_bombed_to_death when using viltrumite_annihilation stance
+##########################################################################
+
+namespace = viltrum_annihilation
+
+# Event: Planet Shattering at Maximum Devastation
+# Fires when a pop dies from bombardment at high devastation
+# Converts the planet to pc_shattered (uninhabitable debris)
+planet_event = {
+    id = viltrum_annihilation.1
+    
+    # Hidden event - no popup shown to player
+    hide_window = yes
+    
+    # Only fires from on_actions, not on its own
+    is_triggered_only = yes
+
+    trigger = {
+        # Planet must be at maximum devastation (99%+)
+        planet_devastation >= 99
+        
+        # Prevent shattering the same planet multiple times
+        NOT = { has_planet_flag = viltrumite_cracked }
+        
+        # Verify a Viltrumite fleet is actively bombarding
+        # This ensures only Viltrumite bombardment shatters planets
+        solar_system = {
+            any_fleet_in_system = {
+                exists = owner
+                owner = {
+                    # Must be a Viltrum Survivors empire
+                    has_origin = origin_viltrum_survivors
+                }
+                # Must be a military fleet (not civilian/transport)
+                is_ship_class = shipclass_military
+            }
+        }
+    }
+
+    immediate = {
+        # Mark planet as shattered to prevent re-triggering
+        set_planet_flag = viltrumite_cracked
+        
+        # Convert planet to shattered world (pc_shattered)
+        # This kills all remaining pops and makes planet uninhabitable
+        change_pc = pc_shattered
+        
+        # Save planet name for notification event
+        save_event_target_as = shattered_world
+        
+        # Find the Viltrumite fleet owner and show them the result
+        solar_system = {
+            random_fleet_in_system = {
+                limit = {
+                    exists = owner
+                    owner = {
+                        has_origin = origin_viltrum_survivors
+                    }
+                    is_ship_class = shipclass_military
+                }
+                owner = {
+                    country_event = { id = viltrum_annihilation.2 }
+                }
+            }
+        }
+    }
+}
+
+# Event: Planet Shattered Notification
+# Shows popup to player after planet is successfully shattered
+country_event = {
+    id = viltrum_annihilation.2
+    title = "viltrum_annihilation.2.name"
+    desc = "viltrum_annihilation.2.desc"
+    picture = "GFX_evt_ps_0"
+    show_sound = event_planetary_riot
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_annihilation.2.a"
+    }
+}

@@ -1,0 +1,76 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Sequid Origins
+# Custom origin for the Sequid Consciousness
+#
+# DESCRIPTION:
+# The Sequids are a parasitic species that takes over host bodies,
+# forming a disturbing collective consciousness. They infiltrate,
+# assimilate, and control other species through neural parasitism.
+#
+# REQUIREMENTS:
+# - Dictatorial authority
+# - Authoritarian and Materialist ethics
+#
+# KEY FEATURES:
+# - Enhanced infiltration and espionage
+# - Can assimilate conquered pops faster
+# - Bonus to governing ethics attraction
+# - Research bonuses from host knowledge
+# - Reduced pop happiness and trust
+##########################################################################
+
+origin_sequid_parasites = {
+	is_origin = yes
+
+	icon = "gfx/interface/icons/origins/origins_subterranean.dds"
+	picture = GFX_origin_subterranean
+
+	max_once_global = yes
+
+	description = "origin_sequid_parasites_desc"
+	negative_description = "origin_sequid_parasites_secondary_desc"
+
+	flags = { custom_start_screen }
+
+	possible = {
+		authority = { value = auth_dictatorial }
+		ethics = {
+			value = ethic_authoritarian
+			value = ethic_materialist
+		}
+	}
+
+	modifier = {
+		# PARASITIC CONTROL
+		pop_government_ethic_attraction = 0.50          # +50% ethics attraction (mind control)
+		planet_stability_add = 10                       # +10 stability (controlled pops)
+		pop_resettlement_cost_mult = -0.50              # -50% resettlement cost (easy to move hosts)
+		
+		# INFILTRATION & ESPIONAGE
+		intel_encryption_add = 2                        # +2 encryption
+		intel_decryption_add = 2                        # +2 decryption
+		spy_network_levels_add = 1                      # +1 spy network
+		
+		# ASSIMILATION & CONQUEST
+		country_pop_enslaved_mult = 0.25                # +25% enslaved pop output
+		army_damage_mult = 0.20                         # +20% army damage (hosts fight)
+		planet_resettlement_unemployed_destination_mult = 0.30  # +30% resettlement pull
+		
+		# RESEARCH (Knowledge from hosts)
+		all_technology_research_speed = 0.15            # +15% research
+		category_biology_research_speed_mult = 0.25     # +25% biology research
+		
+		# PARASITIC PENALTIES
+		pop_happiness = -0.15                           # -15% happiness (controlled)
+		country_trust_cap_add = -75                     # -75 trust cap (parasites)
+		diplo_weight_mult = -0.25                       # -25% diplomatic weight
+		planet_amenities_mult = -0.10                   # -10% amenities
+	}
+
+	random_weight = {
+		base = 5
+	}
+}

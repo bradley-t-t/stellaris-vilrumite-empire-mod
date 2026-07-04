@@ -1,0 +1,31 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Viltrum On_Actions
+# Defines when Viltrum-specific events trigger
+##########################################################################
+
+# Fires when a pop is killed by orbital bombardment
+# Used to trigger planet shattering at high devastation
+on_pop_bombed_to_death = {
+    events = {
+        viltrum_annihilation.1  # Check if planet should be shattered
+    }
+}
+
+# Fires when a country starts a new game
+# Initiates the Scourge Virus event chain for Viltrum Survivors
+on_game_start_country = {
+	events = {
+		viltrum_start_pops.1  # Start Scourge Virus outbreak
+	}
+}
+
+# Fires once per year for each country
+# Used as backup trigger for Scourge Virus if game start fails
+on_yearly_pulse_country = {
+    events = {
+        viltrum_start_pops.1  # Check if Scourge Virus should start
+    }
+}

@@ -1,0 +1,43 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Viltrumite Annihilation Bombardment Stance
+# Custom bombardment stance for Viltrum Survivors origin
+# Automatically shatters planets at 99% devastation via event system
+##########################################################################
+
+viltrumite_annihilation = {
+	# Only available to empires with the Viltrum Survivors origin
+	trigger = {
+		owner = {
+			has_origin = origin_viltrum_survivors
+		}
+	}
+	
+	# Not the default bombardment stance
+	default = no
+	
+	# Continue bombing even after all armies are destroyed
+	stop_when_armies_dead = no
+	
+	# 15x normal planet infrastructure damage (rapid devastation increase)
+	planet_damage = 15.0
+	
+	# 5x damage to defending armies
+	army_damage = 5.0
+	
+	# 2x chance to kill pops during bombardment
+	# This triggers on_pop_bombed_to_death event for planet shattering
+	kill_pop_chance = {
+		base = 2.0
+	}
+	
+	# No minimum population required to start killing pops
+	min_pops_to_kill_pop = 0
+	
+	# AI preference for this stance (moderate)
+	ai_weight = {
+		weight = 50
+	}
+}

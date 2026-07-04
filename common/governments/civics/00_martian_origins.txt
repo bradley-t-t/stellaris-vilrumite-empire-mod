@@ -1,0 +1,81 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Martian Origins
+# Custom origin for the Martian Empire
+#
+# DESCRIPTION:
+# The Martians are a Mars colony that rebelled against Earth, led by
+# the Sequid-controlled Martian Emperor. They are militaristic,
+# independent, and fiercely proud of their Red Planet heritage.
+#
+# REQUIREMENTS:
+# - Oligarchic or Dictatorial authority
+# - Militarist ethics
+#
+# KEY FEATURES:
+# - Enhanced defensive bonuses (fortress Mars mentality)
+# - Army and ground combat advantages
+# - Resource extraction bonuses (mining Mars)
+# - Unity from military culture
+# - Reduced diplomatic standing (rebels)
+##########################################################################
+
+origin_martian_rebellion = {
+	is_origin = yes
+
+	icon = "gfx/interface/icons/origins/origins_lost_colony.dds"
+	picture = GFX_origin_lost_colony
+
+	max_once_global = yes
+
+	description = "origin_martian_rebellion_desc"
+	negative_description = "origin_martian_rebellion_secondary_desc"
+
+	flags = { custom_start_screen }
+
+	possible = {
+		authority = {
+			OR = {
+				value = auth_oligarchic
+				value = auth_dictatorial
+			}
+		}
+		ethics = {
+			value = ethic_militarist
+		}
+	}
+
+	modifier = {
+		# MILITARY CULTURE
+		army_damage_mult = 0.35                         # +35% army damage (hardened warriors)
+		army_morale = 0.25                              # +25% army morale
+		armies_upkeep_mult = -0.20                      # -20% army upkeep
+		planet_orbital_bombardment_damage = 0.25        # +25% bombardment damage
+		
+		# DEFENSIVE STRENGTH
+		ship_home_territory_fire_rate_mult = 0.25       # +25% fire rate in own space
+		starbase_defense_platform_capacity_add = 4      # +4 defense platforms
+		planet_sensor_range_add = 2                     # +2 sensor range
+		
+		# RESOURCE EXTRACTION (Mars mining heritage)
+		planet_miners_produces_mult = 0.30              # +30% miner output
+		country_alloys_produces_mult = 0.20             # +20% alloy production
+		planet_metallurgists_produces_mult = 0.15       # +15% metallurgist output
+		
+		# INDEPENDENCE SPIRIT
+		country_unity_produces_mult = 0.25              # +25% unity (proud heritage)
+		pop_government_ethic_attraction = 0.30          # +30% ethics attraction
+		country_war_exhaustion_mult = -0.25             # -25% war exhaustion
+		
+		# REBEL PENALTIES
+		diplo_weight_mult = -0.30                       # -30% diplomatic weight
+		country_trust_cap_add = -50                     # -50 trust cap (rebels)
+		envoy_improve_relations_mult = -0.25            # -25% improve relations
+	}
+
+	random_weight = {
+		base = 5
+	}
+}

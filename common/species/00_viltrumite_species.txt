@@ -1,0 +1,26 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Viltrumite Species Definition
+# Defines the Viltrumite species for use in prescripted empires
+# Based on custom VILTRUMITE class with Pure Viltrumite trait
+##########################################################################
+
+viltrumite_species = {
+ class = "HUM"
+ 
+ portrait = "human"
+ graphical_culture = "mammalian_01"
+ 
+ # Species display names
+ name = "Viltrumite"
+ plural = "Viltrumites"
+ adjective = "Viltrumite"
+ 
+ # Use custom Viltrumite name list (defined in 99_viltrumite_names.txt)
+ name_list = "VILTRUMITE"
+ 
+ # Start with Pure Viltrumite trait (superhuman abilities)
+ traits = { "trait_viltrumite_pure" }
+}

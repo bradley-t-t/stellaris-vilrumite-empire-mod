@@ -1,0 +1,72 @@
+﻿##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Sequid Consciousness Name List
+# Naming conventions for Sequid characters, ships, planets, and fleets
+#
+# DESCRIPTION:
+# The Sequids are a parasitic species that takes over host bodies,
+# forming a collective consciousness. Their naming reflects body-horror,
+# parasitism, control, and hive consciousness themes.
+##########################################################################
+
+SEQUID = {
+	category = "Molluscoid"
+	
+	ship_names = {
+		generic = {
+			"Puppet Master" "Body Snatcher" "Neural Link" "Mind Weaver" "Host Vessel" "Parasite Prime" "Control Node" "Possession" "Thrall Ship" "Dominated" "Subjugated" "Commandeered" "Hijacked" "Infiltrator" "Assimilator" "Converter" "Reprogrammer" "Symbiont" "Cortex Breaker" "Will Eraser"
+		}
+		corvette = {
+			"Parasite" "Larvae" "Spore" "Infector" "Implanter" "Host Seeker"
+		}
+		destroyer = {
+			"Dominator" "Possessor" "Controller" "Mind Breaker" "Thrall Maker"
+		}
+		cruiser = {
+			"Host Ship" "Puppet Master" "Neural Hiveship" "Control Nexus"
+		}
+		battleship = {
+			"Prime Host" "Consciousness Core" "Hive Overlord" "Master Parasite"
+		}
+		titan = {
+			"Grand Consciousness" "Eternal Host" "Prime Sequid" "Overmind"
+		}
+		science = {
+			"Body Scanner" "Neural Probe" "Host Seeker" "Biology Analyzer"
+		}
+		colonizer = {
+			"Infection Vector" "Spore Carrier" "Host Colony" "Parasite Seed"
+		}
+		transport = {
+			"Host Transport" "Thrall Carrier" "Infected Convoy" "Body Hauler"
+		}
+	}
+	
+	fleet_names = {
+		random_names = {
+			"First Host Fleet" "Parasitic Legion" "Control Network" "Dominated Armada" "Neural Web" "Consciousness Strike" "Thrall Fleet" "Puppet Navy" "Host Collective" "Mind Swarm"
+		}
+	}
+	
+	planet_names = {
+		generic = {
+			names = {
+				"Parasitum" "Host World Prime" "Control Central" "Neural Hub" "Consciousness Core" "Thrall Station" "Dominated World" "Puppet Planet" "Mind Colony" "Hive Node Alpha" "Body Farm" "Host Nursery" "Infection Site" "Spore World" "Larvae Breeding" "Neural Network Prime" "Cortex Central" "Synapse Station" "Cerebrum" "Ganglion"
+			}
+		}
+	}
+	
+	character_names = {
+		default = {
+			weight = 100
+			first_names = {
+				"Host-Prime" "Alpha-Sequid" "Beta-Node" "Gamma-Link" "Delta-Thrall" "Epsilon-Mind" "Cortex-One" "Neural-Prime" "Synapse-Alpha" "Control-Beta" "Puppet-Gamma" "Dominated-Delta" "Possessed-Epsilon" "Hijacked-Zeta" "Thrall-Eta"
+			}
+			second_names = {
+				"of_the_Hive" "Neural_Node" "Control_Nexus" "Prime_Host" "Master_Parasite" "Consciousness_Core" "Mind_Weaver" "Body_Snatcher" "Dominator" "Possessor"
+			}
+		}
+	}
+}

@@ -1,0 +1,71 @@
+﻿##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Flaxan Name List
+# Naming conventions for Flaxan characters, ships, planets, and fleets
+#
+# DESCRIPTION:
+# The Flaxans are interdimensional invaders who experience time differently
+# (aging rapidly in our dimension). Their naming reflects dimensional travel,
+# temporal themes, invasion, and alien otherness.
+##########################################################################
+
+FLAXAN = {
+	category = "Reptilian"
+	
+	ship_names = {
+		generic = {
+			"Dimensional Rift" "Timeline Breaker" "Phase Shifter" "Reality Cutter" "Void Walker" "Time Streamer" "Portal Ship" "Rift Cruiser" "Dimensional Invader" "Cross-Plane" "Multiverse Scout" "Temporal Strike" "Phase Assault" "Reality Breach" "Rift Raider" "Dimension Hopper" "Timeline Destroyer" "Paradox Ship" "Chrono Vessel" "Quantum Intruder"
+		}
+		corvette = {
+			"Rift Scout" "Phase Dart" "Dimensional Probe" "Timeline Piercer" "Portal Seeker"
+		}
+		destroyer = {
+			"Reality Breaker" "Phase Striker" "Temporal Raider" "Rift Cutter" "Void Hunter"
+		}
+		cruiser = {
+			"Dimensional Lord" "Time Master" "Phase Commander" "Rift King" "Portal Guardian"
+		}
+		battleship = {
+			"Dimension Throne" "Reality Shatterer" "Timeline Ender" "Phase Destroyer" "Rift Colossus"
+		}
+		titan = {
+			"Omniversal Prime" "Eternal Rift" "Timeline Omega" "Reality Core"
+		}
+		science = {
+			"Phase Scanner" "Dimensional Probe" "Timeline Analyzer" "Rift Researcher"
+		}
+		colonizer = {
+			"New Dimension" "Rift Colony" "Phase Settlement" "Timeline Expansion"
+		}
+		transport = {
+			"Portal Carrier" "Rift Transport" "Dimensional Convoy" "Phase Hauler"
+		}
+	}
+	
+	fleet_names = {
+		random_names = {
+			"Dimensional Armada" "Phase Fleet" "Rift Legion" "Timeline Strike Force" "Portal Navy" "Reality Breaker Fleet" "Cross-Dimensional Force" "Temporal Assault" "Void Invaders" "Multiverse Legion"
+		}
+	}
+	
+	planet_names = {
+		generic = {
+			names = {
+				"Flaxus Prime" "Rift World" "Phase Station" "Dimensional Hub" "Timeline Nexus" "Portal Gate Alpha" "Reality Anchor" "Cross-Plane Base" "Multiverse Outpost" "Temporal Colony" "Chrono Station" "Quantum World" "Void Anchor" "Dimension Gate Beta" "Phase World Gamma" "Rift Colony Delta" "Timeline Station Epsilon" "Paradox World" "Reality Fracture" "Dimensional Tear"
+			}
+		}
+	}
+	
+	character_names = {
+		default = {
+			first_names = {
+				"Thraxa" "Chronos" "Phasus" "Riftus" "Temporax" "Voidar" "Quantix" "Paradoxa" "Multix" "Dimensar" "Phasix" "Riftax" "Chronax" "Voiden" "Quantum"
+			}
+			second_names = {
+				"the_Timeless" "the_Dimensional" "the_Phase_Walker" "the_Rift_Maker" "the_Timeline_Breaker" "the_Portal_Master" "the_Reality_Bender" "the_Void_Traveler" "the_Chrono_Lord" "the_Quantum_King"
+			}
+		}
+	}
+}

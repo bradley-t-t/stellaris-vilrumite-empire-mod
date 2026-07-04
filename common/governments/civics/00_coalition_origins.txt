@@ -1,0 +1,77 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Coalition Origins
+# Custom origin for the Coalition of Planets
+#
+# DESCRIPTION:
+# The Coalition of Planets is a democratic federation of diverse species
+# united for mutual protection, trade, and prosperity. They value diplomacy,
+# cooperation, and peaceful expansion.
+#
+# REQUIREMENTS:
+# - Democratic authority
+# - Xenophile ethics
+# - Pacifist or Egalitarian ethics
+#
+# KEY FEATURES:
+# - Diplomatic and trade bonuses
+# - Starts with extra envoys and better relations
+# - Science and research advantages from cooperation
+# - Reduced military capabilities (peaceful focus)
+##########################################################################
+
+origin_coalition_unity = {
+	is_origin = yes
+
+	icon = "gfx/interface/icons/origins/origins_common_ground.dds"
+	picture = GFX_origin_common_ground
+
+	max_once_global = yes
+
+	description = "origin_coalition_unity_desc"
+	negative_description = "origin_coalition_unity_secondary_desc"
+
+	flags = { custom_start_screen }
+
+	possible = {
+		authority = { value = auth_democratic }
+		ethics = {
+			value = ethic_xenophile
+			OR = {
+				value = ethic_pacifist
+				value = ethic_egalitarian
+			}
+		}
+	}
+
+	modifier = {
+		# DIPLOMACY & COOPERATION
+		country_trust_growth = 0.50                     # +50% trust growth
+		diplo_weight_mult = 0.30                        # +30% diplomatic weight
+		envoy_improve_relations_mult = 0.50             # +50% improve relations
+		
+		# TRADE & ECONOMY
+		country_trade_fee = -0.25                       # -25% trade fee
+		country_admin_cap_mult = 0.20                   # +20% admin cap
+		
+		# SCIENCE & RESEARCH
+		all_technology_research_speed = 0.15            # +15% all research
+		country_scientist_cap_add = 2                   # +2 scientist cap
+		
+		# UNITY & STABILITY
+		country_unity_produces_mult = 0.25              # +25% unity
+		pop_happiness = 0.10                            # +10% happiness
+		planet_amenities_mult = 0.15                    # +15% amenities
+		
+		# MILITARY LIMITATIONS (Peaceful nature)
+		country_naval_cap_mult = -0.20                  # -20% naval capacity
+		ship_weapon_damage = -0.15                      # -15% weapon damage
+		country_war_exhaustion_mult = 0.25              # +25% war exhaustion
+	}
+
+	random_weight = {
+		base = 5
+	}
+}

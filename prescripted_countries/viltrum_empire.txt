@@ -1,0 +1,135 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Viltrum Empire - Prescripted Country
+# Playable Viltrumite empire that can spawn in new games
+#
+# DESCRIPTION:
+# The Viltrum Empire is a dictatorial militaristic state ruled by the
+# legendary warrior Thragg. After surviving the Scourge Virus, the
+# remaining ~100 Viltrumites seek to rebuild their empire through conquest.
+#
+# GOVERNMENT:
+# - Authority: Dictatorial
+# - Ethics: Authoritarian, Militarist, Xenophobe
+# - Civics: Distinguished Admiralty, Warrior Culture
+# - Origin: Viltrum Survivors
+#
+# SPECIES:
+# - Class: VILTRUMITE (custom species class)
+# - Trait: Pure Viltrumite (5000 year lifespan, 500% army damage)
+# - Portrait: Human (uses standard human portraits)
+#
+# RULER:
+# - Name: Thragg
+# - Title: Grand Regent
+# - Trait: Resilient
+##########################################################################
+
+viltrum_empire = {
+	# Ship name prefix (Viltrum Empire Ship)
+	ship_prefix = "VES"
+	
+	# ===================================================================
+	# SPECIES DEFINITION
+	# ===================================================================
+	species = {
+		class = HUM                    # Human species class
+		portrait = "human"             # Uses human portrait set
+		name = "Viltrumite"            # Species name (singular)
+		plural = "Viltrumites"         # Species name (plural)
+		adjective = "Viltrumite"       # Adjective form
+		name_list = "VILTRUMITE"       # Uses Viltrumite name list
+		
+		trait = "trait_viltrumite_pure"  # Pure Viltrumite trait
+		trait = "trait_organic"          # Organic species trait
+	}
+	
+	# ===================================================================
+	# EMPIRE IDENTITY
+	# ===================================================================
+	name = "Viltrum Empire"         # Empire name
+	adjective = "Viltrumite"        # Empire adjective
+	
+	# ===================================================================
+	# GOVERNMENT STRUCTURE
+	# ===================================================================
+	authority = auth_dictatorial    # Dictatorial authority (single ruler)
+	
+	civics = {
+		"civic_distinguished_admiralty"  # Naval commanders start at higher level
+		"civic_warrior_culture"           # Military focus, army bonuses
+	}
+	
+	government = gov_military_dictatorship  # Military dictatorship government type
+	
+	# ===================================================================
+	# STARTING SYSTEM
+	# ===================================================================
+	planet_name = "Viltrum"         # Homeworld name
+	planet_class = pc_continental   # Continental planet type (earth-like)
+	
+	system_name = "Viltrum"         # Home system name
+	
+	# ===================================================================
+	# ORIGIN & ETHICS
+	# ===================================================================
+	origin = "origin_viltrum_survivors"  # Viltrum Survivors origin
+	
+	ethic = "ethic_authoritarian"   # Authoritarian ethics (hierarchical society)
+	ethic = "ethic_militarist"      # Militarist ethics (warfare focus)
+	ethic = "ethic_xenophobe"       # Xenophobe ethics (distrustful of aliens)
+	
+	# ===================================================================
+	# EMPIRE FLAG
+	# ===================================================================
+	empire_flag = {
+		icon = {
+			category = "viltrum"         # Custom flag category
+			file = "vil.dds"             # Custom Viltrum flag icon
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"        # Solid color background
+		}
+		colors = {
+			"red"                        # Primary color: red
+			"black"                      # Secondary color: black
+			"null"                       # No tertiary color
+			"null"                       # No quaternary color
+		}
+	}
+	
+	# ===================================================================
+	# GRAPHICAL SETTINGS (ships, cities, etc.)
+	# ===================================================================
+	graphical_culture = "mammalian_01"      # Use mammalian ships (available to all)
+	city_graphical_culture = "mammalian_01" # Use mammalian cities (available to all)
+	
+	# ===================================================================
+	# SPAWN SETTINGS
+	# ===================================================================
+	spawn_enabled = yes             # Can appear in random games
+	spawn_as_fallen = no            # Cannot spawn as fallen empire
+	
+	# ===================================================================
+	# THRONE ROOM
+	# ===================================================================
+	room = "default_room"           # Uses default throne room background
+	
+	# ===================================================================
+	# STARTING RULER
+	# ===================================================================
+	ruler = {
+		gender = male                # Male ruler
+		name = "Thragg"              # Ruler name (Grand Regent Thragg)
+		portrait = "human"           # Human portrait
+		texture = 0                  # Portrait texture variant
+		clothes = 3                  # Clothing style variant
+		ruler_title = "Grand Regent"        # Male ruler title
+		ruler_title_female = "Grand Regent" # Female ruler title (same)
+		
+		trait = "leader_trait_resilient"    # Resilient leader trait
+	}
+}

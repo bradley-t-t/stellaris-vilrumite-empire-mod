@@ -1,0 +1,132 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Coalition of Planets - Prescripted Country
+# Multi-species galactic federation
+#
+# DESCRIPTION:
+# The Coalition of Planets is a democratic federation of multiple species
+# working together for mutual prosperity and peace. They value diplomacy,
+# cooperation, and individual freedom above all else.
+#
+# GOVERNMENT:
+# - Authority: Democratic
+# - Ethics: Xenophile, Egalitarian, Pacifist
+# - Civics: Beacon of Liberty, Diplomatic Corps
+#
+# SPECIES:
+# - Class: MAM (Mammalian)
+# - Traits: Communal, Charismatic
+#
+# RULER:
+# - Name: Thaedus
+# - Title: High Chancellor
+##########################################################################
+
+coalition_planets = {
+	# Ship name prefix
+	ship_prefix = "CPS"  # Coalition Planets Ship
+	
+	# ===================================================================
+	# SPECIES DEFINITION
+	# ===================================================================
+	species = {
+		class = MAM                    # Mammalian species class
+		portrait = "mam1"              # Mammalian portrait
+		name = "Coalition Species"     # Species name (singular)
+		plural = "Coalition Species"   # Species name (plural)
+		adjective = "Coalition"        # Adjective form
+		name_list = "COALITION"        # Uses coalition name list
+		
+		trait = "trait_coalition_unity" # Coalition diplomacy and cooperation
+		trait = "trait_organic"        # Organic species
+	}
+	
+	# ===================================================================
+	# EMPIRE IDENTITY
+	# ===================================================================
+	name = "Coalition of Planets"     # Empire name
+	adjective = "Coalition"           # Empire adjective
+	
+	# ===================================================================
+	# GOVERNMENT STRUCTURE
+	# ===================================================================
+	authority = auth_democratic        # Democratic authority
+	
+	civics = {
+		"civic_idealistic_foundation" # Idealistic Foundation
+		"civic_parliamentary_system"  # Parliamentary System
+	}
+	
+	government = gov_moral_democracy   # Moral Democracy
+	
+	# ===================================================================
+	# STARTING SYSTEM
+	# ===================================================================
+	planet_name = "Unity"              # Homeworld name
+	planet_class = pc_continental      # Continental planet
+	
+	system_name = "Harmony"            # Home system name
+	
+	# ===================================================================
+	# ORIGIN & ETHICS
+	# ===================================================================
+	origin = "origin_coalition_unity" # Coalition Unity origin
+	
+	ethic = "ethic_xenophile"          # Xenophile ethics
+	ethic = "ethic_egalitarian"        # Egalitarian ethics
+	ethic = "ethic_pacifist"           # Pacifist ethics
+	
+	# ===================================================================
+	# EMPIRE FLAG
+	# ===================================================================
+	empire_flag = {
+		icon = {
+			category = "ornate"
+			file = "flag_ornate_11.dds"  # Peace symbol-like
+		}
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
+		}
+		colors = {
+			"light_blue"                 # Primary: light blue
+			"white"                      # Secondary: white
+			"yellow"                     # Tertiary: yellow
+			"null"
+		}
+	}
+	
+	# ===================================================================
+	# GRAPHICAL SETTINGS
+	# ===================================================================
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	# ===================================================================
+	# SPAWN SETTINGS
+	# ===================================================================
+	spawn_enabled = yes
+	spawn_as_fallen = no
+	
+	# ===================================================================
+	# THRONE ROOM
+	# ===================================================================
+	room = "default_room"
+	
+	# ===================================================================
+	# STARTING RULER
+	# ===================================================================
+	ruler = {
+		gender = male
+		name = "Thaedus"
+		portrait = "mam1"
+		texture = 0
+		clothes = 0
+		ruler_title = "High Chancellor"
+		ruler_title_female = "High Chancellor"
+		
+		trait = "leader_trait_resilient"
+	}
+}

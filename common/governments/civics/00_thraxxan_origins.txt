@@ -1,0 +1,79 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Thraxxan Origins
+# Custom origin for the Thraxxan Empire
+#
+# DESCRIPTION:
+# The Thraxxans are a hyper-aggressive insectoid swarm species. Their
+# homeworld is organized around massive hives and an endless drive to
+# expand, conquer, and consume. They breed rapidly and strike without mercy.
+#
+# REQUIREMENTS:
+# - Dictatorial or Imperial authority
+# - Fanatic Xenophobe or Fanatic Militarist ethics
+#
+# KEY FEATURES:
+# - Enhanced population growth and army production
+# - Bonus to orbital bombardment damage
+# - Reduced  diplomacy effectiveness (aggressive nature)
+# - Starts with extra pops and armies
+##########################################################################
+
+origin_thraxxan_swarm = {
+	is_origin = yes
+
+	icon = "gfx/interface/icons/origins/origins_lithoid.dds"
+	picture = GFX_origin_lithoid
+
+	max_once_global = yes
+
+	description = "origin_thraxxan_swarm_desc"
+	negative_description = "origin_thraxxan_swarm_secondary_desc"
+
+	flags = { custom_start_screen }
+
+	possible = {
+		authority = {
+			OR = {
+				value = auth_dictatorial
+				value = auth_imperial
+			}
+		}
+		ethics = {
+			OR = {
+				value = ethic_fanatic_militarist
+				value = ethic_fanatic_xenophobe
+			}
+		}
+	}
+
+	modifier = {
+		# POPULATION & GROWTH
+		planet_pop_assembly_mult = 0.20                 # +20% assembly speed
+		planet_jobs_worker_produces_mult = 0.15         # +15% worker output
+		
+		# MILITARY POWER
+		army_damage_mult = 0.30                         # +30% army damage
+		armies_upkeep_mult = -0.25                      # -25% army upkeep
+		starbase_shipyard_build_speed_mult = 0.20       # +20% ship build speed
+		country_naval_cap_mult = 0.15                   # +15% naval capacity
+		
+		# AGGRESSION
+		planet_orbital_bombardment_damage = 0.50        # +50% bombardment damage
+		country_war_exhaustion_mult = -0.30             # -30% war exhaustion
+		country_claim_influence_cost_mult = -0.20       # -20% claim cost
+		
+		# SWARM MENTALITY
+		planet_amenities_mult = -0.15                   # -15% amenities (hive doesn't care)
+		
+		# DIPLOMATIC PENALTIES
+		diplo_weight_mult = -0.20                       # -20% diplomatic weight
+		country_trust_cap_add = -50                     # -50 trust cap (untrustworthy)
+	}
+
+	random_weight = {
+		base = 5
+	}
+}

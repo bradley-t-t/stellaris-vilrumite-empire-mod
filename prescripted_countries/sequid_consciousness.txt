@@ -1,0 +1,131 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Sequid Consciousness - Prescripted Country
+# Parasitic hivemind body snatchers
+#
+# DESCRIPTION:
+# The Sequids are a parasitic species that infiltrates and takes over
+# other civilizations from within. They spread through mental domination
+# and assimilation, converting entire populations to their collective will.
+#
+# GOVERNMENT:
+# - Authority: Dictatorial
+# - Ethics: Authoritarian, Materialist, Xenophobe
+# - Civics: Shadow Council, Masterful Crafters
+#
+# SPECIES:
+# - Class: MOLLUSCOID
+# - Traits: Intelligent, Natural Physicists, Weak
+#
+# RULER:
+# - Title: Prime Sequid
+##########################################################################
+
+sequid_consciousness = {
+	# Ship name prefix
+	ship_prefix = "SCS"  # Sequid Consciousness Ship
+	
+	# ===================================================================
+	# SPECIES DEFINITION
+	# ===================================================================
+	species = {
+		class = MOL                    # Molluscoid (slug-like)
+		portrait = "mol1"
+		name = "Sequid"                # Species name (singular)
+		plural = "Sequids"             # Species name (plural)
+		adjective = "Sequid"           # Adjective form
+		name_list = "SEQUID"           # Uses sequid name list
+		
+		trait = "trait_sequid_parasites" # Parasitic infiltration and control
+		trait = "trait_organic"        # Organic species
+	}
+	
+	# ===================================================================
+	# EMPIRE IDENTITY
+	# ===================================================================
+	name = "Sequid Consciousness"     # Empire name
+	adjective = "Sequid"              # Empire adjective
+	
+	# ===================================================================
+	# GOVERNMENT STRUCTURE
+	# ===================================================================
+	authority = auth_dictatorial       # Dictatorial authority
+	
+	civics = {
+		"civic_shadow_council"         # Shadow Council (infiltration)
+		"civic_cutthroat_politics"     # Cutthroat Politics (internal competition)
+	}
+	
+	government = gov_despotic_hegemony # Despotic Hegemony
+	
+	# ===================================================================
+	# STARTING SYSTEM
+	# ===================================================================
+	planet_name = "Sequid Prime"      # Homeworld name
+	planet_class = pc_ocean           # Ocean world
+	
+	system_name = "Parasitum"         # Home system name
+	
+	# ===================================================================
+	# ORIGIN & ETHICS
+	# ===================================================================
+	origin = "origin_sequid_parasites" # Sequid Parasites origin
+	
+	ethic = "ethic_authoritarian"    # Authoritarian
+	ethic = "ethic_materialist"       # Materialist
+	ethic = "ethic_xenophobe"         # Xenophobe
+	
+	# ===================================================================
+	# EMPIRE FLAG
+	# ===================================================================
+	empire_flag = {
+		icon = {
+			category = "ornate"
+			file = "flag_ornate_9.dds"  # Mind control symbol
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"purple"                      # Primary: purple
+			"dark_purple"                 # Secondary: dark purple
+			"grey"                        # Tertiary: grey
+			"null"
+		}
+	}
+	
+	# ===================================================================
+	# GRAPHICAL SETTINGS
+	# ===================================================================
+	graphical_culture = "molluscoid_01"
+	city_graphical_culture = "molluscoid_01"
+	
+	# ===================================================================
+	# SPAWN SETTINGS
+	# ===================================================================
+	spawn_enabled = yes
+	spawn_as_fallen = no
+	
+	# ===================================================================
+	# THRONE ROOM
+	# ===================================================================
+	room = "default_room"
+	
+	# ===================================================================
+	# STARTING RULER
+	# ===================================================================
+	ruler = {
+		gender = male
+		name = "Prime Sequid"
+		portrait = "mol1"
+		texture = 0
+		clothes = 0
+		ruler_title = "Prime Consciousness"
+		ruler_title_female = "Prime Consciousness"
+		
+		trait = "leader_trait_resilient"
+	}
+}

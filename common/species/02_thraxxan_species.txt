@@ -1,0 +1,22 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Thraxxan Species Definition
+# Defines the Thraxxan insectoid species for use in prescripted empires
+##########################################################################
+
+thraxxan_species = {
+	class = "ART"
+	
+	portrait = "art1"
+	graphical_culture = "arthropoid_01"
+	
+	name = "Thraxxan"
+	plural = "Thraxxans"
+	adjective = "Thraxxan"
+	
+	name_list = "THRAXXAN"
+	
+	traits = { "trait_thraxxan_swarm" }
+}

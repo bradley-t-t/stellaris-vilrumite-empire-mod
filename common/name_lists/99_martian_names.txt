@@ -1,0 +1,71 @@
+﻿##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Martian Name List
+# Naming conventions for Martian characters, ships, planets, and fleets
+#
+# DESCRIPTION:
+# The Martians are a militaristic Mars colony that rebelled against Earth,
+# led by the Sequid-controlled Martian Emperor. Their naming reflects
+# Mars themes, military culture, independence, and rebellion.
+##########################################################################
+
+MARTIAN = {
+	category = "Reptilian"
+	
+	ship_names = {
+		generic = {
+			"Red Planet" "Mars Rising" "Olympus Mons" "Valles Marineris" "Hellas Basin" "Utopia Planitia" "Elysium" "Tharsis" "Syrtis Major" "Mare Australe" "Acidalia" "Amazonis" "Arcadia" "Argyre" "Chryse" "Isidis" "Noachis" "Promethei" "Solis" "Tyrrhena"
+		}
+		corvette = {
+			"Phobos" "Deimos" "Red Sand" "Dust Storm" "Iron Oxide" "Crater"
+		}
+		destroyer = {
+			"Rebel Strike" "Independence" "Freedom" "Revolution" "Red Planet Fury"
+		}
+		cruiser = {
+			"Emperor's Wrath" "Mars Command" "Colonial Pride" "Sovereign"
+		}
+		battleship = {
+			"Martian Throne" "Red Empire" "Mars Supreme" "Colonial Overlord"
+		}
+		titan = {
+			"Mars Eternal" "Emperor's Glory" "Red Planet Omega" "Colonial Apex"
+		}
+		science = {
+			"Red Scanner" "Mars Explorer" "Dust Analyzer" "Crater Survey"
+		}
+		colonizer = {
+			"New Mars" "Red Expansion" "Colonial Seed" "Mars Heritage"
+		}
+		transport = {
+			"Red Transport" "Mars Carrier" "Colonial Convoy" "Dust Hauler"
+		}
+	}
+	
+	fleet_names = {
+		random_names = {
+			"Imperial Fleet" "Red Armada" "Mars Navy" "Colonial Defense" "Emperor's Legion" "Revolutionary Force" "Independence Fleet" "Mars Strike Force" "Red Planet Guard" "Martian Vanguard"
+		}
+	}
+	
+	planet_names = {
+		generic = {
+			names = {
+				"Mars Prime" "New Mars" "Red Colony Alpha" "Olympus Station" "Tharsis Outpost" "Valles Settlement" "Hellas Base" "Utopia Colony" "Elysium Station" "Syrtis Outpost" "Acidalia Base" "Amazonis Colony" "Arcadia Station" "Argyre Base" "Chryse Colony" "Isidis Outpost" "Noachis Settlement" "Promethei Base" "Solis Colony" "Tyrrhena Station"
+			}
+		}
+	}
+	
+	character_names = {
+		default = {
+			first_names = {
+				"Marcus" "Titus" "Brutus" "Caesar" "Augustus" "Scipio" "Pompey" "Sulla" "Cato" "Cicero" "Cassius" "Aurelius" "Maximus" "Decimus" "Lucius" "Julia" "Octavia" "Livia" "Cornelia" "Claudia"
+			}
+			second_names = {
+				"Martius" "Olympius" "Tharsus" "Vallesius" "Hellasus" "Utopiaus" "Elysus" "Acidalius" "Amazonius" "Argyreus" "Chryseus" "Isidius" "Noacheus" "Solarus" "Tyrrhes"
+			}
+		}
+	}
+}

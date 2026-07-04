@@ -1,0 +1,22 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Flaxan Species Definition
+# Defines the Flaxan reptilian species for use in prescripted empires
+##########################################################################
+
+flaxan_species = {
+	class = "REP"
+	
+	portrait = "rep6"
+	graphical_culture = "reptilian_01"
+	
+	name = "Flaxan"
+	plural = "Flaxans"
+	adjective = "Flaxan"
+	
+	name_list = "FLAXAN"
+	
+	traits = { "trait_flaxan_temporal" }
+}
