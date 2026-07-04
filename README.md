@@ -1,14 +1,20 @@
-<p align="center"><img src="thumbnail.png" alt="Viltrum Empire" width="380"></p>
+<p align="center"><img src="thumbnail.png" width="380" alt="Viltrum Empire" /></p>
 
 <h1 align="center">Viltrum Empire</h1>
 
-<p align="center">A total-conversion Stellaris mod that drops the factions of the <em>Invincible</em> universe — the planet-shattering Viltrumites and the powers that resist them — into Paradox's grand-strategy galaxy.</p>
+<p align="center"><b>A total-conversion Stellaris mod for the <em>Invincible</em> universe.</b></p>
+<p align="center">
+  Drops the planet-shattering Viltrumites and the powers that resist them<br />
+  into Paradox's grand-strategy galaxy.
+</p>
 
 <p align="center">
-  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3602982845"><img src="https://img.shields.io/badge/Steam_Workshop-Subscribe-1b2838?style=flat-square&logo=steam&logoColor=white" alt="Steam Workshop" /></a>
-  <img src="https://img.shields.io/badge/Stellaris-v4.1.7-1b2838?style=flat-square&logo=steam&logoColor=white" alt="Stellaris v4.1.7" />
-  <img src="https://img.shields.io/badge/Total_Conversion-Invincible_Universe-7B2D8B?style=flat-square" alt="Total Conversion" />
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3602982845"><img src="https://img.shields.io/badge/Steam_Workshop-Subscribe-7b2d8b?style=for-the-badge&logo=steam&logoColor=white" alt="Steam Workshop" /></a>
+  <img src="https://img.shields.io/badge/Stellaris-v4.1.7-7b2d8b?style=for-the-badge&logo=steam&logoColor=white" alt="Stellaris v4.1.7" />
+  <img src="https://img.shields.io/badge/Total_Conversion-Invincible_Universe-7b2d8b?style=for-the-badge" alt="Total Conversion" />
 </p>
+
+<br />
 
 - **Play the Invincible universe** — seven canon factions (Viltrumites, GDA, Thraxxans, Coalition, Sequids, Flaxans, Martians) ship as playable species and ready-made empires.
 - **Asymmetric, lore-accurate balance** — the Pure Viltrumite trait grants 500% army damage and near-immortal leaders, offset by near-zero (-95%) population growth, so you conquer instead of grow.
