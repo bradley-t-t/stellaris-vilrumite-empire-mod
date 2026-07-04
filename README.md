@@ -1,72 +1,101 @@
-<p align="center"><img src="thumbnail.png" width="380" alt="Viltrum Empire" /></p>
+<p align="center">
+  <img src="thumbnail.png" width="360" alt="Viltrum Empire" />
+</p>
 
 <h1 align="center">Viltrum Empire</h1>
 
-<p align="center"><b>A total-conversion Stellaris mod for the <em>Invincible</em> universe.</b></p>
 <p align="center">
-  Drops the planet-shattering Viltrumites and the powers that resist them<br />
-  into Paradox's grand-strategy galaxy.
+  <b>A total-conversion Stellaris mod that drops the <em>Invincible</em> universe into the galaxy.</b>
+</p>
+<p align="center">
+  Seven canon factions, an asymmetric lore-accurate balance, and event chains<br />
+  that cull the Viltrumite race and shatter worlds to debris.
 </p>
 
 <p align="center">
-  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3602982845"><img src="https://img.shields.io/badge/Steam_Workshop-Subscribe-7b2d8b?style=for-the-badge&logo=steam&logoColor=white" alt="Steam Workshop" /></a>
-  <img src="https://img.shields.io/badge/Stellaris-v4.1.7-7b2d8b?style=for-the-badge&logo=steam&logoColor=white" alt="Stellaris v4.1.7" />
-  <img src="https://img.shields.io/badge/Total_Conversion-Invincible_Universe-7b2d8b?style=for-the-badge" alt="Total Conversion" />
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3602982845"><img src="https://img.shields.io/badge/Steam_Workshop-Subscribe-b91c1c?style=for-the-badge&logo=steam&logoColor=white" alt="Steam Workshop" /></a>
+  <img src="https://img.shields.io/badge/Stellaris-v4.1.7-b91c1c?style=for-the-badge&logo=steam&logoColor=white" alt="Stellaris v4.1.7" />
+  <img src="https://img.shields.io/badge/Total_Conversion-Invincible_Universe-b91c1c?style=for-the-badge" alt="Total Conversion" />
+  <img src="https://img.shields.io/badge/Factions-7_playable-7a1010?style=for-the-badge" alt="7 factions" />
 </p>
 
 <br />
 
-- **Play the Invincible universe** — seven canon factions (Viltrumites, GDA, Thraxxans, Coalition, Sequids, Flaxans, Martians) ship as playable species and ready-made empires.
-- **Asymmetric, lore-accurate balance** — the Pure Viltrumite trait grants 500% army damage and near-immortal leaders, offset by near-zero (-95%) population growth, so you conquer instead of grow.
-- **Event-driven signature mechanics** — a Scourge Virus event chain culls the Viltrumite race to roughly 100 survivors at game start, and a custom bombardment stance shatters worlds to debris at maximum devastation.
+## Why Viltrum Empire
+
+Most empire packs hand you a fresh flag and the same balanced stat spread as everyone else. This mod does the opposite: it rebuilds seven *Invincible* factions from canon, then lets that canon dictate the numbers. The Viltrumites are so absurdly strong that they can barely reproduce; the GDA can only dig in and endure; and a start-of-game plague and a world-shattering bombardment stance make sure the fantasy plays out mechanically, not just in the flavor text.
+
+<table width="100%">
+  <tr>
+    <td width="33%" valign="top">
+      <h3 align="center">Play the Invincible universe</h3>
+      <p align="center">Seven canon factions — Viltrumites, GDA, Thraxxans, Coalition, Sequids, Flaxans, and Martians — ship as playable species and ready-made empires.</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3 align="center">Asymmetric by design</h3>
+      <p align="center">Balance is derived from canon, not min-maxing. The Pure Viltrumite trait grants 500% army damage and near-immortal leaders, offset by -95% population growth — you conquer instead of grow.</p>
+    </td>
+    <td width="33%" valign="top">
+      <h3 align="center">Signature event chains</h3>
+      <p align="center">A Scourge Virus cull leaves roughly 100 elite survivors at game start, and a custom bombardment stance shatters worlds to debris at maximum devastation.</p>
+    </td>
+  </tr>
+</table>
+
+<br />
 
 ## Install
 
-**Steam Workshop (recommended)** — [Subscribe on the Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3602982845), then enable **Viltrum Empire** in the Stellaris launcher's mod list.
+**Steam Workshop (recommended)** — [Subscribe on the Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3602982845), launch Stellaris, and enable **Viltrum Empire** in the launcher's mod list.
 
-**Manual** — place this mod folder inside your Stellaris `mod` directory so the launcher reads its `descriptor.mod`, then enable it in the launcher:
+**Manual** — place this mod folder inside your Stellaris `mod` directory so the launcher reads its `descriptor.mod`, then enable it in the launcher's playset:
 
 | OS | Mod directory |
-|---|---|
+| :--- | :--- |
 | Windows | `%USERPROFILE%\Documents\Paradox Interactive\Stellaris\mod\` |
 | macOS | `~/Documents/Paradox Interactive/Stellaris/mod/` |
 | Linux | `~/.local/share/Paradox Interactive/Stellaris/mod/` |
 
-## Species and factions
+This is a **total conversion** built for **Stellaris v4.1.7** (per `descriptor.mod`). It reworks core content and is not intended to run alongside other major overhaul mods.
 
-Seven playable species, each mapped to its *Invincible* counterpart with its own trait set and name list. The **Viltrumites** are the dominant warrior race — superhuman strength, a 5,000-year lifespan, and combat stats that mirror their canonical invincibility. The **GDA (Humans)** play as Earth's defensive establishment, leaning on engineering research and hull regeneration for a fortify-and-hold game. **Thraxxans**, **Coalition**, **Sequids**, **Flaxans**, and **Martians** each fill a distinct strategic niche.
+## Usage
 
-## Prescripted empires
+Start a new game and pick one of the seven prescripted empires, or build your own using the mod's species and traits. Each empire pairs a species with its own authority, ethics, civics, custom origin, and ruler.
 
-Seven ready-to-play empires ship in `prescripted_countries/`: `viltrum_empire`, `gda_empire`, `thraxxan_empire`, `coalition_planets`, `sequid_consciousness`, `flaxan_empire`, and `martian_empire`. Each pairs a species with its authority, ethics, civics, custom origin, and ruler — for example the Viltrum Empire is a dictatorial xenophobe-militarist state under Grand Regent Thragg, built on the **Viltrum Survivors** origin. The Viltrum Empire ships a custom flag; the other empires draw on Stellaris' built-in flags and portraits.
+| Empire | Species | Identity |
+| :--- | :--- | :--- |
+| **Viltrum Empire** | Viltrumites | Dictatorial xenophobe-militarist under Grand Regent Thragg, on the **Viltrum Survivors** origin |
+| **GDA Empire** | GDA (Humans) | Earth's defensive establishment — research and fortify to hold the line |
+| **Thraxxan Empire** | Thraxxans | Its own strategic niche and trait set |
+| **Coalition Planets** | Coalition | Its own strategic niche and trait set |
+| **Sequid Consciousness** | Sequids | Its own strategic niche and trait set |
+| **Flaxan Empire** | Flaxans | Its own strategic niche and trait set |
+| **Martian Empire** | Martians | Its own strategic niche and trait set |
 
-## Traits and balancing
+### What each species plays like
 
-Balance is derived from canon rather than min-maxing — one bespoke species trait file per faction, plus a shared leader-trait set. The **Pure Viltrumite** trait is deliberately extreme: +5,000 leader lifespan, 500% army damage and health, +30% research speed, and perfect habitability, all offset by -95% population growth. **GDA Training** instead rewards defense (engineering research, hull regeneration, extra defense platforms). No two species play alike.
+Every faction has one bespoke species-trait file, so no two play alike:
 
-## Events and narrative
+| Trait | Belongs to | What it does |
+| :--- | :--- | :--- |
+| **Pure Viltrumite** | Viltrumites | +5,000 leader lifespan, 500% army damage & health, +30% research speed, +25% edict fund, perfect habitability — all offset by **-95% population growth** |
+| **GDA Training** | GDA (Humans) | +10% engineering research, +10% ship hull & hull regen, +2 defense platform capacity — a fortify-and-hold defense game |
 
-Two event chains drive the mod's signature moments, wired through custom `on_actions`:
+The **Viltrumites** are the dominant warrior race: superhuman combat stats and a 5,000-year lifespan that mirror their canonical invincibility, but they can barely grow. The **GDA (Humans)** lean on engineering and durability to survive. The remaining five factions each fill a distinct niche with their own trait file and per-species name list.
 
-```mermaid
-flowchart LR
-    O[Viltrum Survivors Origin] --> S[Scourge Virus Events]
-    S --> P[Roughly 100 Pure Viltrumites]
-    P --> T[Pure Viltrumite Trait: 500% combat]
-    T --> B[Annihilation Bombardment Stance]
-    B --> D[Planet at 99% Devastation]
-    D --> C[Planet Shattered to Debris]
-```
+### The two event chains
 
-The **Scourge Virus** chain (`viltrum_start_pops`) fires at game start for Viltrum Survivors empires, culling the population from billions to a hundred elite survivors. The **annihilation** chain (`viltrum_annihilation`) pairs with a custom bombardment stance that shatters any planet reaching 99% devastation into uninhabitable debris. Six custom event pictures back the narrative pop-ups.
+Both chains are wired through custom `on_actions` and back their pop-ups with six bespoke event pictures:
 
-## Localisation and presentation
+- **Scourge Virus** (`viltrum_start_pops`) fires at game start for Viltrum Survivors empires, culling the population from billions down to roughly 100 elite pure-blooded survivors — the mechanical reason Viltrumites must conquer rather than expand.
+- **Planet annihilation** (`viltrum_annihilation`) pairs the **Viltrumite Annihilation** bombardment stance (15x planet damage, only for the Viltrum Survivors origin) with an event that converts any world reaching **99% devastation** into uninhabitable shattered debris.
 
-All player-facing text lives in a single English localisation file with Stellaris-native color-coded tooltips, written as flavor-forward prose rather than dry stat lists. A custom Viltrumite species class and portrait set, a bespoke Viltrum flag (with a map-mode variant), and the event-picture interface definitions round out the presentation.
+## How it works
 
-## Compatibility
-
-Built for and supporting **Stellaris v4.1.7** (per `descriptor.mod`). As a total conversion it reworks core content and is not intended to run alongside other major overhaul mods.
+- **Canon drives the numbers.** Each faction is one species definition plus one trait file, tuned to its *Invincible* portrayal rather than to a balanced curve — extreme highs paid for with extreme lows.
+- **Prescripted empires are self-contained.** The seven files in `prescripted_countries/` bind a species to its authority, ethics, civics, origin, flag, and ruler, so they spawn ready to play (and as AI opponents).
+- **Origins gate the mechanics.** The **Viltrum Survivors** origin is what unlocks the Scourge Virus start and the annihilation bombardment stance; only empires on that origin get them.
+- **Presentation is native.** All player-facing text lives in one English localisation file with Stellaris color-coded tooltips, backed by a custom Viltrumite species class, portrait set, and a bespoke Viltrum flag with a map-mode variant.
 
 ## Mod structure
 
@@ -93,3 +122,9 @@ localisation/english/       English strings and tooltips
 ## License
 
 Proprietary — Copyright (c) 2026 Trenton Taylor. All rights reserved. No permission is granted to use, copy, modify, or distribute the software. See [LICENSE.md](LICENSE.md).
+
+<br />
+
+<p align="center">
+  <sub>Seven factions, one galaxy — conquer it as the race too strong to grow.</sub>
+</p>
