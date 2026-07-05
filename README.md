@@ -13,10 +13,11 @@
 </p>
 
 <p align="center">
-  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3602982845"><img src="https://img.shields.io/badge/Steam_Workshop-Subscribe-b91c1c?style=for-the-badge&logo=steam&logoColor=white" alt="Steam Workshop" /></a>
-  <img src="https://img.shields.io/badge/Stellaris-v4.1.7-b91c1c?style=for-the-badge&logo=steam&logoColor=white" alt="Stellaris v4.1.7" />
-  <img src="https://img.shields.io/badge/Total_Conversion-Invincible_Universe-b91c1c?style=for-the-badge" alt="Total Conversion" />
-  <img src="https://img.shields.io/badge/Factions-7_playable-7a1010?style=for-the-badge" alt="7 factions" />
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3602982845"><img src="https://img.shields.io/badge/Steam_Workshop-Subscribe-2563eb?style=for-the-badge&logo=steam&logoColor=white" alt="Steam Workshop" /></a>
+  <img src="https://img.shields.io/badge/Stellaris-v4.1.7-2563eb?style=for-the-badge&logo=steam&logoColor=white" alt="Stellaris v4.1.7" />
+  <img src="https://img.shields.io/badge/Total_Conversion-Invincible_Universe-3b82f6?style=for-the-badge" alt="Total Conversion" />
+  <img src="https://img.shields.io/badge/Factions-7_playable-1f56cf?style=for-the-badge" alt="7 factions" />
+  <img src="https://img.shields.io/badge/license-Proprietary-1f56cf?style=for-the-badge" alt="License" />
 </p>
 
 <br />
@@ -62,15 +63,15 @@ This is a **total conversion** built for **Stellaris v4.1.7** (per `descriptor.m
 
 Start a new game and pick one of the seven prescripted empires, or build your own using the mod's species and traits. Each empire pairs a species with its own authority, ethics, civics, custom origin, and ruler.
 
-| Empire | Species | Identity |
-| :--- | :--- | :--- |
-| **Viltrum Empire** | Viltrumites | Dictatorial xenophobe-militarist under Grand Regent Thragg, on the **Viltrum Survivors** origin |
-| **GDA Empire** | GDA (Humans) | Earth's defensive establishment — research and fortify to hold the line |
-| **Thraxxan Empire** | Thraxxans | Its own strategic niche and trait set |
-| **Coalition Planets** | Coalition | Its own strategic niche and trait set |
-| **Sequid Consciousness** | Sequids | Its own strategic niche and trait set |
-| **Flaxan Empire** | Flaxans | Its own strategic niche and trait set |
-| **Martian Empire** | Martians | Its own strategic niche and trait set |
+| Empire | Species | Ruler | Identity |
+| :--- | :--- | :--- | :--- |
+| **Viltrum Empire** | Viltrumites | Grand Regent Thragg | Dictatorial xenophobe-militarist on the **Viltrum Survivors** origin |
+| **Global Defense Agency** | Humans | Director Cecil Stedman | Earth's defensive establishment — research and fortify to hold the line |
+| **Thraxxan Hive** | Thraxxans | Thraxxan Queen | Its own strategic niche and trait set |
+| **Coalition of Planets** | Coalition Species | Thaedus | Its own strategic niche and trait set |
+| **Sequid Consciousness** | Sequids | Prime Sequid | Its own strategic niche and trait set |
+| **Flaxan Empire** | Flaxans | Flaxan Emperor | Its own strategic niche and trait set |
+| **Martian Confederacy** | Martians | Commander Levy | Its own strategic niche and trait set |
 
 ### What each species plays like
 
@@ -79,9 +80,9 @@ Every faction has one bespoke species-trait file, so no two play alike:
 | Trait | Belongs to | What it does |
 | :--- | :--- | :--- |
 | **Pure Viltrumite** | Viltrumites | +5,000 leader lifespan, 500% army damage & health, +30% research speed, +25% edict fund, perfect habitability — all offset by **-95% population growth** |
-| **GDA Training** | GDA (Humans) | +10% engineering research, +10% ship hull & hull regen, +2 defense platform capacity — a fortify-and-hold defense game |
+| **GDA Training** | Humans | +10% engineering research, +10% ship hull & hull regen, +2 defense platform capacity, +5% happiness, +10% unity — a fortify-and-hold defense game |
 
-The **Viltrumites** are the dominant warrior race: superhuman combat stats and a 5,000-year lifespan that mirror their canonical invincibility, but they can barely grow. The **GDA (Humans)** lean on engineering and durability to survive. The remaining five factions each fill a distinct niche with their own trait file and per-species name list.
+The **Viltrumites** are the dominant warrior race: superhuman combat stats and a 5,000-year lifespan that mirror their canonical invincibility, but they can barely grow. The **Global Defense Agency**'s humans lean on engineering and durability to survive. The remaining five factions each fill a distinct niche with their own trait file and per-species name list.
 
 ### The two event chains
 
