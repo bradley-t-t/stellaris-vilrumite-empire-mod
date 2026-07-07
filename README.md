@@ -67,11 +67,11 @@ Start a new game and pick one of the seven prescripted empires, or build your ow
 | :--- | :--- | :--- | :--- |
 | **Viltrum Empire** | Viltrumites | Grand Regent Thragg | Dictatorial xenophobe-militarist on the **Viltrum Survivors** origin |
 | **Global Defense Agency** | Humans | Director Cecil Stedman | Earth's defensive establishment — research and fortify to hold the line |
-| **Thraxxan Hive** | Thraxxans | Thraxxan Queen | Its own strategic niche and trait set |
-| **Coalition of Planets** | Coalition Species | Thaedus | Its own strategic niche and trait set |
-| **Sequid Consciousness** | Sequids | Prime Sequid | Its own strategic niche and trait set |
-| **Flaxan Empire** | Flaxans | Flaxan Emperor | Its own strategic niche and trait set |
-| **Martian Confederacy** | Martians | Commander Levy | Its own strategic niche and trait set |
+| **Thraxxan Hive** | Thraxxans | Thraxxan Queen | Dictatorial authoritarian swarm — mining guilds and rapid expansion |
+| **Coalition of Planets** | Coalition Species | Thaedus | Democratic xenophile-pacifist federation — diplomacy and liberty |
+| **Sequid Consciousness** | Sequids | Prime Sequid | Dictatorial materialist hegemony — infiltration and shadow politics |
+| **Flaxan Empire** | Flaxans | Flaxan Emperor | Fanatic militarist dictatorship — warrior culture and fast fleets |
+| **Martian Confederacy** | Martians | Commander Levy | Oligarchic militarist junta — warrior culture and a police state |
 
 ### What each species plays like
 
@@ -81,8 +81,13 @@ Every faction has one bespoke species-trait file, so no two play alike:
 | :--- | :--- | :--- |
 | **Pure Viltrumite** | Viltrumites | +5,000 leader lifespan, 500% army damage & health, +30% research speed, +25% edict fund, perfect habitability — all offset by **-95% population growth** |
 | **GDA Training** | Humans | +10% engineering research, +10% ship hull & hull regen, +2 defense platform capacity, +5% happiness, +10% unity — a fortify-and-hold defense game |
+| **Swarm Biology** | Thraxxans | +25% pop assembly, +15% mineral & +10% worker output, -15% building cost — an industrial swarm that is short-lived (-70 years) and weak in melee |
+| **Coalition Diplomacy** | Coalition | +25% trust growth, +15% diplomatic weight, +10% admin cap, +15% amenities & ethic attraction — wins through diplomacy, not war |
+| **Parasitic Control** | Sequids | +2 encryption & decryption, +15% physics research, +25% slave political power — infiltrators with physically fragile armies |
+| **Temporal Acceleration** | Flaxans | +25% ship speed, +15% evasion, +25% army damage, +20% pop assembly — fast, evasive raiders who age quickly |
+| **Martian Warrior** | Martians | +25% army damage, +15% morale, +10% ship hull, +10% habitability — hardy fighters, but rebellious and crime-prone |
 
-The **Viltrumites** are the dominant warrior race: superhuman combat stats and a 5,000-year lifespan that mirror their canonical invincibility, but they can barely grow. The **Global Defense Agency**'s humans lean on engineering and durability to survive. The remaining five factions each fill a distinct niche with their own trait file and per-species name list.
+The **Viltrumites** are the dominant warrior race: superhuman combat stats and a 5,000-year lifespan that mirror their canonical invincibility, but they can barely grow. The **Global Defense Agency**'s humans lean on engineering and durability to survive. The other five factions each fill a distinct niche — an industrial swarm, a diplomatic federation, parasitic infiltrators, dimensional raiders, and rebellious warriors — with their own trait file and per-species name list.
 
 ### The two event chains
 
