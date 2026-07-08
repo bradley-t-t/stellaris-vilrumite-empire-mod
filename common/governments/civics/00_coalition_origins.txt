@@ -54,7 +54,6 @@ origin_coalition_unity = {
 		
 		# TRADE & ECONOMY
 		country_trade_fee = -0.25                       # -25% trade fee
-		country_admin_cap_mult = 0.20                   # +20% admin cap
 		
 		# SCIENCE & RESEARCH
 		all_technology_research_speed = 0.15            # +15% all research

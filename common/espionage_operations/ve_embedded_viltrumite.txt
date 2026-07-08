@@ -1,0 +1,102 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Embedded Viltrumite Espionage Operation
+# Custom espionage operation for the Viltrum Survivors origin
+#
+# DESCRIPTION:
+# A Viltrumite agent embeds within a target empire's world, builds
+# influence through intimidation and manipulation, then seizes total
+# control of the planet. No war declaration required.
+#
+# REQUIREMENTS:
+# - Viltrum Survivors origin
+# - Spy network level 60+ on target
+# - Target must have a non-capital planet
+#
+# EFFECT:
+# - Transfers one planet from the target empire to the Viltrumite empire
+##########################################################################
+
+operation_embedded_viltrumite = {
+	target = country
+	categories = { op_cat_subterfuge }
+	picture = GFX_evt_throne_room
+	desc = "operation_embedded_viltrumite_desc"
+
+	resources = {
+		category = espionage_operations
+		cost = {
+			influence = 200
+		}
+	}
+
+	spy_power_cost = 65
+	network_strength_requirement = 60
+
+	# Only available to Viltrum Survivors
+	potential = {
+		is_country_type = default
+		from = {
+			is_country_type = default
+			has_origin = origin_viltrum_survivors
+		}
+	}
+
+	# Target must have a non-capital planet to seize
+	allow = {
+		custom_tooltip = {
+			fail_text = "operation_embedded_viltrumite_no_planets"
+			any_owned_planet = {
+				is_capital = no
+			}
+		}
+	}
+
+	# Stage 1: Infiltration - Viltrumite lands on the planet undetected
+	stage = {
+		difficulty = 4
+		icon = GFX_espionage_operation_stage_default
+		event = viltrum_espionage.10
+	}
+
+	# Stage 2: Subversion - Build a power base through fear and leverage
+	stage = {
+		difficulty = 5
+		icon = GFX_espionage_operation_stage_default
+		event = viltrum_espionage.20
+	}
+
+	# Stage 3: Seizure - The Viltrumite takes control
+	stage = {
+		difficulty = 6
+		icon = GFX_espionage_operation_stage_default
+		event = viltrum_espionage.30
+	}
+
+	# On success: Transfer a planet and notify both empires
+	on_success = {
+		random_owned_planet = {
+			limit = {
+				is_capital = no
+			}
+			save_event_target_as = stolen_world
+			set_owner = from
+		}
+		from = {
+			country_event = { id = viltrum_espionage.1 }
+		}
+		country_event = { id = viltrum_espionage.2 }
+	}
+
+	# On failure: Opinion penalty and cooldown
+	on_roll_failed = {
+		from = {
+			add_modifier = {
+				modifier = viltrumite_espionage_exposed
+				days = 720
+			}
+		}
+	}
+}

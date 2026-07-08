@@ -1,0 +1,15 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Espionage Static Modifiers
+# Modifier applied when an Embedded Viltrumite operation is exposed
+##########################################################################
+
+viltrumite_espionage_exposed = {
+	icon = "gfx/interface/icons/modifiers/mod_intel_decryption_add.dds"
+
+	# Exposed agent makes future espionage harder
+	intel_encryption_add = -2
+	spy_network_levels_add = -1
+}

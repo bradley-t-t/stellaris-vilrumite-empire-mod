@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3602982845"><img src="https://img.shields.io/badge/Steam_Workshop-Subscribe-2563eb?style=for-the-badge&logo=steam&logoColor=white" alt="Steam Workshop" /></a>
-  <img src="https://img.shields.io/badge/Stellaris-v4.1.7-2563eb?style=for-the-badge&logo=steam&logoColor=white" alt="Stellaris v4.1.7" />
+  <img src="https://img.shields.io/badge/Stellaris-v4.4-2563eb?style=for-the-badge&logo=steam&logoColor=white" alt="Stellaris v4.4" />
   <img src="https://img.shields.io/badge/Total_Conversion-Invincible_Universe-3b82f6?style=for-the-badge" alt="Total Conversion" />
   <img src="https://img.shields.io/badge/Factions-7_playable-1f56cf?style=for-the-badge" alt="7 factions" />
   <img src="https://img.shields.io/badge/license-Proprietary-1f56cf?style=for-the-badge" alt="License" />
@@ -34,7 +34,7 @@ Most empire packs hand you a fresh flag and the same balanced stat spread as eve
     </td>
     <td width="33%" valign="top">
       <h3 align="center">Asymmetric by design</h3>
-      <p align="center">Balance is derived from canon, not min-maxing. The Pure Viltrumite trait grants 500% army damage and near-immortal leaders, offset by -95% population growth — you conquer instead of grow.</p>
+      <p align="center">Balance is derived from canon, not min-maxing. The Pure Viltrumite trait grants 10000% army damage and near-immortal leaders, offset by -50% population growth — you conquer instead of grow.</p>
     </td>
     <td width="33%" valign="top">
       <h3 align="center">Signature event chains</h3>
@@ -57,7 +57,7 @@ Most empire packs hand you a fresh flag and the same balanced stat spread as eve
 | macOS | `~/Documents/Paradox Interactive/Stellaris/mod/` |
 | Linux | `~/.local/share/Paradox Interactive/Stellaris/mod/` |
 
-This is a **total conversion** built for **Stellaris v4.1.7** (per `descriptor.mod`). It reworks core content and is not intended to run alongside other major overhaul mods.
+This is a **total conversion** built for **Stellaris v4.4** (per `descriptor.mod`). It reworks core content and is not intended to run alongside other major overhaul mods.
 
 ## Usage
 
@@ -79,7 +79,7 @@ Every faction has one bespoke species-trait file, so no two play alike:
 
 | Trait | Belongs to | What it does |
 | :--- | :--- | :--- |
-| **Pure Viltrumite** | Viltrumites | +5,000 leader lifespan, 500% army damage & health, +30% research speed, +25% edict fund, perfect habitability — all offset by **-95% population growth** |
+| **Pure Viltrumite** | Viltrumites | +5,000 leader lifespan, 10000% army damage & health, +30% research speed, +25% edict fund, perfect habitability — all offset by **-50% population growth** |
 | **GDA Training** | Humans | +10% engineering research, +10% ship hull & hull regen, +2 defense platform capacity, +5% happiness, +10% unity — a fortify-and-hold defense game |
 
 The **Viltrumites** are the dominant warrior race: superhuman combat stats and a 5,000-year lifespan that mirror their canonical invincibility, but they can barely grow. The **Global Defense Agency**'s humans lean on engineering and durability to survive. The remaining five factions each fill a distinct niche with their own trait file and per-species name list.
@@ -112,7 +112,9 @@ common/
   portrait_sets/            Viltrumite portrait mapping
   on_actions/               Event triggers
   bombardment_stances/      Viltrumite annihilation stance
-events/                     Scourge Virus + planet annihilation event chains
+  espionage_operations/     Embedded-agent infiltration operation
+  static_modifiers/         Espionage operation modifiers
+events/                     Scourge Virus, planet annihilation + espionage events
 prescripted_countries/      7 playable prescripted empires
 flags/viltrum/              Custom Viltrum flag (+ map-mode variant)
 gfx/event_pictures/         Event picture textures

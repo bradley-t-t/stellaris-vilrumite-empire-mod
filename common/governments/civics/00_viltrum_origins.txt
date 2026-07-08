@@ -17,7 +17,7 @@
 #
 # KEY FEATURES:
 # - Starts with ~100 Viltrumites after Scourge Virus event chain
-# - Massive ship combat bonuses (500% weapon damage, 50% speed)
+# - Massive ship combat bonuses (800% weapon damage, 50% speed)
 # - Strong leadership and military bonuses
 # - Economic focus on alloys over consumer goods
 # - Reduced happiness due to post-plague trauma
@@ -58,36 +58,48 @@ origin_viltrum_survivors = {
 	# Empire-wide modifiers
 	modifier = {
 		# INFRASTRUCTURE & ECONOMY
-		country_naval_cap_add = 50                      # +50 naval capacity
+		country_naval_cap_add = 500                     # +500 naval capacity (scaled for 4.3 5x naval cap)
 		planet_building_build_speed_mult = 0.25         # +25% building construction speed
 		planet_building_capacity_add = 2                # +2 building slots
 		planet_districts_hab_cost_mult = -0.20          # -20% habitat district cost
 		country_unity_produces_mult = 3.0               # +300% unity production
-		
+		country_starbase_capacity_add = 2               # +2 starbase capacity
+
 		# SHIP COMBAT BUFFS (Viltrumite warriors as living weapons)
-		ship_fire_rate_mult = 0.15                      # +15% fire rate
-		ship_weapon_damage = 5.0                        # +500% weapon damage
-		ship_hull_mult = 0.10                           # +10% hull points
-		ship_armor_mult = 0.10                          # +10% armor
-		ship_speed_mult = 0.50                          # +50% speed
-		ship_evasion_mult = 0.30                        # +30% evasion
+		ship_fire_rate_mult = 2.50                      # +250% fire rate
+		ship_weapon_damage = 80.0                       # +8000% weapon damage
+		ship_hull_mult = 5.0                            # +500% hull points
+		ship_armor_mult = 5.0                           # +500% armor
+		ship_speed_mult = 5.0                           # +500% speed
+		ship_evasion_mult = 3.0                         # +300% evasion
 		ship_disengage_chance_mult = 0.50               # +50% emergency FTL chance
 		starbase_shipyard_build_speed_mult = 0.30       # +30% ship construction speed
-		
+
 		# LEADERSHIP & MILITARY
 		ruler_skill_levels = 2                          # Ruler starts at skill level 3
 		country_commander_cap_add = 3                   # +3 commander capacity
-		country_power_projection_influence_produces_add = 1  # +1 influence from power projection
-		
+		country_power_projection_influence_produces_add = 2  # +2 influence from power projection
+
 		# AGGRESSIVE DIPLOMACY
 		country_war_exhaustion_mult = -0.50             # -50% war exhaustion gain
 		country_claim_influence_cost_mult = -0.30       # -30% claim influence cost
 		country_vassal_naval_capacity_contribution_mult = 0.50  # +50% vassal naval cap contribution
-		
-		# ECONOMIC FOCUS (Alloys over consumer goods)
-		country_alloys_produces_mult = 0.25             # +25% alloy production
-		country_consumer_goods_produces_mult = -0.25    # -25% consumer goods production
-		
+
+		# VILTRUMITE SCIENCE (Ruthless genius + conscripted alien researchers)
+		all_technology_research_speed = 5.0              # +500% all research
+		country_engineering_tech_research_speed = 0.50  # +50% engineering
+		country_physics_tech_research_speed = 0.50      # +50% physics
+		country_society_tech_research_speed = 0.50      # +50% society
+		country_scientist_cap_add = 4                   # +4 scientist capacity (conscripted researchers)
+		num_tech_alternatives_add = 2                   # +2 research alternatives (broader knowledge base)
+
+		# ECONOMIC POWER (Viltrumite efficiency)
+		country_energy_produces_mult = 20.0             # +2000% energy production
+		country_consumer_goods_produces_mult = 20.0     # +2000% consumer goods production
+		country_minerals_produces_mult = 20.0           # +2000% mineral production
+		country_food_produces_mult = 20.0               # +2000% food production
+		country_alloys_produces_mult = 2.0              # +200% alloy production
+
 		# THEMATIC PENALTIES (Post-plague trauma)
 		pop_happiness = -0.10                           # -10% pop happiness
 	}

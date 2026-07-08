@@ -1,4 +1,4 @@
-version="4.1.7"
+version="4.4.0"
 tags={
 	"Gameplay"
 	"Technologies"
@@ -7,5 +7,5 @@ tags={
 	"Total Conversion"
 }
 name="Viltrum Empire"
-supported_version="v4.1.7"
+supported_version="v4.4.*"
 remote_file_id="3602982845"

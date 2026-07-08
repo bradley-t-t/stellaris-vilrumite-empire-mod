@@ -34,7 +34,7 @@ flaxan_empire = {
 	# ===================================================================
 	species = {
 		class = REP                    # Reptilian species class
-		portrait = "rep6"              # Reptilian portrait #6
+		portrait = "rep4"              # Reptilian portrait #6
 		name = "Flaxan"                # Species name (singular)
 		plural = "Flaxans"             # Species name (plural)
 		adjective = "Flaxan"           # Adjective form
@@ -121,7 +121,7 @@ flaxan_empire = {
 	ruler = {
 		gender = male
 		name = "Flaxan Emperor"
-		portrait = "rep6"
+		portrait = "rep4"
 		texture = 0
 		clothes = 0
 		ruler_title = "Dimensional Emperor"

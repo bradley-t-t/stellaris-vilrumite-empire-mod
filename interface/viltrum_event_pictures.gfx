@@ -40,4 +40,9 @@ spriteTypes = {
 		masking_texture = "gfx/interface/situation_log/event_mask.dds"
 		alwaystransparent = yes
 	}
+
+	spriteType = {
+		name = "GFX_planet_modifier_ground_support_viltrumite_annihilation"
+		texturefile = "gfx/interface/icons/planet_modifiers/pm_under_orbital_bombardment.dds"
+	}
 }

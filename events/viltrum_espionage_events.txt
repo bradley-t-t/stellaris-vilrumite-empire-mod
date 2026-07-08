@@ -1,0 +1,80 @@
+##########################################################################
+# INVINCIBLE UNIVERSE MOD
+# Created by: Trent
+#
+# FILE: Embedded Viltrumite Espionage Events
+# Events for the Embedded Viltrumite espionage operation
+# Handles stage progress notifications and planet transfer
+##########################################################################
+
+namespace = viltrum_espionage
+
+# Stage 1 Progress: Infiltration
+country_event = {
+    id = viltrum_espionage.10
+    title = "viltrum_espionage.10.name"
+    desc = "viltrum_espionage.10.desc"
+    picture = GFX_evt_throne_room
+    show_sound = event_conversation
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_espionage.10.a"
+    }
+}
+
+# Stage 2 Progress: Subversion
+country_event = {
+    id = viltrum_espionage.20
+    title = "viltrum_espionage.20.name"
+    desc = "viltrum_espionage.20.desc"
+    picture = GFX_evt_throne_room
+    show_sound = event_conversation
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_espionage.20.a"
+    }
+}
+
+# Stage 3 Progress: Seizure
+country_event = {
+    id = viltrum_espionage.30
+    title = "viltrum_espionage.30.name"
+    desc = "viltrum_espionage.30.desc"
+    picture = GFX_evt_throne_room
+    show_sound = event_conversation
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_espionage.30.a"
+    }
+}
+
+# Success: Planet Seized - Notification to Viltrumite Empire
+country_event = {
+    id = viltrum_espionage.1
+    title = "viltrum_espionage.1.name"
+    desc = "viltrum_espionage.1.desc"
+    picture = GFX_evt_throne_room
+    show_sound = event_celebration
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_espionage.1.a"
+    }
+}
+
+# Success: Planet Lost - Notification to Target Empire
+country_event = {
+    id = viltrum_espionage.2
+    title = "viltrum_espionage.2.name"
+    desc = "viltrum_espionage.2.desc"
+    picture = GFX_evt_burning_city
+    show_sound = event_bad_omen
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_espionage.2.a"
+    }
+}

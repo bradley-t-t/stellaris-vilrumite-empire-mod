@@ -25,7 +25,7 @@ origin_thraxxan_swarm = {
 	is_origin = yes
 
 	icon = "gfx/interface/icons/origins/origins_lithoid.dds"
-	picture = GFX_origin_lithoid
+	picture = GFX_origin_progenitor_hive
 
 	max_once_global = yes
 

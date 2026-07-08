@@ -1,9 +1,5 @@
 {
-  "version": "1.0.4",
+  "version": "1.0",
   "projectName": "viltrum-empire",
-  "branch": "main",
-  "provider": "claude-code",
-  "cleanLogs": true,
-  "cleanCss": false,
-  "hooks": {}
+  "branch": "main"
 }
