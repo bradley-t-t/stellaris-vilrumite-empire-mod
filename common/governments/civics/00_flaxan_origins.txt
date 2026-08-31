@@ -1,0 +1,58 @@
+# The Flaxans are interdimensional invaders who experience time differently.
+# They age rapidly in our dimension but can use portals to return home.
+# Their civilization excels at dimensional manipulation and rapid strikes.
+
+origin_flaxan_dimension = {
+	is_origin = yes
+
+	icon = "gfx/interface/icons/origins/origin_void_dwellers.dds"
+	picture = GFX_origin_void_dwellers
+
+	max_once_global = yes
+
+	description = "origin_flaxan_dimension_desc"
+	negative_description = "origin_flaxan_dimension_secondary_desc"
+
+	flags = { custom_start_screen }
+
+	possible = {
+		authority = {
+			OR = {
+				value = auth_dictatorial
+				value = auth_imperial
+			}
+		}
+		ethics = {
+			value = ethic_fanatic_militarist
+		}
+	}
+
+	modifier = {
+		# DIMENSIONAL TRAVEL
+		ship_speed_mult = 0.50
+		ship_hyperlane_range_add = 2
+		ship_emergency_ftl_mult = 0.50
+		
+		# RAPID CONSTRUCTION (Time dilation)
+		starbase_shipyard_build_speed_mult = 0.40
+		planet_building_build_speed_mult = 0.30
+		megastructure_build_speed_mult = 0.25
+		
+		# COMBAT ADVANTAGES
+		ship_evasion_mult = 0.30
+		ship_fire_rate_mult = 0.15
+		country_naval_cap_mult = 0.20
+		
+		# DIMENSIONAL PHYSICS
+		country_physics_tech_research_speed = 0.30
+		country_engineering_tech_research_speed = 0.15
+		
+		# TEMPORAL PENALTIES (Aging rapidly)
+		leader_lifespan_mult = -0.40
+		species_leader_exp_gain = -0.20
+	}
+
+	random_weight = {
+		base = 5
+	}
+}

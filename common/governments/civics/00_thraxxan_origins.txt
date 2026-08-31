@@ -1,0 +1,60 @@
+# The Thraxxans are a hyper-aggressive insectoid swarm species. Their
+# homeworld is organized around massive hives and an endless drive to
+# expand, conquer, and consume. They breed rapidly and strike without mercy.
+
+origin_thraxxan_swarm = {
+	is_origin = yes
+
+	icon = "gfx/interface/icons/origins/origins_lithoid.dds"
+	picture = GFX_origin_progenitor_hive
+
+	max_once_global = yes
+
+	description = "origin_thraxxan_swarm_desc"
+	negative_description = "origin_thraxxan_swarm_secondary_desc"
+
+	flags = { custom_start_screen }
+
+	possible = {
+		authority = {
+			OR = {
+				value = auth_dictatorial
+				value = auth_imperial
+			}
+		}
+		ethics = {
+			OR = {
+				value = ethic_fanatic_militarist
+				value = ethic_fanatic_xenophobe
+			}
+		}
+	}
+
+	modifier = {
+		# POPULATION & GROWTH
+		planet_pop_assembly_mult = 0.20
+		planet_jobs_worker_produces_mult = 0.15
+		
+		# MILITARY POWER
+		army_damage_mult = 0.30
+		armies_upkeep_mult = -0.25
+		starbase_shipyard_build_speed_mult = 0.20
+		country_naval_cap_mult = 0.15
+		
+		# AGGRESSION
+		planet_orbital_bombardment_damage = 0.50
+		country_war_exhaustion_mult = -0.30
+		country_claim_influence_cost_mult = -0.20
+		
+		# SWARM MENTALITY
+		planet_amenities_mult = -0.15
+		
+		# DIPLOMATIC PENALTIES
+		diplo_weight_mult = -0.20
+		country_trust_cap_add = -50
+	}
+
+	random_weight = {
+		base = 5
+	}
+}

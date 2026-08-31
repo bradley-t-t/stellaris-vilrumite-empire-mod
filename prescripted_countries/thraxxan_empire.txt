@@ -1,0 +1,79 @@
+# The Thraxxan Empire is a massive insectoid hive mind led by their queen.
+# They reproduce rapidly and overwhelm enemies through sheer numbers rather
+# than individual strength. Their single-minded devotion to the hive makes
+# them relentless in expansion and conquest.
+
+thraxxan_empire = {
+	ship_prefix = "HVS"
+	
+	species = {
+		class = ART
+		portrait = "art1"
+		name = "Thraxxan"
+		plural = "Thraxxans"
+		adjective = "Thraxxan"
+		name_list = "THRAXXAN"
+		
+		trait = "trait_thraxxan_swarm"
+		trait = "trait_organic"
+	}
+	
+	name = "Thraxxan Hive"
+	adjective = "Thraxxan"
+	
+	authority = auth_dictatorial
+	
+	civics = {
+		"civic_functional_architecture"
+		"civic_mining_guilds"
+	}
+	
+	government = gov_despotic_empire
+	
+	planet_name = "Thraxx Prime"
+	planet_class = pc_tropical
+	
+	system_name = "Thraxx"
+	
+	origin = "origin_thraxxan_swarm"
+	
+	ethic = "ethic_fanatic_xenophobe"
+	ethic = "ethic_materialist"
+	
+	empire_flag = {
+		icon = {
+			category = "pointy"
+			file = "flag_pointy_5.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"dark_green"
+			"orange"
+			"brown"
+			"null"
+		}
+	}
+	
+	graphical_culture = "arthropoid_01"
+	city_graphical_culture = "arthropoid_01"
+	
+	spawn_enabled = yes
+	spawn_as_fallen = no
+	
+	room = "default_room"
+	
+	ruler = {
+		gender = female
+		name = "Thraxxan Queen"
+		portrait = "art1"
+		texture = 0
+		clothes = 0
+		ruler_title = "Hive Queen"
+		ruler_title_female = "Hive Queen"
+		
+		trait = "leader_trait_resilient"
+	}
+}

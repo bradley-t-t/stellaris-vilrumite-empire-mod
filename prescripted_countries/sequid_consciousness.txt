@@ -1,0 +1,79 @@
+# The Sequids are a parasitic species that infiltrates and takes over
+# other civilizations from within. They spread through mental domination
+# and assimilation, converting entire populations to their collective will.
+
+sequid_consciousness = {
+	ship_prefix = "SCS"
+	
+	species = {
+		class = MOL
+		portrait = "mol1"
+		name = "Sequid"
+		plural = "Sequids"
+		adjective = "Sequid"
+		name_list = "SEQUID"
+		
+		trait = "trait_sequid_parasites"
+		trait = "trait_organic"
+	}
+	
+	name = "Sequid Consciousness"
+	adjective = "Sequid"
+	
+	authority = auth_dictatorial
+	
+	civics = {
+		"civic_shadow_council"
+		"civic_cutthroat_politics"
+	}
+	
+	government = gov_despotic_hegemony
+	
+	planet_name = "Sequid Prime"
+	planet_class = pc_ocean
+	
+	system_name = "Parasitum"
+	
+	origin = "origin_sequid_parasites"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_materialist"
+	ethic = "ethic_xenophobe"
+	
+	empire_flag = {
+		icon = {
+			category = "ornate"
+			file = "flag_ornate_9.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"purple"
+			"dark_purple"
+			"grey"
+			"null"
+		}
+	}
+	
+	graphical_culture = "molluscoid_01"
+	city_graphical_culture = "molluscoid_01"
+	
+	spawn_enabled = yes
+	spawn_as_fallen = no
+	
+	room = "default_room"
+	
+	ruler = {
+		gender = male
+		name = "Prime Sequid"
+		portrait = "mol1"
+		texture = 0
+		clothes = 0
+		ruler_title = "Prime Consciousness"
+		ruler_title_female = "Prime Consciousness"
+		
+		trait = "leader_trait_resilient"
+	}
+}

@@ -1,0 +1,14 @@
+# Names the game draws on when it generates a species of the VILTRUMITE class.
+# A species class without an entry here loads with "Missing species names",
+# so this is required even though the prescripted Viltrum Empire names its
+# own species inline.
+
+VILTRUMITE = {
+	viltrumite = {
+		name = SPEC_Viltrumite
+		plural = SPEC_Viltrumite_pl
+		home_planet = SPEC_Viltrumite_planet
+		home_system = SPEC_Viltrumite_system
+		name_list = "VILTRUMITE"
+	}
+}

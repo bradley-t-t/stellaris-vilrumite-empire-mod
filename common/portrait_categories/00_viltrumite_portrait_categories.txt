@@ -1,0 +1,12 @@
+# Groups the Viltrumite portrait sets under one heading in the empire creator.
+# A set that belongs to no category is not offered there, so both sets defined
+# in 00_viltrumite_portraits.txt are listed here.
+
+VILTRUMITE = {
+	name = VILTRUMITE
+
+	sets = {
+		viltrumite_set
+		viltrumites
+	}
+}

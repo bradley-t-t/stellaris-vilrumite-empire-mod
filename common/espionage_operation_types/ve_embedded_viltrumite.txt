@@ -1,0 +1,75 @@
+# Takes a planet off another empire with no war declaration: an agent embeds on
+# a world, builds a power base, then simply takes over. The three stages below
+# are narrative only — the transfer happens in the last stage's event,
+# viltrum_espionage.30.
+#
+# Scopes follow the vanilla operation convention: owner is the empire running
+# the operation, target is the empire being robbed.
+
+operation_embedded_viltrumite = {
+	target = country
+	categories = { op_cat_subterfuge }
+	picture = GFX_evt_throne_room
+	desc = operation_embedded_viltrumite_desc
+	stages = 3
+
+	resources = {
+		category = operations
+		cost = {
+			influence = 200
+		}
+	}
+
+	spy_power_cost = 65
+
+	potential = {
+		owner = {
+			has_origin = origin_viltrum_survivors
+		}
+		target = {
+			is_country_type = default
+		}
+	}
+
+	allow = {
+		custom_tooltip = {
+			fail_text = operation_embedded_viltrumite_no_planets
+			target = {
+				any_owned_planet = {
+					is_capital = no
+				}
+			}
+		}
+	}
+
+	# Infiltration: the Viltrumite lands unnoticed.
+	stage = {
+		difficulty = 4
+		icon = GFX_espionage_chapter_icon_surveillance
+		event = viltrum_espionage.10
+	}
+
+	# Subversion: a power base built on fear and leverage.
+	stage = {
+		difficulty = 5
+		icon = GFX_espionage_chapter_icon_motion
+		event = viltrum_espionage.20
+	}
+
+	# Seizure.
+	stage = {
+		difficulty = 6
+		icon = GFX_espionage_chapter_icon_success
+		event = viltrum_espionage.30
+	}
+
+	# Being caught costs the operator its cover, not the target.
+	on_roll_failed = {
+		owner = {
+			add_modifier = {
+				modifier = viltrumite_espionage_exposed
+				days = 720
+			}
+		}
+	}
+}

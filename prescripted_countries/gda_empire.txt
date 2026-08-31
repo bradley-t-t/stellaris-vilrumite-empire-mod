@@ -1,0 +1,80 @@
+# The Global Defense Agency represents Earth's unified defense force,
+# led by the ruthless and pragmatic Cecil Stedman. While Earth appears
+# outmatched by alien threats, the GDA compensates through espionage,
+# tactical brilliance, and willingness to use any means necessary.
+
+gda_empire = {
+	ship_prefix = "GDA"
+	
+	species = {
+		class = HUM
+		portrait = "human"
+		name = "Human"
+		plural = "Humans"
+		adjective = "Human"
+		name_list = "GDA"
+		
+		trait = "trait_gda_human"
+		trait = "trait_organic"
+	}
+	
+	name = "Global Defense Agency"
+	adjective = "GDA"
+	
+	authority = auth_oligarchic
+	
+	civics = {
+		"civic_police_state"
+		"civic_shadow_council"
+	}
+	
+	government = gov_military_junta
+	
+	planet_name = "Earth"
+	planet_class = pc_continental
+	
+	system_name = "Sol"
+	
+	origin = "origin_gda_earth_defense"
+	
+	ethic = "ethic_xenophobe"
+	ethic = "ethic_egalitarian"
+	ethic = "ethic_materialist"
+	
+	empire_flag = {
+		icon = {
+			category = "pointy"
+			file = "flag_pointy_18.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
+		}
+		colors = {
+			"dark_blue"
+			"white"
+			"grey"
+			"null"
+		}
+	}
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	spawn_enabled = yes
+	spawn_as_fallen = no
+	
+	room = "default_room"
+	
+	ruler = {
+		gender = male
+		name = "Cecil Stedman"
+		portrait = "human"
+		texture = 1
+		clothes = 1
+		ruler_title = "Director"
+		ruler_title_female = "Director"
+		
+		trait = "leader_trait_resilient"
+	}
+}

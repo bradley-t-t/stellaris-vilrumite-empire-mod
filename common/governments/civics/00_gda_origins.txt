@@ -1,0 +1,74 @@
+# Earth's Global Defense Agency operates as humanity's first and last
+# line of defense against extraterrestrial threats. Led by the pragmatic
+# Director Cecil Stedman, the GDA employs espionage, covert operations,
+# advanced technology, and strategic defense to protect humanity from
+# superior alien forces. What they lack in raw power, they compensate
+# with intelligence, preparation, and ruthless efficiency.
+
+origin_gda_earth_defense = {
+	is_origin = yes
+
+	icon = "gfx/interface/icons/origins/origins_hegemon.dds"
+	picture = GFX_origin_payback
+
+	# Only one empire per galaxy can use this origin
+	max_once_global = yes
+
+	description = "origin_gda_earth_defense_desc"
+	negative_description = "origin_gda_earth_defense_secondary_desc"
+
+	flags = { custom_start_screen }
+
+	possible = {
+		authority = { value = auth_oligarchic }
+		ethics = {
+			value = ethic_xenophobe
+			OR = {
+				value = ethic_militarist
+				value = ethic_materialist
+			}
+		}
+	}
+
+	advanced_start = yes
+	
+	modifier = {
+		# ESPIONAGE & INTELLIGENCE
+		# Encryption blunts their spying; decryption sharpens ours.
+		intel_encryption_add = 2
+		intel_decryption_add = 2
+		spy_network_levels_add = 1
+		
+		# DEFENSIVE CAPABILITIES
+		planet_sensor_range_add = 2
+		starbase_defense_platform_capacity_add = 4
+		army_defense_damage_mult = 0.50
+		army_defense_morale_mult = 0.25
+		ship_home_territory_fire_rate_mult = 0.20
+		
+		# TECHNOLOGY & RESEARCH
+		all_technology_research_speed = 0.15
+		country_engineering_tech_research_speed = 0.10
+		country_physics_tech_research_speed = 0.10
+		category_computing_research_speed_mult = 0.20
+		
+		# INFRASTRUCTURE
+		planet_building_build_speed_mult = 0.15
+		country_starbase_capacity_add = 2
+		starbase_upgrade_cost_mult = -0.20
+		
+		# STRATEGIC LIMITATIONS (Underdog status)
+		country_naval_cap_mult = -0.15
+		country_claim_influence_cost_mult = 0.25
+		ship_weapon_damage = -0.10
+		
+		# DIPLOMATIC ADVANTAGES
+		envoy_improve_relations_mult = 0.25
+		country_trust_growth = 0.25
+	}
+
+	# AI weight for selecting this origin
+	random_weight = {
+		base = 5
+	}
+}

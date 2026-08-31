@@ -1,0 +1,82 @@
+﻿# Custom names for Global Defense Agency (GDA) Empire
+# Military-themed naming conventions for Earth's Global Defense Agency.
+# Emphasizes defensive operations, intelligence gathering, and strategic
+# military terminology reflecting the GDA's mission to protect humanity.
+
+GDA = {
+	category = "Humanoid"
+	
+	ship_names = {
+		generic = {
+			Guardian Sentinel Warden Defender Protector Shield Bulwark Rampart Bastion Citadel Fortress Aegis
+			Phantom Shadow Ghost Specter Wraith Eclipse Blackout Darkwatch Nightfall Stealth Cipher Enigma
+			Interceptor Counterstrike Retaliation Reprisal Payback Vigilance Watch Ward Safeguard Haven
+			Arsenal Armory Vanguard Picket Patrol Scout Observer Reconnaissance
+			Javelin Patriot Raptor Eagle Hawk Falcon Hornet Wasp Viper Cobra Scorpion Mantis
+			Deterrent Containment Blockade Cordon Barricade Checkpoint Perimeter Alert
+			Command Control Tactical Strategic Operational Protocol Directive Executive Authority Mandate
+			Overwatch Surveillance Monitor Watchdog Lookout Handler
+			Earthguard Terrawatch Homeland Homeworld Pentagon Cheyenne
+		}
+		corvette = {
+			Interceptor Raptor Viper Falcon Hawk Hornet Wasp Scout Patrol Picket
+		}
+		destroyer = {
+			Guardian Sentinel Warden Defender Protector Rampart Bulwark Bastion
+		}
+		cruiser = {
+			Aegis Shield Fortress Citadel Arsenal Command Authority Strategic
+		}
+		battleship = {
+			Deterrent Retaliation Payback Vengeance Earthguard Homeland Pentagon Cheyenne
+		}
+		science = {
+			Observer Reconnaissance Monitor Surveillance Overwatch Lookout Scanner Probe
+		}
+		colonizer = {
+			Pioneer Settler Voyager Frontier Pathfinder Trailblazer Colonist
+		}
+		constructor = {
+			Builder Engineer Constructor Fabricator Architect Forgemaster
+		}
+		transport = {
+			Carrier Transport Deployment Hauler Convoy
+		}
+		military_station_small = {
+			Outpost Checkpoint Watch Guard Post
+		}
+	}
+	
+	fleet_names = {
+		random_names = {
+			"GDA Defense Fleet" "GDA Rapid Response" "GDA Strike Group" "GDA Patrol Squadron" 
+			"GDA Strategic Reserve" "GDA Task Force" "GDA Interceptor Wing" "GDA System Guard"
+		}
+	}
+	
+	planet_names = {
+		generic = {
+			names = {
+				Earth Terra Sol Washington Pentagon Cheyenne London Moscow Beijing Tokyo Delhi
+				Paris Berlin Rome Cairo Sydney Toronto Europa Asia Afrika America Oceania
+				Everest Sahara Amazon Pacific Atlantic Arctic Mediterranean Apollo Gemini Mercury
+				Outpost Stronghold Redoubt Firebase Depot Waystation Checkpoint Perimeter
+			}
+		}
+	}
+	
+	character_names = {
+		default = {
+			first_names = {
+				Cecil Donald Mark William Robert David John James Michael Chris Steven Richard Joseph Thomas
+				Charles Daniel Matthew Anthony Kevin Brian Edward Ronald Jason Jeffrey Ryan Jacob Nicholas
+				Sarah Jennifer Emily Jessica Ashley Michelle Amanda Lisa Mary Karen Nancy Laura Elizabeth
+			}
+			second_names = {
+				Stedman Armstrong Johnson Williams Brown Jones Garcia Miller Davis Rodriguez Martinez
+				Wilson Anderson Taylor Thomas Moore Jackson White Harris Martin Thompson Clark
+			}
+			use_full_regnal_name = yes
+		}
+	}
+}

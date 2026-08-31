@@ -1,0 +1,22 @@
+.idea/
+.vscode/
+*.iml
+*.sql
+
+# Secrets and local tooling state — never commit
+.env
+.env.*
+!.env.example
+.intelligence/
+INTELLIGENCE.md
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+.DS_Store
+Thumbs.db
+*.log
+.fleet/
+.junie/
+desktop.ini

@@ -1,0 +1,68 @@
+# Shatters a planet once Viltrumite bombardment has devastated it. Hooked to
+# on_pop_bombed_to_death, so it is re-evaluated on every pop killed from orbit.
+
+namespace = viltrum_annihilation
+
+planet_event = {
+    id = viltrum_annihilation.1
+    
+    hide_window = yes
+    
+    is_triggered_only = yes
+
+    trigger = {
+        planet_devastation >= 99
+        
+        NOT = { has_planet_flag = viltrumite_cracked }
+        
+        # The devastation could have come from anyone, so gate on a Viltrumite
+        # warfleet still being in-system — otherwise another empire's siege
+        # would crack the planet on Viltrum's behalf.
+        solar_system = {
+            any_fleet_in_system = {
+                exists = owner
+                owner = {
+                    has_origin = origin_viltrum_survivors
+                }
+                is_ship_class = shipclass_military
+            }
+        }
+    }
+
+    immediate = {
+        set_planet_flag = viltrumite_cracked
+        
+        # Kills every remaining pop and leaves the world uninhabitable.
+        change_pc = pc_shattered
+        
+        save_event_target_as = shattered_world
+        
+        solar_system = {
+            random_fleet_in_system = {
+                limit = {
+                    exists = owner
+                    owner = {
+                        has_origin = origin_viltrum_survivors
+                    }
+                    is_ship_class = shipclass_military
+                }
+                owner = {
+                    country_event = { id = viltrum_annihilation.2 }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = viltrum_annihilation.2
+    title = "viltrum_annihilation.2.name"
+    desc = "viltrum_annihilation.2.desc"
+    picture = "GFX_evt_ps_0"
+    show_sound = event_planetary_riot
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_annihilation.2.a"
+    }
+}

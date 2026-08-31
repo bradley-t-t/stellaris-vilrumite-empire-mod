@@ -1,0 +1,33 @@
+# The numbers here are deliberately absurd — a Viltrumite army is meant to walk
+# through anything a normal empire can field. The growth penalty at the bottom is
+# the only thing keeping that from snowballing into an unbeatable start.
+
+trait_viltrumite_pure = {
+	cost = 2
+	
+	allowed_archetypes = { BIOLOGICAL }
+	
+	icon = "gfx/interface/icons/traits/trait_very_strong.dds"
+	
+	opposites = { }
+	
+	modifier = {
+		# Effectively immortal; Viltrumites in canon live for millennia.
+		leader_lifespan_add = 5000
+
+		army_damage_mult = 100.0
+		army_health = 100.0
+		army_morale = 50.0
+
+		country_edict_fund_mult = 0.25
+
+		# Full habitability everywhere, so no world is off-limits to colonisation.
+		pop_environment_tolerance = 1.0
+
+		species_leader_exp_gain = 1.0
+		all_technology_research_speed = 0.30
+
+		# The counterweight to everything above: they cannot expand quickly.
+		logistic_growth_mult = -0.50
+	}
+}

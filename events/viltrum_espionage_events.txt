@@ -1,0 +1,112 @@
+# Events for the Embedded Viltrumite espionage operation.
+#
+# .10, .20 and .30 are the operation's three stages and must be
+# espionage_operation_event — that is the only event type the operation stage
+# runner fires. Inside them owner is the operating empire and target is the
+# victim. The seizure itself rides on .30, the last stage.
+#
+# .1 and .2 are ordinary notifications sent to the two empires afterwards.
+
+namespace = viltrum_espionage
+
+# Stage 1 Progress: Infiltration
+espionage_operation_event = {
+    id = viltrum_espionage.10
+    title = "viltrum_espionage.10.name"
+    desc = "viltrum_espionage.10.desc"
+    espionage_operation = yes
+    picture = GFX_evt_throne_room
+    show_sound = event_conversation
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_espionage.10.a"
+    }
+}
+
+# Stage 2 Progress: Subversion
+espionage_operation_event = {
+    id = viltrum_espionage.20
+    title = "viltrum_espionage.20.name"
+    desc = "viltrum_espionage.20.desc"
+    espionage_operation = yes
+    picture = GFX_evt_throne_room
+    show_sound = event_conversation
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_espionage.20.a"
+    }
+}
+
+# Stage 3: Seizure. The planet changes hands here.
+espionage_operation_event = {
+    id = viltrum_espionage.30
+    title = "viltrum_espionage.30.name"
+    desc = "viltrum_espionage.30.desc"
+    espionage_operation = yes
+    picture = GFX_evt_throne_room
+    show_sound = event_conversation
+    is_triggered_only = yes
+
+    immediate = {
+        set_espionage_operation_progress_locked = yes
+
+        owner = {
+            save_event_target_as = viltrumite_operator
+        }
+
+        target = {
+            random_owned_planet = {
+                limit = {
+                    is_capital = no
+                }
+                save_event_target_as = stolen_world
+                set_owner = event_target:viltrumite_operator
+            }
+        }
+
+        owner = {
+            country_event = { id = viltrum_espionage.1 }
+        }
+        target = {
+            country_event = { id = viltrum_espionage.2 }
+        }
+    }
+
+    option = {
+        name = "viltrum_espionage.30.a"
+    }
+
+    after = {
+        set_espionage_operation_progress_locked = no
+    }
+}
+
+# Success: Planet Seized - Notification to Viltrumite Empire
+country_event = {
+    id = viltrum_espionage.1
+    title = "viltrum_espionage.1.name"
+    desc = "viltrum_espionage.1.desc"
+    picture = GFX_evt_throne_room
+    show_sound = event_celebration
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_espionage.1.a"
+    }
+}
+
+# Success: Planet Lost - Notification to Target Empire
+country_event = {
+    id = viltrum_espionage.2
+    title = "viltrum_espionage.2.name"
+    desc = "viltrum_espionage.2.desc"
+    picture = GFX_evt_burning_city
+    show_sound = event_bad_omen
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_espionage.2.a"
+    }
+}

@@ -1,0 +1,19 @@
+on_pop_bombed_to_death = {
+    events = {
+        viltrum_annihilation.1
+    }
+}
+
+on_game_start_country = {
+	events = {
+		viltrum_start_pops.1
+	}
+}
+
+# Backstop: on_game_start_country does not fire for every start path, so the
+# same event is re-checked yearly. It no-ops once the chain has run.
+on_yearly_pulse_country = {
+    events = {
+        viltrum_start_pops.1
+    }
+}

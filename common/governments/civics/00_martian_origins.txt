@@ -1,0 +1,61 @@
+# The Martians are a Mars colony that rebelled against Earth, led by
+# the Sequid-controlled Martian Emperor. They are militaristic,
+# independent, and fiercely proud of their Red Planet heritage.
+
+origin_martian_rebellion = {
+	is_origin = yes
+
+	icon = "gfx/interface/icons/origins/origins_lost_colony.dds"
+	picture = GFX_origin_lost_colony
+
+	max_once_global = yes
+
+	description = "origin_martian_rebellion_desc"
+	negative_description = "origin_martian_rebellion_secondary_desc"
+
+	flags = { custom_start_screen }
+
+	possible = {
+		authority = {
+			OR = {
+				value = auth_oligarchic
+				value = auth_dictatorial
+			}
+		}
+		ethics = {
+			value = ethic_militarist
+		}
+	}
+
+	modifier = {
+		# MILITARY CULTURE
+		army_damage_mult = 0.35
+		army_morale = 0.25
+		armies_upkeep_mult = -0.20
+		planet_orbital_bombardment_damage = 0.25
+		
+		# DEFENSIVE STRENGTH
+		ship_home_territory_fire_rate_mult = 0.25
+		starbase_defense_platform_capacity_add = 4
+		planet_sensor_range_add = 2
+		
+		# RESOURCE EXTRACTION (Mars mining heritage)
+		planet_miners_produces_mult = 0.30
+		country_alloys_produces_mult = 0.20
+		planet_metallurgists_produces_mult = 0.15
+		
+		# INDEPENDENCE SPIRIT
+		country_unity_produces_mult = 0.25
+		pop_government_ethic_attraction = 0.30
+		country_war_exhaustion_mult = -0.25
+		
+		# REBEL PENALTIES
+		diplo_weight_mult = -0.30
+		country_trust_cap_add = -50
+		envoy_improve_relations_mult = -0.25
+	}
+
+	random_weight = {
+		base = 5
+	}
+}

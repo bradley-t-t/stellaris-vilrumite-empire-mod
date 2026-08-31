@@ -1,0 +1,81 @@
+# The Viltrum Empire is a dictatorial militaristic state ruled by the
+# legendary warrior Thragg. After surviving the Scourge Virus, the
+# remaining ~100 Viltrumites seek to rebuild their empire through conquest.
+#
+# - Class: VILTRUMITE, which is what puts the Viltrumite portraits on this
+#   empire by default rather than leaving them to be picked
+# - Trait: Pure Viltrumite (see 00_viltrumite_traits.txt for the numbers)
+
+viltrum_empire = {
+	ship_prefix = "VES"
+	
+	species = {
+		class = VILTRUMITE
+		portrait = "viltrumite"
+		name = "Viltrumite"
+		plural = "Viltrumites"
+		adjective = "Viltrumite"
+		name_list = "VILTRUMITE"
+		
+		trait = "trait_viltrumite_pure"
+		trait = "trait_organic"
+	}
+	
+	name = "Viltrum Empire"
+	adjective = "Viltrumite"
+	
+	authority = auth_dictatorial
+	
+	civics = {
+		"civic_distinguished_admiralty"
+		"civic_warrior_culture"
+	}
+	
+	government = gov_military_dictatorship
+	
+	planet_name = "Viltrum"
+	planet_class = pc_continental
+	
+	system_name = "Viltrum"
+	
+	origin = "origin_viltrum_survivors"
+	
+	ethic = "ethic_authoritarian"
+	ethic = "ethic_militarist"
+	ethic = "ethic_xenophobe"
+	
+	empire_flag = {
+		icon = {
+			category = "viltrum"
+			file = "vil.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"red"
+			"black"
+			"null"
+			"null"
+		}
+	}
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	spawn_enabled = yes
+	spawn_as_fallen = no
+	
+	room = "default_room"
+	
+	ruler = {
+		gender = male
+		name = "Thragg"
+		portrait = "viltrumite"
+		ruler_title = "Grand Regent"
+		ruler_title_female = "Grand Regent"
+		
+		trait = "leader_trait_resilient"
+	}
+}

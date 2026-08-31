@@ -1,0 +1,79 @@
+# The Flaxans are interdimensional invaders from a dimension where time
+# moves much faster. What is days for them is mere seconds for others.
+# They age rapidly but reproduce quickly, creating massive armies through
+# multiple generations in short timeframes.
+
+flaxan_empire = {
+	ship_prefix = "FIS"
+	
+	species = {
+		class = REP
+		portrait = "rep4"
+		name = "Flaxan"
+		plural = "Flaxans"
+		adjective = "Flaxan"
+		name_list = "FLAXAN"
+		
+		trait = "trait_flaxan_temporal"
+		trait = "trait_organic"
+	}
+	
+	name = "Flaxan Empire"
+	adjective = "Flaxan"
+	
+	authority = auth_dictatorial
+	
+	civics = {
+		"civic_warrior_culture"
+		"civic_distinguished_admiralty"
+	}
+	
+	government = gov_military_dictatorship
+	
+	planet_name = "Flaxus"
+	planet_class = pc_continental
+	
+	system_name = "Temporal Rift"
+	
+	origin = "origin_flaxan_dimension"
+	
+	ethic = "ethic_fanatic_militarist"
+	ethic = "ethic_authoritarian"
+	
+	empire_flag = {
+		icon = {
+			category = "pointy"
+			file = "flag_pointy_7.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "00_solid.dds"
+		}
+		colors = {
+			"red"
+			"black"
+			"grey"
+			"null"
+		}
+	}
+	
+	graphical_culture = "reptilian_01"
+	city_graphical_culture = "reptilian_01"
+	
+	spawn_enabled = yes
+	spawn_as_fallen = no
+	
+	room = "default_room"
+	
+	ruler = {
+		gender = male
+		name = "Flaxan Emperor"
+		portrait = "rep4"
+		texture = 0
+		clothes = 0
+		ruler_title = "Dimensional Emperor"
+		ruler_title_female = "Dimensional Empress"
+		
+		trait = "leader_trait_resilient"
+	}
+}

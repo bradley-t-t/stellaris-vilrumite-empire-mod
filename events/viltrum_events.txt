@@ -1,0 +1,169 @@
+# The Scourge Virus chain, which is what actually produces the "~100 survivors"
+# premise of the Viltrum Survivors origin. .2 is a hidden loop that reschedules
+# itself every 10 days, killing one pop a pass and firing a narrative event as
+# the population crosses each milestone, until it drops to 100 and .3 ends it.
+# Entry points are on_game_start_country and on_yearly_pulse_country.
+
+namespace = viltrum_start_pops
+
+country_event = {
+    id = viltrum_start_pops.1
+    title = "viltrum_start_pops.1.name"
+    desc = "viltrum_start_pops.1.desc"
+    picture = "GFX_evt_sv_0"
+    show_sound = event_bad_omen
+    is_triggered_only = yes
+
+    trigger = {
+        has_origin = origin_viltrum_survivors
+        
+        NOT = { has_country_flag = viltrum_scourge_started }
+    }
+
+    immediate = {
+        set_country_flag = viltrum_scourge_started
+    }
+
+    option = {
+        name = "viltrum_start_pops.1.a"
+        hidden_effect = {
+            # capital_scope is a colony; the chain runs on the planet under it.
+            capital_scope.planet = {
+                planet_event = { id = viltrum_start_pops.2 days = 15 }
+            }
+        }
+    }
+}
+
+planet_event = {
+    id = viltrum_start_pops.2
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        owner = {
+            has_country_flag = viltrum_scourge_started
+            NOT = { has_country_flag = viltrum_scourge_ended }
+        }
+    }
+
+    immediate = {
+        # One pop is 100 population, so each pass costs the empire 100 people.
+        random_owned_pop_group = {
+            limit = {
+                pop_group_size > 1
+            }
+            kill_single_pop = yes
+        }
+        
+        if = {
+            limit = {
+                pop_amount > 3000
+                pop_amount < 3500
+                owner = {
+                    NOT = { has_country_flag = viltrum_progress_1 }
+                }
+            }
+            owner = {
+                set_country_flag = viltrum_progress_1
+                country_event = { id = viltrum_start_pops.4 }
+            }
+        }
+        
+        else_if = {
+            limit = {
+                pop_amount > 1500
+                pop_amount < 2000
+                owner = {
+                    NOT = { has_country_flag = viltrum_progress_2 }
+                }
+            }
+            owner = {
+                set_country_flag = viltrum_progress_2
+                country_event = { id = viltrum_start_pops.5 }
+            }
+        }
+        
+        else_if = {
+            limit = {
+                pop_amount > 600
+                pop_amount < 800
+                owner = {
+                    NOT = { has_country_flag = viltrum_progress_3 }
+                }
+            }
+            owner = {
+                set_country_flag = viltrum_progress_3
+                country_event = { id = viltrum_start_pops.6 }
+            }
+        }
+        
+        if = {
+            limit = {
+                pop_amount > 100
+            }
+            planet_event = { id = viltrum_start_pops.2 days = 10 }
+        }
+        else = {
+            owner = {
+                country_event = { id = viltrum_start_pops.3 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = viltrum_start_pops.4
+    title = "viltrum_start_pops.4.name"
+    desc = "viltrum_start_pops.4.desc"
+    picture = "GFX_evt_sv_1"
+    show_sound = event_bad_omen
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_start_pops.4.a"
+    }
+}
+
+country_event = {
+    id = viltrum_start_pops.5
+    title = "viltrum_start_pops.5.name"
+    desc = "viltrum_start_pops.5.desc"
+    picture = "GFX_evt_sv_2"
+    show_sound = event_bad_omen
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_start_pops.5.a"
+    }
+}
+
+country_event = {
+    id = viltrum_start_pops.6
+    title = "viltrum_start_pops.6.name"
+    desc = "viltrum_start_pops.6.desc"
+    picture = "GFX_evt_sv_3"
+    show_sound = event_bad_omen
+    is_triggered_only = yes
+
+    option = {
+        name = "viltrum_start_pops.6.a"
+    }
+}
+
+country_event = {
+    id = viltrum_start_pops.3
+    title = "viltrum_start_pops.3.name"
+    desc = "viltrum_start_pops.3.desc"
+    picture = "GFX_evt_sv_4"
+    show_sound = event_celebration
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = viltrum_scourge_ended
+    }
+
+    option = {
+        name = "viltrum_start_pops.3.a"
+    }
+}

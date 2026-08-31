@@ -1,0 +1,31 @@
+# The stance itself only bombs hard. Planet shattering happens in
+# events/viltrum_annihilation_events.txt: every pop killed here fires
+# on_pop_bombed_to_death, and that handler cracks the planet once devastation
+# reaches 99. The damage numbers are tuned to reach 99 quickly.
+
+viltrumite_annihilation = {
+	trigger = {
+		owner = {
+			has_origin = origin_viltrum_survivors
+		}
+	}
+	
+	default = no
+	
+	stop_when_armies_dead = no
+	
+	# These are multipliers on the vanilla stance values, not absolutes.
+	planet_damage = 15.0
+	
+	army_damage = 5.0
+	
+	kill_pop_chance = {
+		base = 2.0
+	}
+	
+	min_pops_to_kill_pop = 0
+	
+	ai_weight = {
+		weight = 50
+	}
+}

@@ -1,0 +1,79 @@
+# The Coalition of Planets is a democratic federation of multiple species
+# working together for mutual prosperity and peace. They value diplomacy,
+# cooperation, and individual freedom above all else.
+
+coalition_planets = {
+	ship_prefix = "CPS"
+	
+	species = {
+		class = MAM
+		portrait = "mam1"
+		name = "Coalition Species"
+		plural = "Coalition Species"
+		adjective = "Coalition"
+		name_list = "COALITION"
+		
+		trait = "trait_coalition_unity"
+		trait = "trait_organic"
+	}
+	
+	name = "Coalition of Planets"
+	adjective = "Coalition"
+	
+	authority = auth_democratic
+	
+	civics = {
+		"civic_idealistic_foundation"
+		"civic_parliamentary_system"
+	}
+	
+	government = gov_moral_democracy
+	
+	planet_name = "Unity"
+	planet_class = pc_continental
+	
+	system_name = "Harmony"
+	
+	origin = "origin_coalition_unity"
+	
+	ethic = "ethic_xenophile"
+	ethic = "ethic_egalitarian"
+	ethic = "ethic_pacifist"
+	
+	empire_flag = {
+		icon = {
+			category = "ornate"
+			file = "flag_ornate_11.dds"
+		}
+		background = {
+			category = "backgrounds"
+			file = "circle.dds"
+		}
+		colors = {
+			"light_blue"
+			"white"
+			"yellow"
+			"null"
+		}
+	}
+	
+	graphical_culture = "mammalian_01"
+	city_graphical_culture = "mammalian_01"
+	
+	spawn_enabled = yes
+	spawn_as_fallen = no
+	
+	room = "default_room"
+	
+	ruler = {
+		gender = male
+		name = "Thaedus"
+		portrait = "mam1"
+		texture = 0
+		clothes = 0
+		ruler_title = "High Chancellor"
+		ruler_title_female = "High Chancellor"
+		
+		trait = "leader_trait_resilient"
+	}
+}

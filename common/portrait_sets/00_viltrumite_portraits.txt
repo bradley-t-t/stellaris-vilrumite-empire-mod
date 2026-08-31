@@ -1,0 +1,24 @@
+# The two portrait sets offered under the VILTRUMITE species class.
+#
+# viltrumite_set is the mod's own artwork, in gfx/models/portraits/viltrumite.
+# viltrumites reuses the vanilla human portraits, which is what a Viltrumite
+# passing as human looks like.
+#
+# Both are listed in 00_viltrumite_portrait_categories.txt so the empire
+# creator shows them together.
+
+viltrumite_set = {
+	species_class = VILTRUMITE
+
+	portraits = {
+		"viltrumite"
+	}
+}
+
+viltrumites = {
+	species_class = VILTRUMITE
+
+	portraits = {
+		"human"
+	}
+}

@@ -1,0 +1,16 @@
+# Human species class with the Pure Viltrumite trait; VILTRUMITE names it
+
+viltrumite_species = {
+ class = "HUM"
+ 
+ portrait = "human"
+ graphical_culture = "mammalian_01"
+ 
+ name = "Viltrumite"
+ plural = "Viltrumites"
+ adjective = "Viltrumite"
+ 
+ name_list = "VILTRUMITE"
+ 
+ traits = { "trait_viltrumite_pure" }
+}

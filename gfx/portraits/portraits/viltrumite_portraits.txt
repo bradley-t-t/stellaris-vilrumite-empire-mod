@@ -1,0 +1,343 @@
+portraits = {
+
+    0 = { texturefile = "gfx/models/portraits/viltrumite/0.dds" }
+
+    1 = { texturefile = "gfx/models/portraits/viltrumite/1.dds" }
+
+    2 = { texturefile = "gfx/models/portraits/viltrumite/2.dds" }
+
+    3 = { texturefile = "gfx/models/portraits/viltrumite/3.dds" }
+
+    4 = { texturefile = "gfx/models/portraits/viltrumite/4.dds" }
+
+    5 = { texturefile = "gfx/models/portraits/viltrumite/5.dds" }
+
+    6 = { texturefile = "gfx/models/portraits/viltrumite/6.dds" }
+
+    7 = { texturefile = "gfx/models/portraits/viltrumite/7.dds" }
+
+    8 = { texturefile = "gfx/models/portraits/viltrumite/8.dds" }
+
+    9 = { texturefile = "gfx/models/portraits/viltrumite/9.dds" }
+
+    10 = { texturefile = "gfx/models/portraits/viltrumite/10.dds" }
+
+    11 = { texturefile = "gfx/models/portraits/viltrumite/11.dds" }
+
+    12 = { texturefile = "gfx/models/portraits/viltrumite/12.dds" }
+
+    13 = { texturefile = "gfx/models/portraits/viltrumite/13.dds" }
+
+    14 = { texturefile = "gfx/models/portraits/viltrumite/14.dds" }
+
+    15 = { texturefile = "gfx/models/portraits/viltrumite/15.dds" }
+
+    16 = { texturefile = "gfx/models/portraits/viltrumite/16.dds" }
+
+    17 = { texturefile = "gfx/models/portraits/viltrumite/17.dds" }
+
+    18 = { texturefile = "gfx/models/portraits/viltrumite/18.dds" }
+
+    19 = { texturefile = "gfx/models/portraits/viltrumite/19.dds" }
+
+    20 = { texturefile = "gfx/models/portraits/viltrumite/20.dds" }
+
+    21 = { texturefile = "gfx/models/portraits/viltrumite/21.dds" }
+
+    22 = { texturefile = "gfx/models/portraits/viltrumite/22.dds" }
+
+    23 = { texturefile = "gfx/models/portraits/viltrumite/23.dds" }
+
+    24 = { texturefile = "gfx/models/portraits/viltrumite/24.dds" }
+
+    25 = { texturefile = "gfx/models/portraits/viltrumite/25.dds" }
+
+    26 = { texturefile = "gfx/models/portraits/viltrumite/26.dds" }
+
+    27 = { texturefile = "gfx/models/portraits/viltrumite/27.dds" }
+
+}
+
+portrait_groups = {
+    viltrumite = {
+        default = 0
+
+        game_setup = {
+            
+            add = {
+                portraits = {
+
+                    0
+
+                    1
+
+                    2
+
+                    3
+
+                    4
+
+                    5
+
+                    6
+
+                    7
+
+                    8
+
+                    9
+
+                    10
+
+                    11
+
+                    12
+
+                    13
+
+                    14
+
+                    15
+
+                    16
+
+                    17
+
+                    18
+
+                    19
+
+                    20
+
+                    21
+
+                    22
+
+                    23
+
+                    24
+
+                    25
+
+                    26
+
+                    27
+
+                }
+            }
+            
+        }
+
+        # species scope
+        species = {
+            
+            add = {
+                portraits = {
+                    0
+                }
+            }
+            
+        }
+
+        # pop scope
+        pop = {
+            
+            add = {
+                portraits = {
+
+                    0
+
+                    1
+
+                    2
+
+                    3
+
+                    4
+
+                    5
+
+                    6
+
+                    7
+
+                    8
+
+                    9
+
+                    10
+
+                    11
+
+                    12
+
+                    13
+
+                    14
+
+                    15
+
+                    16
+
+                    17
+
+                    18
+
+                    19
+
+                    20
+
+                    21
+
+                    22
+
+                    23
+
+                    24
+
+                    25
+
+                    26
+
+                    27
+
+                }
+            }
+            
+        }
+
+        # leader scope
+        leader = {
+            
+            add = {
+                portraits = {
+
+                    0
+
+                    1
+
+                    2
+
+                    3
+
+                    4
+
+                    5
+
+                    6
+
+                    7
+
+                    8
+
+                    9
+
+                    10
+
+                    11
+
+                    12
+
+                    13
+
+                    14
+
+                    15
+
+                    16
+
+                    17
+
+                    18
+
+                    19
+
+                    20
+
+                    21
+
+                    22
+
+                    23
+
+                    24
+
+                    25
+
+                    26
+
+                    27
+
+                }
+            }
+            
+        }
+
+        # ruler scope
+        ruler = {
+            
+            add = {
+                portraits = {
+
+                    0
+
+                    1
+
+                    2
+
+                    3
+
+                    4
+
+                    5
+
+                    6
+
+                    7
+
+                    8
+
+                    9
+
+                    10
+
+                    11
+
+                    12
+
+                    13
+
+                    14
+
+                    15
+
+                    16
+
+                    17
+
+                    18
+
+                    19
+
+                    20
+
+                    21
+
+                    22
+
+                    23
+
+                    24
+
+                    25
+
+                    26
+
+                    27
+
+                }
+            }
+            
+        }
+    }
+}

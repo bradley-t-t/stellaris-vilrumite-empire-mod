@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [develop, main]
+  # A pull request already runs against the merge result, and develop is
+  # strict, so the head contains the base by the time it lands. The push run
+  # that followed each merge re-tested a tree the pull request had just tested.
+  # Only main keeps one, as the record that production passed.
+  push:
+    branches: [main]
+  # A run that GitHub never scheduled cannot be re-fired by any push, close or
+  # reopen, and a required context that never appears blocks a branch for good.
+  # This is the one lever that does not depend on an event being delivered.
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        if: ${{ hashFiles('package.json') != '' }}
+        with:
+          node-version: 22
+          cache: npm
+      - name: Install and check
+        shell: bash
+        run: |
+          if [ ! -f package.json ]; then
+            echo "No package.json — nothing to check."
+            exit 0
+          fi
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install --no-audit --no-fund
+          fi
+          npm run lint --if-present
+          npm test --if-present
+          npm run build --if-present
